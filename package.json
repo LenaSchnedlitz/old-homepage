@@ -1,7 +1,9 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "personal-homepage",
+  "description": "My personal homepage",
   "version": "0.0.1",
+  "author": "Lena Schnedlitz",
+  "license": "See LICENSE",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
