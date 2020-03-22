@@ -14,8 +14,8 @@ It most likely doesn't work in old browsers (looking at you, IE11), but I won't 
 ```bash
 git clone git@gitlab.com:LenaSchnedlitz/personal-homepage.git
 cd personal-homepage
-yarn install
-yarn run dev
+npm install
+npm run dev
 ```
 
 Refer to the official [Sapper documentation](https://sapper.svelte.dev/docs) for more details.
@@ -25,7 +25,7 @@ Refer to the official [Sapper documentation](https://sapper.svelte.dev/docs) for
 You need [Cypress](https://www.cypress.io/) to execute tests.
 
 ```bash
-yarn test
+npm test
 ```
 
 
