@@ -1,0 +1,19 @@
+image: node:latest
+
+pages: 
+  cache:
+    paths:
+      - node_modules/
+
+  export:
+    script:
+      - yarn install
+      - yarn export
+
+  artifacts:
+    paths:
+      - __sapper__/export
+    
+  only:
+    master
+
