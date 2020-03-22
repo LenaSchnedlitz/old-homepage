@@ -30,7 +30,7 @@ pages:
   script:
   - npm run test
   - npm run export
-  - mv __sapper__/export/sapper-v3 public
+  - mv __sapper__/export public
   artifacts:
     paths:
     - public
