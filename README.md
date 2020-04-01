@@ -5,6 +5,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/kinda-sfw.svg)](https://forthebadge.com)
 
 This is my second attempt at a personal homepage. Still a work in progress.  
+
 In general, the page consists of a *landing page*, *about section*, *blog*, and *portfolio*.  
 It most likely doesn't work in old browsers (looking at you, IE11), but I won't fix this.
 
