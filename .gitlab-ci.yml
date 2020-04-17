@@ -1,5 +1,7 @@
 image: cypress/base:12.16.1
 
+# CACHE #
+
 cache:
   key: the-one-and-only-cache-key
   paths:
@@ -7,16 +9,18 @@ cache:
     - cache/Cypress
     - node_modules
 
-stages:
-  - test
-  - deploy
-
-
 before_script:
   - npm ci
   - npx cypress cache path
   - npx cypress cache list
   - npm run cy:verify
+
+
+# JOBS #
+
+stages:
+  - test
+  - deploy
 
 
 test:
@@ -30,6 +34,7 @@ deploy:
     - npm run test
     - npm run export
     - mv __sapper__/export public
+    - git --version
   artifacts:
     paths:
       - public
