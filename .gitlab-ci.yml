@@ -29,7 +29,7 @@ test:
     - npx cypress cache path
     - npx cypress cache list
   script:
-    - cy:verify
+    - npm run cy:verify
     - npm run test
 
 deploy:
