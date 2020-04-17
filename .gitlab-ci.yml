@@ -10,10 +10,9 @@ cache:
     - node_modules
 
 before_script:
-  - npm ci
+  - npm ci --cache .npm --prefer-offline
   - npx cypress cache path
   - npx cypress cache list
-  - npm run cy:verify
 
 
 # JOBS #
@@ -25,16 +24,26 @@ stages:
 
 test:
   stage: test
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+    - npx cypress cache path
+    - npx cypress cache list
   script:
+    - cy:verify
     - npm run test
 
 deploy:
   stage: deploy
+  before_script:
+    - npm ci --cache .npm --prefer-offline
   script:
-    - npm run test
+    - echo ${CI_COMMIT_SHA:0:8}
     - npm run export
-    - mv __sapper__/export public
-    - git --version
+    - git clone git@github.com:LenaSchnedlitz/LenaSchnedlitz.github.io.git
+    - mv __sapper__/export/* LenaSchnedlitz.github.io
+    - git add .
+    - git commit -m ${CI_COMMIT_SHA:0:8}
+    - git push
   artifacts:
     paths:
       - public
