@@ -1,6 +1,10 @@
 image: cypress/base:12.16.1
 
-# CACHE #
+# VARIABLES AND CACHE #
+
+variables:
+  DEPLOY_USER: 'LenaSchnedlitz'
+  DEPLOY_REPO_NAME: 'LenaSchnedlitz.github.io'
 
 cache:
   key: the-one-and-only-cache-key
@@ -39,11 +43,11 @@ deploy:
   script:
     - echo ${CI_COMMIT_SHA:0:8}
     - npm run export
-    - git clone git@github.com:LenaSchnedlitz/LenaSchnedlitz.github.io.git
-    - mv __sapper__/export/* LenaSchnedlitz.github.io
+    - git clone https://github.com/${DEPLOY_USER}/${DEPLOY_REPO_NAME}.git
+    - mv __sapper__/export/* ${DEPLOY_REPO_NAME}
     - git add .
     - git commit -m ${CI_COMMIT_SHA:0:8}
-    - git push
+    - git push https://LenaSchnedlitz:${DEPLOY_TOKEN}@${DEPLOY_REPO_NAME}.git HEAD
   artifacts:
     paths:
       - public
