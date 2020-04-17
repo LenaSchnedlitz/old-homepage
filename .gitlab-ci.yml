@@ -1,45 +1,32 @@
-# See https://gitlab.com/rdela/sapper-v3/-/blob/master/.gitlab-ci.yml
-
 image: cypress/base:12.16.1
 
-# to cache both npm modules and Cypress binary we use environment variables
-# to point at the folders we can list as paths in "cache" job settings
-variables:
-  npm_config_cache: "$CI_PROJECT_DIR/.npm"
-  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
-
-# cache using branch name
-# https://gitlab.com/help/ci/caching/index.md
 cache:
-  key: ${CI_COMMIT_REF_SLUG}
+  key: the-one-and-only-cache-key
   paths:
     - .npm
     - cache/Cypress
     - node_modules
 
-before_script:
-  - npm ci
-  # check Cypress binary path and cached versions
-  # useful to make sure we are not carrying around old versions
-  - npx cypress cache path
-  - npx cypress cache list
-  - npm run cy:verify
+stages:
+  - test
+  - deploy
 
-pages:
-  stage: deploy
-  script:
-  - npm run test
-  - npm run export
-  - mv __sapper__/export public
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
 
 test:
   stage: test
   script:
-  - npm run test
+    - npm run test
   except:
-  - master
+    - master
+
+deploy:
+  stage: deploy
+  script:
+    - npm run test
+    - npm run export
+    - mv __sapper__/export public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
