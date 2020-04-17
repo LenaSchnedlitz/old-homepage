@@ -1,12 +1,5 @@
 image: cypress/base:12.16.1
 
-cache:
-  key: the-one-and-only-cache-key
-  paths:
-    - .npm
-    - cache/Cypress
-    - node_modules
-
 stages:
   - test
   - deploy
