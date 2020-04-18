@@ -30,21 +30,17 @@
   <h1>About Me</h1>
 
   <p>
-    My name is <i>Lena Schnedlitz</i> and I’m a software engineer from Vienna,
-    Austria.
+    My name is <span class="emph">Lena Schnedlitz</span> and I’m a <em>software engineer</em>
+    from Vienna, Austria.
   </p>
   <p>
-    I enjoy implementing stuff and solving problems.
-    I’m mostly interested in logic, UX and medicine.
-    I also love hipster coffee shops,
-    math puzzles and origami.
-  </p>
-  <p>
-    <br>
-    This page is about my personal projects and opinions. You can find most of my stuff on
+    I enjoy implementing things and solving problems. You can find most of my stuff on
     <a class="link" href="https://github.com/LenaSchnedlitz">GitHub</a>.
-    The source code of this homepage is available on
-    <a class="link" href="https://gitlab.com/LenaSchnedlitz/personal-homepage">GitLab</a>.
+  </p>
+  <p>
+    This website is about my personal projects and opinions. There might be a slight bias towards
+    content related to programming, but I also post about topics like math puzzles,
+    origami, and video games.
   </p>
 </article>
 
