@@ -49,7 +49,7 @@ deploy:
     - git config user.name "Lena Schnedlitz"
     - git config user.email ${GITLAB_USER_EMAIL}
     - git commit -m ${CI_COMMIT_SHA:0:8}
-    - git push https://LenaSchnedlitz:${DEPLOY_TOKEN}@github.com/${DEPLOY_REPO_NAME}.git HEAD
+    - git push https://LenaSchnedlitz:${DEPLOY_TOKEN}@github.com/${DEPLOY_USER}/${DEPLOY_REPO_NAME}.git HEAD
   artifacts:
     paths:
       - public
