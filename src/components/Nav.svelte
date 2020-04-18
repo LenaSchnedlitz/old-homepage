@@ -76,6 +76,26 @@
       width: calc(100% - 1.4rem);
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    [aria-current]::after {
+      background-color: var(--gray-1);
+    }
+
+    a:hover {
+      color: var(--primary-color-3);
+    }
+
+    a:active {
+      color: var(--primary-color);
+    }
+
+    @media (min-width: 800px) {
+      nav {
+        background: #111111dd;
+      }
+    }
+  }
 </style>
 
 <nav>
