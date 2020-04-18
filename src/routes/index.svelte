@@ -18,7 +18,7 @@
     line-height: 22px;
   }
 
-  #picture {
+  #portrait {
     position: absolute;
     height: 36%;
     width: calc(100% - 64px);
@@ -35,7 +35,7 @@
       top: 166px;
     }
 
-    #picture {
+    #portrait {
       top: 0;
       left: 0;
       height: 100%;
@@ -47,13 +47,13 @@
   }
 
   @media (min-width: 2000px) {
-    #picture {
+    #portrait {
       background-image: url('../../me/optimized/me-l-min.jpg');
     }
   }
 
   @media (min-width: 3000px) {
-    #picture {
+    #portrait {
       background-image: url('../../me/optimized/me-xl-min.jpg');
     }
   }
@@ -61,8 +61,20 @@
 
   @media (prefers-color-scheme: dark) {
     @media (min-width: 700px) {
-      #picture {
-        background-image: none; /* TODO */
+      #portrait {
+        background-image: url('../../me/optimized/me-dark-m-min.jpg');
+      }
+    }
+
+    @media (min-width: 2000px) {
+      #portrait {
+        background-image: url('../../me/optimized/me-dark-l-min.jpg');
+      }
+    }
+
+    @media (min-width: 3000px) {
+      #portrait {
+        background-image: url('../../me/optimized/me-dark-xl-min.jpg');
       }
     }
   }
@@ -72,7 +84,7 @@
   <title>Lena Schnedlitz</title>
 </svelte:head>
 
-<div id="picture"></div>
+<div id="portrait"></div>
 
 <article>
   <h1>Hi.</h1>
