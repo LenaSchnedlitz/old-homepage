@@ -359,11 +359,11 @@ code {
 }
 
 .hljs-deletion {
-  background: #fdd;
+  background: #f1e2df;
 }
 
 .hljs-addition {
-  background: #dfd;
+  background: #ddeceb;
 }
 
 .hljs-emphasis {
