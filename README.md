@@ -26,9 +26,3 @@ You need [Cypress](https://www.cypress.io/) to execute tests.
 ```bash
 npm test
 ```
-
-
-
-
-
-
