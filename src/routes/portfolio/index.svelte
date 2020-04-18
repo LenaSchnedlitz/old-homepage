@@ -8,6 +8,11 @@
 
 <script>
   export let posts;
+
+  let width;
+  let small;
+
+  $: small = width && width < 800;
 </script>
 
 <svelte:head>
@@ -33,10 +38,6 @@
     padding: 0;
   }
 
-  .rectangle {
-    display: none;
-  }
-
   .square {
     padding: 0;
     width: 100%;
@@ -56,21 +57,16 @@
       padding: 0 40px 40px 0;
     }
 
-    .link-wrapper:first-child {
-      padding-right: 0;
-    }
-
-    .link-wrapper:first-child .square {
+    .link-wrapper .square {
       width: 354px;
     }
 
-    .link-wrapper:not(:first-child) .square {
-      display: none;
+    .link-wrapper .rectangle {
+      width: auto;
     }
 
-    .link-wrapper:not(:first-child) .rectangle {
-      display: initial;
-      width: auto;
+    .link-wrapper:first-child {
+      padding-right: 0;
     }
 
     .link-wrapper:nth-child(odd) {
@@ -79,14 +75,19 @@
   }
 </style>
 
+<svelte:window bind:innerWidth={width}/>
+
 <h1>Projects</h1>
 
 <section>
-  {#each posts as post}
+  {#each posts as post, i}
     <div class="link-wrapper">
       <a rel="prefetch" href="portfolio/{post.slug}" title="{post.title}">
-        <img class="square" alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
-        <img class="rectangle" alt="{post.title}" src="portfolio/{post.slug}.png"/>
+        {#if small || i === 0}
+          <img class="square" alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
+        {:else}
+          <img class="rectangle" alt="{post.title}" src="portfolio/{post.slug}.png"/>
+        {/if}
       </a>
     </div>
   {/each}
