@@ -43,7 +43,7 @@ deploy:
   script:
     - npm run export
     - git clone https://github.com/${DEPLOY_USER}/${DEPLOY_REPO_NAME}.git
-    - mv __sapper__/export/* ${DEPLOY_REPO_NAME}
+    - cp -rf __sapper__/export/* ${DEPLOY_REPO_NAME}
     - cd ${DEPLOY_REPO_NAME}
     - git add .
     - git config user.name "Lena Schnedlitz"
