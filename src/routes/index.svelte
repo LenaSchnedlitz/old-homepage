@@ -90,6 +90,7 @@
   <h1>Hi.</h1>
 
   <p>
-    My name is Lena. I’m a <i>software engineer</i> from Vienna, Austria.
+    My name is <em>Lena.</em><br>
+    I’m a <span class="emph">software engineer</span> from Vienna, Austria.
   </p>
 </article>
