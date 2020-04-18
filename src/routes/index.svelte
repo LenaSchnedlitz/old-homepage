@@ -27,7 +27,7 @@
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    box-shadow: 0 20px 20px -25px rgba(0,0,0,.3);
+    box-shadow: 0 20px 20px -25px rgba(0, 0, 0, .3);
   }
 
   @media (min-width: 700px) {
@@ -55,6 +55,15 @@
   @media (min-width: 3000px) {
     #picture {
       background-image: url('../../me/optimized/me-xl-min.jpg');
+    }
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+    @media (min-width: 700px) {
+      #picture {
+        background-image: none; /* TODO */
+      }
     }
   }
 </style>
