@@ -23,7 +23,7 @@
     height: 36%;
     width: calc(100% - 64px);
     background-size: contain;
-    background-image: url('../../me/me-s.jpg');
+    background-image: url('../../me/optimized/me-s-min.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
@@ -40,7 +40,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background-image: url('../../me/me-m.jpg');
+      background-image: url('../../me/optimized/me-m-min.jpg');
       box-shadow: none;
       z-index: -1;
     }
@@ -48,13 +48,13 @@
 
   @media (min-width: 2000px) {
     #picture {
-      background-image: url('../../me/me-l.jpg');
+      background-image: url('../../me/optimized/me-l-min.jpg');
     }
   }
 
   @media (min-width: 3000px) {
     #picture {
-      background-image: url('../../me/me-xl.jpg');
+      background-image: url('../../me/optimized/me-xl-min.jpg');
     }
   }
 </style>
