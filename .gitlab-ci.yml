@@ -40,6 +40,8 @@ deploy:
   stage: deploy
   before_script:
     - npm ci --cache .npm --prefer-offline
+    - git config user.name "Lena Schnedlitz"
+    - git config user.email ${GITLAB_USER_EMAIL}
   script:
     - npm run export
     - git clone https://github.com/${DEPLOY_USER}/${DEPLOY_REPO_NAME}.git
