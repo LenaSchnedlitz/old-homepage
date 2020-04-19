@@ -47,7 +47,7 @@
     section {
       margin-top: 121px;
       flex-direction: row-reverse;
-      justify-content: left;
+      justify-content: flex-end;
     }
 
     .link-wrapper {
