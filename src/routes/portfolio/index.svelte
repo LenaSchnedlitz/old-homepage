@@ -124,7 +124,7 @@
     <div class="link-wrapper">
       <a rel="prefetch" href="portfolio/{post.slug}" title="{post.title}">
         {#if small}
-          <article class="rectangle" style="background-color: {post.bg}">
+          <article class="portfolio-card rectangle {post.background}">
             <div class="project-name">
               <h3>{post.title}</h3>
               <span>{post.teaser}</span>
@@ -132,7 +132,7 @@
             <img alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
           </article>
         {:else if i === 0}
-          <article class="square" style="background-color: {post.bg}">
+          <article class="portfolio-card square {post.background}">
             <div class="project-name">
               <h3>{post.title}</h3>
               <span>{post.teaser}</span>
@@ -140,7 +140,7 @@
             <img alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
           </article>
         {:else}
-          <article class="rectangle" style="background-color: {post.bg}">
+          <article class="portfolio-card rectangle {post.background}">
             <div class="project-name">
               <h3>{post.title}</h3>
               <span>{post.teaser}</span>

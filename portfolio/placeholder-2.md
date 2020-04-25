@@ -1,7 +1,7 @@
 ---
 slug: 'placeholder-2'
 title: 'Placeholder'
-bg: 'aqua'
+background: 'gray-light'
 align: 'left'
 teaser: 'This will soon be replaced by real content!'
 ---

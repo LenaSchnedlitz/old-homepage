@@ -1,7 +1,7 @@
 ---
 slug: '01-skycalc'
 title: 'Skycalc'
-bg: 'aqua'
+background: 'gray-light'
 align: 'left'
 teaser: 'This will soon be replaced by real content!'
 ---
