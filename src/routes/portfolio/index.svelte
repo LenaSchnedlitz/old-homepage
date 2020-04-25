@@ -52,14 +52,14 @@
     font-family: var(--sans-serif);
   }
 
-  .project-name h3 {
+  .project-title {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: 800;
   }
 
-  .project-name span {
+  .project-subtitle {
     line-height: 1.5;
   }
 
@@ -85,16 +85,17 @@
       margin-top: -191px;
     }
 
-    .link-wrapper .square {
-      width: 354px;
-      height: 354px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+    .portfolio-card > .preview-left {
+      align-self: flex-start;
+      margin-bottom: 2rem;
     }
 
-    .link-wrapper .rectangle {
+    .portfolio-card > .preview-right {
+      align-self: flex-end;
+      margin-bottom: 2rem;
+    }
+
+    .rectangle {
       width: 256px;
       height: 354px;
       display: flex;
@@ -103,14 +104,27 @@
       align-items: center;
     }
 
-    .link-wrapper .left {
-      align-self: flex-start;
-      margin-bottom: 2rem;
+    .square {
+      width: 354px;
+      height: 354px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .link-wrapper .right {
-      align-self: flex-end;
-      margin-bottom: 2rem;
+    .square .project-name {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
+    .square .project-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .square .project-subtitle {
+      font-size: 1.1rem;
     }
   }
 </style>
@@ -126,26 +140,26 @@
         {#if small}
           <article class="portfolio-card rectangle {post.background}">
             <div class="project-name">
-              <h3>{post.title}</h3>
-              <span>{post.teaser}</span>
+              <h3 class="project-title">{post.title}</h3>
+              <span class="project-subtitle">{post.teaser}</span>
             </div>
             <img alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
           </article>
         {:else if i === 0}
           <article class="portfolio-card square {post.background}">
             <div class="project-name">
-              <h3>{post.title}</h3>
-              <span>{post.teaser}</span>
+              <h3 class="project-title">{post.title}</h3>
+              <span class="project-subtitle">{post.teaser}</span>
             </div>
             <img alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
           </article>
         {:else}
           <article class="portfolio-card rectangle {post.background}">
             <div class="project-name">
-              <h3>{post.title}</h3>
-              <span>{post.teaser}</span>
+              <h3 class="project-title">{post.title}</h3>
+              <span class="project-subtitle">{post.teaser}</span>
             </div>
-            <img alt="{post.title}" src="portfolio/{post.slug}.png" class="{post.align}"/>
+            <img alt="{post.title}" src="portfolio/{post.slug}.png" class="preview-{post.align}"/>
           </article>
         {/if}
       </a>
