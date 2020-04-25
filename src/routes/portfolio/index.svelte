@@ -38,13 +38,11 @@
     padding: 0;
   }
 
-  .rectangle {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  .square > img {
+    width: 180px;
+    margin-bottom: -1rem;
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .5);
+    border-radius: 15px 15px 0 0;
   }
 
   .project-name {
@@ -85,32 +83,35 @@
       margin-top: -191px;
     }
 
-    .portfolio-card > .preview-left {
-      align-self: flex-start;
-      margin-bottom: 2rem;
-    }
-
-    .portfolio-card > .preview-right {
-      align-self: flex-end;
-      margin-bottom: 2rem;
-    }
-
     .rectangle {
       width: 256px;
       height: 354px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+    }
+
+    .rectangle > img {
+      margin-bottom: 3rem;
+      max-width: 206px;
+      box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .5);
+    }
+
+    .preview-left {
+      align-self: flex-start;
+      border-radius: 0 15px 15px 0;
+    }
+
+    .preview-right {
+      align-self: flex-end;
+      border-radius: 15px 0 0 15px;
     }
 
     .square {
       width: 354px;
       height: 354px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+    }
+
+    .square > img {
+      width: auto;
+      max-width: 230px;
     }
 
     .square .project-name {
@@ -124,7 +125,7 @@
     }
 
     .square .project-subtitle {
-      font-size: 1.1rem;
+      font-size: 15px;
     }
   }
 </style>
@@ -138,12 +139,12 @@
     <div class="link-wrapper">
       <a rel="prefetch" href="portfolio/{post.slug}" title="{post.title}">
         {#if small}
-          <article class="portfolio-card rectangle {post.background}">
+          <article class="portfolio-card square {post.background}">
             <div class="project-name">
               <h3 class="project-title">{post.title}</h3>
               <span class="project-subtitle">{post.teaser}</span>
             </div>
-            <img alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
+            <img alt="{post.title}" src="portfolio/{post.slug}.png"/>
           </article>
         {:else if i === 0}
           <article class="portfolio-card square {post.background}">
@@ -151,7 +152,7 @@
               <h3 class="project-title">{post.title}</h3>
               <span class="project-subtitle">{post.teaser}</span>
             </div>
-            <img alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
+            <img alt="{post.title}" src="portfolio/{post.slug}.png"/>
           </article>
         {:else}
           <article class="portfolio-card rectangle {post.background}">

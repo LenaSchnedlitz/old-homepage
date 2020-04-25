@@ -1,9 +1,9 @@
 ---
 slug: '01-skycalc'
-title: 'Skycalc'
+title: 'SkyCalc'
 teaser: 'A small tool for character progress optimization in Skyrim.'
 background: 'gray-light'
-align: 'left'
+align: 'right'
 ---
 
 Nothing here yet - Will be replaced by *real* content!

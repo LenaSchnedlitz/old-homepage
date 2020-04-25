@@ -283,6 +283,11 @@ code {
 /* PORTFOLIO CARDS ********************************************************************************/
 
 .portfolio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
   box-shadow: 5px 10px 25px 0 rgba(0,0,0,0.1);
 }
 

@@ -2,7 +2,7 @@
 slug: 'placeholder-2'
 title: 'Placeholder'
 background: 'gray-light'
-align: 'left'
+align: 'right'
 teaser: 'This will soon be replaced by real content!'
 ---
 
