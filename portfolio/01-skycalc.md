@@ -1,6 +1,8 @@
 ---
-slug: 'placeholder'
-title: 'Placeholder'
+slug: '01-skycalc'
+title: 'Skycalc'
+bg: 'aqua'
+align: 'left'
 teaser: 'This will soon be replaced by real content!'
 ---
 

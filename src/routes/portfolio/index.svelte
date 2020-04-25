@@ -38,9 +38,29 @@
     padding: 0;
   }
 
-  .square {
+  .rectangle {
     padding: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project-name {
+    margin: 2rem;
+    font-family: var(--sans-serif);
+  }
+
+  .project-name h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  .project-name span {
+    line-height: 1.5;
   }
 
   @media (min-width: 800px) {
@@ -57,20 +77,40 @@
       padding: 0 40px 40px 0;
     }
 
-    .link-wrapper .square {
-      width: 354px;
-    }
-
-    .link-wrapper .rectangle {
-      width: auto;
-    }
-
     .link-wrapper:first-child {
       padding-right: 0;
     }
 
     .link-wrapper:nth-child(odd) {
       margin-top: -191px;
+    }
+
+    .link-wrapper .square {
+      width: 354px;
+      height: 354px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .link-wrapper .rectangle {
+      width: 256px;
+      height: 354px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .link-wrapper .left {
+      align-self: flex-start;
+      margin-bottom: 2rem;
+    }
+
+    .link-wrapper .right {
+      align-self: flex-end;
+      margin-bottom: 2rem;
     }
   }
 </style>
@@ -83,10 +123,30 @@
   {#each posts as post, i}
     <div class="link-wrapper">
       <a rel="prefetch" href="portfolio/{post.slug}" title="{post.title}">
-        {#if small || i === 0}
-          <img class="square" alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
+        {#if small}
+          <article class="rectangle" style="background-color: {post.bg}">
+            <div class="project-name">
+              <h3>{post.title}</h3>
+              <span>{post.teaser}</span>
+            </div>
+            <img alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
+          </article>
+        {:else if i === 0}
+          <article class="square" style="background-color: {post.bg}">
+            <div class="project-name">
+              <h3>{post.title}</h3>
+              <span>{post.teaser}</span>
+            </div>
+            <img alt="{post.title}" src="portfolio/{post.slug}-square.png"/>
+          </article>
         {:else}
-          <img class="rectangle" alt="{post.title}" src="portfolio/{post.slug}.png"/>
+          <article class="rectangle" style="background-color: {post.bg}">
+            <div class="project-name">
+              <h3>{post.title}</h3>
+              <span>{post.teaser}</span>
+            </div>
+            <img alt="{post.title}" src="portfolio/{post.slug}.png" class="{post.align}"/>
+          </article>
         {/if}
       </a>
     </div>
