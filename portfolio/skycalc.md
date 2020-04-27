@@ -1,5 +1,6 @@
 ---
-slug: '01-skycalc'
+slug: 'skycalc'
+rank: 1
 title: 'SkyCalc'
 teaser: 'A small tool for character progress optimization in Skyrim.'
 previewType: 'png'

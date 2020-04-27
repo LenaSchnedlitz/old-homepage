@@ -1,7 +1,7 @@
 <script context="module">
   export function preload({params, query}) {
     return this.fetch('portfolio.json').then(r => r.json()).then(posts => {
-      posts.reverse();
+      posts.sort((a, b) => a.rank < b.rank);
       return {posts};
     });
   }

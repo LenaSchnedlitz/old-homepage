@@ -1,5 +1,6 @@
 ---
-slug: '03-game-of-life'
+slug: 'game-of-life'
+rank: 2
 title: 'Game of Life'
 teaser: 'Conway''s famous game implemented on a hexagonal grid.'
 previewType: 'gif'
