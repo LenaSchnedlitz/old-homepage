@@ -1,6 +1,7 @@
 <script context="module">
   export function preload({params, query}) {
     return this.fetch('portfolio.json').then(r => r.json()).then(posts => {
+      posts.reverse();
       return {posts};
     });
   }
@@ -90,8 +91,12 @@
 
     .rectangle > img {
       margin-bottom: 3rem;
-      max-width: 206px;
+      width: 206px;
       box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .5);
+    }
+
+    .rectangle .project-name {
+      margin-bottom: 1.3rem;
     }
 
     .preview-left {
@@ -116,7 +121,8 @@
 
     .square .project-name {
       margin-left: 3rem;
-      margin-right: 3rem;
+      margin-right: auto;
+      padding-right: 3rem;
     }
 
     .square .project-title {
@@ -126,6 +132,21 @@
 
     .square .project-subtitle {
       font-size: 15px;
+    }
+
+    .project-name {
+      animation-duration: 0.3s;
+      animation-name: slidein;
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translateX(-3rem);
+    }
+
+    20% {
+      transform: translateX(-1rem);
     }
   }
 </style>
@@ -144,7 +165,7 @@
               <h3 class="project-title">{post.title}</h3>
               <span class="project-subtitle">{post.teaser}</span>
             </div>
-            <img alt="{post.title}" src="portfolio/{post.slug}.png"/>
+            <img alt="{post.title}" src="portfolio/{post.slug}.{post.previewType}"/>
           </article>
         {:else if i === 0}
           <article class="portfolio-card square {post.background}">
@@ -152,7 +173,7 @@
               <h3 class="project-title">{post.title}</h3>
               <span class="project-subtitle">{post.teaser}</span>
             </div>
-            <img alt="{post.title}" src="portfolio/{post.slug}.png"/>
+            <img alt="{post.title}" src="portfolio/{post.slug}.{post.previewType}"/>
           </article>
         {:else}
           <article class="portfolio-card rectangle {post.background}">
@@ -160,7 +181,8 @@
               <h3 class="project-title">{post.title}</h3>
               <span class="project-subtitle">{post.teaser}</span>
             </div>
-            <img alt="{post.title}" src="portfolio/{post.slug}.png" class="preview-{post.align}"/>
+            <img alt="{post.title}" src="portfolio/{post.slug}.{post.previewType}"
+                 class="preview-{post.align}"/>
           </article>
         {/if}
       </a>

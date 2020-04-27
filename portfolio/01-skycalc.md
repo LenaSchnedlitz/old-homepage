@@ -2,7 +2,8 @@
 slug: '01-skycalc'
 title: 'SkyCalc'
 teaser: 'A small tool for character progress optimization in Skyrim.'
-background: 'gray-light'
+previewType: 'png'
+background: 'secondary'
 align: 'right'
 ---
 
