@@ -8,4 +8,33 @@ background: 'secondary'
 align: 'right'
 ---
 
-Nothing here yet - Will be replaced by *real* content!
+In my opinion, Skyrim is one of the best games ever made.
+As a completionist, I spent ages trying to unlock all perks.
+However, at higher levels, it gets difficult to plan ahead and figure out 
+how much training will be needed to reach a long-yearned-for level up.
+That’s why I decided to make a tool for character progress optimization.
+
+<figure class="right">
+<figcaption>SkyCalc <strong>Landing Page</strong></figcaption>
+<img src="portfolio/skycalc/landing.png" alt="Landing Page"/>
+</figure>
+
+SkyCalc uses level information to predict how much training of user-selected skills is needed to 
+reach a certain goal level.
+Results can be exported as a text file.
+
+<figure class="left">
+<figcaption>SkyCalc <strong>Level Selection</strong></figcaption>
+<img src="portfolio/skycalc/level.png" alt="Level Selection"/>
+</figure>
+
+<figure class="right">
+<figcaption>SkyCalc <strong>Skill Selection</strong></figcaption>
+<img src="portfolio/skycalc/skill.png" alt="Skill Selection"/>
+</figure>
+
+<figure class="left">
+<figcaption>SkyCalc <strong>Results</strong></figcaption>
+<img src="portfolio/skycalc/results.png" alt="Results"/>
+</figure>
+

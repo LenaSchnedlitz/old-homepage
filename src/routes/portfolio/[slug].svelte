@@ -17,12 +17,22 @@
   export let post;
 </script>
 
+<style>
+  h2.teaser {
+    font-family: var(--sans-serif);
+    font-style: normal;
+    font-weight: normal;
+    margin: -16px 0 32px;
+  }
+</style>
+
 <svelte:head>
   <title>Lena Schnedlitz - {post.title}</title>
 </svelte:head>
 
 <article>
   <h1>{post.title}</h1>
+  <h2 class="teaser">{post.teaser}</h2>
 
   {@html post.html}
 </article>
