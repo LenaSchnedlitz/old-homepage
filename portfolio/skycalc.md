@@ -20,8 +20,16 @@ That’s why I decided to make a tool for character progress optimization.
 </figure>
 
 SkyCalc uses level information to predict how much training of user-selected skills is needed to 
-reach a certain goal level.
+reach a certain goal level. 
+The tool also offers guidance which skills to choose for role-playing.
 Results can be exported as a text file.
+
+<span class="meta">Source Code:</span>
+<a href="https://github.com/LenaSchnedlitz/skycalc" class="link">GitHub
+<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg></a>
+
+
+## <span class="emph">More Screenshots:</span>
 
 <figure class="left">
 <figcaption>SkyCalc <strong>Level Selection</strong></figcaption>
@@ -33,7 +41,7 @@ Results can be exported as a text file.
 <img src="portfolio/skycalc/skill.png" alt="Skill Selection"/>
 </figure>
 
-<figure class="left">
+<figure class="center">
 <figcaption>SkyCalc <strong>Results</strong></figcaption>
 <img src="portfolio/skycalc/results.png" alt="Results"/>
 </figure>
