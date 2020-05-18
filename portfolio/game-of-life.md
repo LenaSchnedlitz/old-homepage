@@ -15,7 +15,7 @@ Pretty much all parameters of the game can be configured: rules for birth and su
 start configuration, duration, and color palette.  
 
 While researching for this project, I stumbled upon a very 
-informative <a class="link" href="https://davidsiaw.github.io/blog/2014/11/21/hexlife">blog post</a> that
+informative <a class="link" href="https://davidsiaw.github.io/blog/2014/11/21/hexlife">article</a> that
 recommends the rule set <span class="emph">B2/S34</span>, which means that cells are born if surrounded 
 by exactly 2 living cells and they survive if surrounded by 3 or 4 other live cells. This configuration 
 produces some nice oscillators, e.g. this one:
