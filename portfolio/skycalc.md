@@ -5,7 +5,7 @@ title: 'SkyCalc'
 teaser: 'A small tool for character progress optimization in Skyrim.'
 previewType: 'png'
 background: 'gray-light'
-align: 'right'
+align: 'left'
 ---
 
 In my opinion, Skyrim is one of the best games ever made.

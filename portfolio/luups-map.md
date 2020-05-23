@@ -2,10 +2,10 @@
 slug: 'luups-map'
 rank: 4
 title: 'LUUPS Map'
-teaser: 'A helpful tool for users of LUUPS.'
+teaser: 'An interactive, filterable voucher map.'
 previewType: 'png'
 background: 'gray-light'
-align: 'left'
+align: 'right'
 ---
 
 <a class="link" href="https://www.luups.net/">LUUPS</a> is a city guide with vouchers that is

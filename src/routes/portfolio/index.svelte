@@ -51,7 +51,7 @@
   .square > img {
     width: 180px;
     margin-bottom: -1rem;
-    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .5);
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .2);
     border-radius: 15px 15px 0 0;
   }
 
@@ -93,13 +93,17 @@
       margin-top: -191px;
     }
 
-    .link-wrapper:nth-child(odd):last-child {
+    .link-wrapper:nth-child(odd):not(:nth-child(7)):last-child {
       margin-left: 296px;
     }
 
     .link-wrapper:nth-child(4):not(:nth-child(8)) {
       margin-left: -40px;
       margin-right: 40px;
+    }
+
+    .link-wrapper:nth-child(7) {
+      margin-left: 336px;
     }
 
     .rectangle {
@@ -110,7 +114,7 @@
     .rectangle > img {
       margin-bottom: 3rem;
       width: 206px;
-      box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .5);
+      box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .2);
     }
 
     .rectangle .project-name {
