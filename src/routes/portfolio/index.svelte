@@ -1,7 +1,16 @@
 <script context="module">
+  function sortPostsByRankDescendingly(postA, postB) {
+    if (postA.rank > postB.rank) {
+      return -1;
+    } else if (postB.rank > postA.rank) {
+      return 1;
+    }
+    return 0;
+  }
+
   export function preload({params, query}) {
     return this.fetch('portfolio.json').then(r => r.json()).then(posts => {
-      posts.sort((a, b) => a.rank < b.rank);
+      posts.sort(sortPostsByRankDescendingly);
       return {posts};
     });
   }
