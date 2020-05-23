@@ -4,7 +4,7 @@ rank: 1
 title: 'SkyCalc'
 teaser: 'A small tool for character progress optimization in Skyrim.'
 previewType: 'png'
-background: 'secondary'
+background: 'gray-light'
 align: 'right'
 ---
 

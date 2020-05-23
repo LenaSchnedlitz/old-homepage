@@ -4,7 +4,7 @@ rank: 6
 title: 'Phagocyte'
 teaser: 'Hide articles about COVID-19 in Firefox.'
 previewType: 'png'
-background: 'primary'
+background: 'primary-dark'
 align: 'left'
 ---
 

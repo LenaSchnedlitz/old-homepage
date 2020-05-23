@@ -1,6 +1,6 @@
 ---
 slug: 'luups-map'
-rank: 5
+rank: 4
 title: 'LUUPS Map'
 teaser: 'A helpful tool for users of LUUPS.'
 previewType: 'png'

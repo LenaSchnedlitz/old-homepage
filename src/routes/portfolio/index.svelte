@@ -93,6 +93,15 @@
       margin-top: -191px;
     }
 
+    .link-wrapper:nth-child(odd):last-child {
+      margin-left: 296px;
+    }
+
+    .link-wrapper:nth-child(4):not(:nth-child(8)) {
+      margin-left: -40px;
+      margin-right: 40px;
+    }
+
     .rectangle {
       width: 256px;
       height: 354px;

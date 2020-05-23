@@ -383,7 +383,7 @@ figure > img {
 }
 
 .portfolio-card.gray-light {
-  background: var(--gray-3);
+  background: var(--gray-2);
   color: var(--gray-9);
 }
 
