@@ -24,10 +24,6 @@ reach a certain goal level.
 The tool also offers guidance which skills to choose for role-playing.
 Results can be exported as a text file.
 
-<span class="meta">Source Code:</span>
-<a href="https://github.com/LenaSchnedlitz/skycalc" class="link">GitHub
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg></a>
-
 
 ## <span class="emph">More Screenshots:</span>
 
@@ -46,3 +42,7 @@ Results can be exported as a text file.
 <img src="portfolio/skycalc/results.png" alt="Results"/>
 </figure>
 
+
+<span class="meta">Source Code:</span>
+<a href="https://github.com/LenaSchnedlitz/skycalc" class="link">GitHub
+<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg></a>

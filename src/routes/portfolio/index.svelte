@@ -56,7 +56,7 @@
   }
 
   .project-name {
-    margin: 2rem;
+    margin: 2rem 2.4rem 2rem 2rem;
     font-family: var(--sans-serif);
   }
 
