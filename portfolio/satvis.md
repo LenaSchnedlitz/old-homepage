@@ -15,7 +15,7 @@ quite cumbersome. SatVis attempts to change this by providing features such as *
 
 Check out the official
 <a class="link" href="https://link.springer.com/chapter/10.1007%2F978-3-030-34968-4_28">SatVis&nbsp;paper</a>
-to find out more.
+to learn more.
 
 
 ## <span class="emph">Some Screenshots:</span>
