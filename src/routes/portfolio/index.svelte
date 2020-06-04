@@ -112,6 +112,10 @@
       height: 354px;
     }
 
+    .rectangle .tiny {
+      margin-bottom: 6rem;
+    }
+
     .rectangle > img {
       margin-bottom: 3rem;
       width: 206px;
@@ -205,7 +209,7 @@
               <span class="project-subtitle">{post.teaser}</span>
             </div>
             <img alt="{post.title}" src="portfolio/{post.slug}.{post.previewType}"
-                 class="preview-{post.align}"/>
+                 class="preview-{post.align} {post.tiny ? 'tiny' : ''}"/>
           </article>
         {/if}
       </a>

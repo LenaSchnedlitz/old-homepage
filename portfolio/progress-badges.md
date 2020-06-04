@@ -6,6 +6,7 @@ teaser: 'Progress bars for your README files.'
 previewType: 'svg'
 background: 'gray-light'
 align: 'left'
+tiny: true
 ---
 
 This web app was inspired by <a class="link" href="https://shields.io/">shields.io</a> and offers an API 
