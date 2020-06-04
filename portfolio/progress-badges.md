@@ -10,7 +10,8 @@ align: 'left'
 
 This web app was inspired by <a class="link" href="https://shields.io/">shields.io</a> and offers an API 
 for adding progress bars to markdown files.
-<br><br>
+
+<br><br><br>
 
 When using the *minimal theme*, a simple black and gray bar is generated:
 
@@ -18,7 +19,7 @@ When using the *minimal theme*, a simple black and gray bar is generated:
 <img src="portfolio/progress-badges/minimal.svg" alt="Minimal Theme"/>
 </figure>
 
-<br>
+<br><br><br>
 
 
 The *badge theme* imitates the style of badges by shields.io:
@@ -41,7 +42,7 @@ The *badge theme* imitates the style of badges by shields.io:
 </figure>
 </section>
 
-<br>
+<br><br><br>
 
 The *default/custom color theme* allows users to select a custom bar color:
 
