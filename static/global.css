@@ -275,6 +275,12 @@ figure > img {
   }
 }
 
+.figrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 
 /* FOLLOW ME **************************************************************************************/
 
