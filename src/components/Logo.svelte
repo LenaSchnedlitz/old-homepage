@@ -9,6 +9,8 @@
   a {
     margin: 30px 32px 34px;
     display: inline-block;
+    position: relative;
+    z-index: 100;
   }
 
   .scrolled {
