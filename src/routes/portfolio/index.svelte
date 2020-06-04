@@ -49,6 +49,7 @@
   }
 
   .square > img {
+    min-height: calc(1rem + 4px);
     width: 180px;
     margin-bottom: -1rem;
     box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .2);
