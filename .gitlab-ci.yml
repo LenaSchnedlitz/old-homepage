@@ -42,10 +42,16 @@ deploy:
     - npm ci --cache .npm --prefer-offline
   script:
     - npm run export
+    # clone deploy repo and throw away all content but .git/ and CNAME
     - git clone https://github.com/${DEPLOY_USER}/${DEPLOY_REPO_NAME}.git
+    - mv ${DEPLOY_REPO_NAME} ${DEPLOY_REPO_NAME}-old
+    - mkdir ${DEPLOY_REPO_NAME}
+    - mv -t ${DEPLOY_REPO_NAME} ${DEPLOY_REPO_NAME}-old/.git ${DEPLOY_REPO_NAME}-old/CNAME
+    # add newly built content
     - cp -rf __sapper__/export/* ${DEPLOY_REPO_NAME}
     - cd ${DEPLOY_REPO_NAME}
     - git add .
+    # commit and push
     - git config user.name "Lena Schnedlitz"
     - git config user.email ${GITLAB_USER_EMAIL}
     - git commit -m ${CI_COMMIT_SHORT_SHA}
