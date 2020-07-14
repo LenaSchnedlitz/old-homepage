@@ -51,11 +51,18 @@ The *default/custom color theme* allows users to select a custom bar color:
 <img src="portfolio/progress-badges/default.svg" alt="Default Theme"/>
 </figure>
 
-<span class="meta">Try it out!</span>
-<a href="https://progressbadges.herokuapp.com/" class="link">Link
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg></a>
+<p>
+<a href="https://progressbadges.herokuapp.com/" class="meta link">
+Try it out!&nbsp;
+<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg>
+</a>
+</p>
 
-<span class="meta">Source Code:</span>
-<a href="https://github.com/LenaSchnedlitz/progress" class="link">GitHub
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg></a>
+<p>
+<a href="https://github.com/LenaSchnedlitz/progress" class="meta link">Source Code&nbsp;
+<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg>
+</a>
+</p>
 
+<br>
+<br>

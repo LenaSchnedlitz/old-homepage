@@ -32,7 +32,11 @@ to learn more.
 </figure>
 
 
-<span class="meta">Source Code:</span>
-<a href="https://github.com/gleiss/saturation-visualization" class="link">GitHub
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg></a>
+<p>
+<a href="https://github.com/gleiss/saturation-visualization" class="meta link">Source Code&nbsp;
+<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg>
+</a>
+</p>
 
+<br>
+<br>

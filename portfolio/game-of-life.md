@@ -39,7 +39,11 @@ This configuration allows for very fast growth and often results in mesmerizing 
 Feel free to play around as well!
 
 
-<span class="meta">Source Code:</span>
-<a href="https://github.com/LenaSchnedlitz/hexagonal-game-of-life" class="link">GitHub
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg></a>
+<p>
+<a href="https://github.com/LenaSchnedlitz/hexagonal-game-of-life" class="meta link">Source Code&nbsp;
+<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg>
+</a>
+</p>
 
+<br>
+<br>
