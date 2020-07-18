@@ -13,7 +13,7 @@ published annually. I've been using the booklet for some years now and can stron
 it, but it lacks one important feature: <em>an interactive, filterable map</em>.
 
 I teamed up with another Viennese software engineer,
-<a class="link" href="https://github.com/hschne">Hans&nbsp;Schnedlitz</a>,
+<a class="link" href="https://github.com/hschne">Hans&nbsp;Schnedlitz</a> (the name is no coincidence),
 to develop exactly this.
 
 <figure>
