@@ -34,9 +34,10 @@
     from Vienna, Austria.
   </p>
   <p>
-    I enjoy implementing things and solving problems. You can find most of my stuff on
+    I enjoy implementing and optimizing things. You can find most of my stuff on
     <a class="link" href="https://github.com/LenaSchnedlitz">GitHub</a>.
   </p>
+  <br>
   <p>
     This website is about my personal projects and opinions. There might be a slight bias towards
     content related to programming, but I also post about topics like math puzzles,
