@@ -7,6 +7,7 @@
 
 <style>
   main {
+    min-height: calc(100% - 168px);
     max-width: 650px;
     padding: 0 32px 32px;
     margin: 0 auto;

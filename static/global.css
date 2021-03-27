@@ -94,10 +94,15 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
   overflow-x: hidden;
   font-family: var(--serif);
   font-size: 14px;
   color: var(--gray-9);
+}
+
+#sapper {
+  height: 100%;
 }
 
 h1 {
@@ -352,7 +357,30 @@ figure > img {
 /* FOLLOW ME **************************************************************************************/
 
 #follow-me {
+  width: 100%;
+}
+
+#follow-me strong,
+#follow-me .dot,
+#follow-me .label{
   display: none;
+}
+
+#follow-me ul {
+  margin: 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#follow-me li {
+  padding: 0 0.6rem;
+  list-style: none;
+}
+
+#follow-me a svg {
+  width: 20px;
+  height: 20px;
 }
 
 @media (min-width: 800px) {
@@ -361,9 +389,16 @@ figure > img {
     left: 40px;
     bottom: 26px;
     display: flex;
+    width: auto;
     font-family: var(--sans-serif);
     transform: rotate(-90deg);
     transform-origin: top left;
+  }
+
+  #follow-me strong,
+  #follow-me .dot,
+  #follow-me .label{
+    display: initial;
   }
 
   #follow-me strong {
@@ -372,14 +407,8 @@ figure > img {
   }
 
   #follow-me ul {
-    margin: 0;
     padding: 0;
-    display: flex;
-  }
-
-  #follow-me li {
-    padding: 0 0.6rem;
-    list-style: none;
+    justify-content: flex-start;
   }
 
   #follow-me a {
@@ -387,6 +416,8 @@ figure > img {
   }
 
   #follow-me a svg {
+    width: 1rem;
+    height: 1rem;
     transition: all ease-out 150ms;
     padding-right: 0.3rem;
   }
