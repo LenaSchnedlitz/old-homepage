@@ -22,11 +22,14 @@
     transition: all ease-out 150ms;
   }
 
-  [aria-current] {
+  a {
     position: relative;
+    padding: 0 0.5rem;
+    font-family: var(--monospace);
+    font-size: 12px;
   }
 
-  [aria-current]::after {
+  a::after {
     position: absolute;
     content: '';
     bottom: -0.2rem;
@@ -34,21 +37,23 @@
     display: block;
     height: 1px;
     width: calc(100% - 0.8rem);
-    background-color: var(--gray-9);
-  }
-
-  a {
-    padding: 0 0.5rem;
-    font-family: var(--monospace);
-    font-size: 12px;
   }
 
   a:hover {
-    color: var(--primary-color-8);
+    color: var(--primary-color);
+  }
+
+  a:hover::after {
+    background-color: var(--primary-color);
   }
 
   a:active {
     color: var(--primary-color-6);
+  }
+
+  [aria-current]::after {
+    height: 1px;
+    background-color: var(--gray-9);
   }
 
   @media (min-width: 800px) {
@@ -67,27 +72,31 @@
       font-size: 14px;
     }
 
-    li {
-      margin-top: 0.5rem;
-    }
-
-    [aria-current]::after {
+    a::after {
       left: 0.7rem;
       width: calc(100% - 1.4rem);
+    }
+
+    li {
+      margin-top: 0.5rem;
     }
   }
 
   @media (prefers-color-scheme: dark) {
-    [aria-current]::after {
-      background-color: var(--gray-1);
+    a:hover {
+      color: var(--primary-color-4);
     }
 
-    a:hover {
-      color: var(--primary-color-3);
+    a:hover::after {
+      background-color: var(--primary-color-4);
     }
 
     a:active {
-      color: var(--primary-color);
+      color: var(--primary-color-3);
+    }
+
+    [aria-current]::after {
+      background-color: var(--gray-1);
     }
 
     @media (min-width: 800px) {
@@ -100,13 +109,11 @@
 
 <nav>
   <ul>
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-         the blog data when we hover over the link or tap it on a touchscreen -->
     <li>
       <a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>Blog</a>
     </li>
     <li>
-      <a aria-current='{segment === "portfolio" ? "page" : undefined}'
+      <a rel=prefetch  aria-current='{segment === "portfolio" ? "page" : undefined}'
          href='portfolio'>Portfolio</a>
     </li>
     <li>

@@ -17,7 +17,8 @@
   }
 
   .link:hover {
-    background-image: linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--primary-color-3), var(--primary-color-3));
+    color: var(--primary-color-4);
+    background-image: linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--primary-color-4), var(--primary-color-4));
   }
 
   mark {
@@ -67,19 +68,19 @@
   /* FOLLOW ME ************************************************************************************/
   @media (min-width: 800px) {
     #follow-me a:hover {
-      color: var(--primary-color-3);
+      color: var(--secondary-color);
     }
 
     #follow-me a:hover svg {
-      stroke: var(--primary-color-3);
+      stroke: var(--secondary-color);
     }
 
     #follow-me a:active {
-      color: var(--primary-color);
+      color: var(--secondary-color-3);
     }
 
     #follow-me a:active svg {
-      stroke: var(--primary-color);
+      stroke: var(--secondary-color-3);
     }
   }
 

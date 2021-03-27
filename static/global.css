@@ -65,6 +65,7 @@ html {
   --primary-color: #ee3377;
   --primary-color-2: #fabad1;
   --primary-color-3: #f68db3;
+  --primary-color-4: #f15f94;
   --primary-color-6: #ce336c;
   --primary-color-7: #ae3561;
   --primary-color-8: #8e3656;
@@ -144,7 +145,8 @@ a {
 }
 
 .link:hover {
-  background-image: linear-gradient(var(--gray-1), var(--gray-1)), linear-gradient(var(--gray-1), var(--gray-1)), linear-gradient(var(--primary-color-6), var(--primary-color-6));
+  color: var(--primary-color);
+  background-image: linear-gradient(var(--gray-1), var(--gray-1)), linear-gradient(var(--gray-1), var(--gray-1)), linear-gradient(var(--primary-color), var(--primary-color));
 }
 
 mark {
@@ -366,19 +368,20 @@ figure > img {
   }
 
   #follow-me a:hover {
-    color: var(--primary-color-8);
+    color: var(--tertiary-color);
   }
 
   #follow-me a:hover svg {
-    stroke: var(--primary-color-8);
+    stroke: var(--tertiary-color);
+    stroke-width: 2;
   }
 
   #follow-me a:active {
-    color: var(--primary-color-6);
+    color: var(--tertiary-color-6);
   }
 
   #follow-me a:active svg {
-    stroke: var(--primary-color-6);
+    stroke: var(--tertiary-color-6);
   }
 
   @media (max-height: 800px) {
