@@ -161,19 +161,28 @@
       font-size: 15px;
     }
 
-    .project-name {
-      animation-duration: 0.3s;
-      animation-name: slidein;
+    .portfolio-card {
+      animation-duration: .2s;
+      animation-name: appear;
+      transition: all cubic-bezier(.18,.89,.32,1.28) .5s;
+    }
+
+    .portfolio-card:hover {
+      transform: scale(.9);
     }
   }
 
-  @keyframes slidein {
+  @keyframes appear {
     from {
-      transform: translateX(-3rem);
+      opacity: 0;
     }
 
-    20% {
-      transform: translateX(-1rem);
+    90% {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
     }
   }
 </style>
