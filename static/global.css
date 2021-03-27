@@ -238,8 +238,8 @@ svg.icon-inline {
 }
 
 ::selection {
-  background-color: var(--tertiary-color-6);
-  color: var(--gray-1);
+  background-color: var(--secondary-color);
+  color: var(--gray-9);
 }
 
 a::selection {

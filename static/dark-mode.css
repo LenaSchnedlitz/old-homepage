@@ -56,6 +56,11 @@
     background: var(--gray-8);
   }
 
+  ::selection {
+    background-color: var(--tertiary-color);
+    color: var(--gray-1);
+  }
+
   a::selection {
     /* Fixes selection style of links with prettier underline */
     text-shadow: none;
