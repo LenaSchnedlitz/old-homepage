@@ -1,15 +1,15 @@
 <style>
   article {
     position: absolute;
-    top: calc(50% + 68px);
+    top: calc(50% + 4.25rem);
     width: 250px;
-    margin: 0 0 0 -32px;
-    padding: 0 32px 32px;
+    margin: 0 0 0 -2rem;
+    padding: 0 2rem 2rem;
     box-sizing: border-box;
   }
 
   h1 {
-    font-size: 44px;
+    font-size: 2.75rem;
     text-transform: none;
   }
 
@@ -21,13 +21,13 @@
   #portrait {
     position: absolute;
     height: 36%;
-    width: calc(100% - 64px);
+    width: calc(100% - 4rem);
     background-size: contain;
     background-image: url('../../me/optimized/me-s-min.jpg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    box-shadow: 0 20px 20px -25px rgba(0, 0, 0, .3);
+    box-shadow: 0 1.25rem 1.25rem -25px rgba(0, 0, 0, .3);
   }
 
   @media (min-width: 700px) {

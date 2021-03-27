@@ -22,7 +22,7 @@
     font-family: var(--sans-serif);
     font-style: normal;
     font-weight: normal;
-    margin: -16px 0 32px;
+    margin: -1rem 0 2rem;
   }
 </style>
 

@@ -15,12 +15,6 @@
   <title>Lena Schnedlitz - Blog</title>
 </svelte:head>
 
-<style>
-  p {
-    font-size: 14px;
-  }
-</style>
-
 <h1>Posts</h1>
 
 {#each posts as post}

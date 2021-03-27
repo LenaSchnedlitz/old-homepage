@@ -9,7 +9,7 @@
   main {
     min-height: calc(100% - 168px);
     max-width: 650px;
-    padding: 0 32px 32px;
+    padding: 0 2rem 2rem;
     margin: 0 auto;
     box-sizing: border-box;
   }

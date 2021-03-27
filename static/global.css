@@ -88,21 +88,25 @@ html {
   --gray-8: #2d2d2d;
   --gray-9: #111111;
 
-  height: 100%;
   background: var(--gray-1);
+  color: var(--gray-9);
+
+  font-family: var(--serif);
+  font-size: 16px;
+}
+
+html,
+body,
+#sapper {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  height: 100%;
   overflow-x: hidden;
-  font-family: var(--serif);
-  font-size: 14px;
-  color: var(--gray-9);
-}
-
-#sapper {
-  height: 100%;
 }
 
 h1 {
@@ -115,21 +119,21 @@ h1 {
 }
 
 h2 {
-  margin: 23px 0 16px 4px;
-  font-size: 16px;
+  margin: 23px 0 1rem 4px;
+  font-size: 1rem;
   font-weight: bold;
   font-style: italic;
 }
 
 p {
   margin: 0 -1rem 0.5rem 1rem;
-  line-height: 24px;
-  font-size: 16px;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 @media (min-width: 800px) {
   p {
-    margin: 0 -20px 0.5rem 20px;
+    margin: 0 -1.25rem 0.5rem 1.25rem;
   }
 }
 
@@ -171,7 +175,7 @@ mark::after {
   background: linear-gradient(to right, var(--secondary-color-3), var(--secondary-color-2));
   border-radius: 70px 35px 90px 40px;
   z-index: -1;
-  transition: all cubic-bezier(.45,.05,.55,.95) 300ms;
+  transition: all cubic-bezier(.45, .05, .55, .95) 300ms;
 }
 
 @media (min-width: 800px) {
@@ -190,7 +194,7 @@ mark::after {
   margin-right: 0.1rem;
   font-family: var(--sans-serif);
   font-weight: 600;
-  font-size: 12px;
+  font-size: .75rem;
   text-transform: uppercase;
 }
 
@@ -203,8 +207,8 @@ mark::after {
 }
 
 svg.icon {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: none;
   stroke: var(--gray-9);
   stroke-width: 1px;
@@ -238,13 +242,13 @@ svg.icon-inline {
 .dot {
   height: 4px;
   width: 4px;
-  border-radius: 8px;
-  margin: 0.2rem 0.1rem 0.2rem 0.8rem;
+  border-radius: .5rem;
+  margin: auto 0.1rem .6rem 0.8rem;
   background: var(--gray-3);
 }
 
 ::selection {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color-3);
   color: var(--gray-9);
 }
 
@@ -263,13 +267,13 @@ pre {
 
 code {
   font-family: var(--monospace);
-  font-size: 12px;
+  font-size: .75rem;
   line-height: 1.5;
 }
 
 @media (min-width: 800px) {
   pre {
-    padding: 1rem 20px 1.5rem;
+    padding: 1rem 1.25rem 1.5rem;
   }
 }
 
@@ -280,13 +284,13 @@ figure {
 
 figcaption {
   position: absolute;
-  left: -0.8rem;
-  bottom: -0.7rem;
+  left: -.9rem;
+  bottom: -.4rem;
   transform: rotate(-90deg);
   transform-origin: top left;
 
   font-family: var(--sans-serif);
-  font-size: 10px;
+  font-size: .625rem;
   text-transform: uppercase;
 }
 
@@ -330,6 +334,10 @@ figure > img {
   justify-content: space-evenly;
 }
 
+.figrow figcaption {
+  bottom: -.7rem;
+}
+
 
 .dotted {
   position: relative;
@@ -346,8 +354,8 @@ figure > img {
   background-color: transparent;
   background-image: radial-gradient(circle, var(--gray-3) 11%, transparent 10%),
   radial-gradient(circle, var(--gray-3) 11%, transparent 10%);
-  background-size: 16px 16px;
-  background-position: 0 0, 16px 16px;
+  background-size: 1rem 1rem;
+  background-position: 0 0, 1rem 1rem;
 
   content: '';
   z-index: -1;
@@ -362,7 +370,7 @@ figure > img {
 
 #follow-me strong,
 #follow-me .dot,
-#follow-me .label{
+#follow-me .label {
   display: none;
 }
 
@@ -371,6 +379,7 @@ figure > img {
   padding: 1.5rem;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 #follow-me li {
@@ -379,8 +388,8 @@ figure > img {
 }
 
 #follow-me a svg {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 @media (min-width: 800px) {
@@ -397,7 +406,7 @@ figure > img {
 
   #follow-me strong,
   #follow-me .dot,
-  #follow-me .label{
+  #follow-me .label {
     display: initial;
   }
 
@@ -413,6 +422,7 @@ figure > img {
 
   #follow-me a {
     display: flex;
+    align-items: center;
   }
 
   #follow-me a svg {

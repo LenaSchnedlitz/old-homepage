@@ -4,14 +4,14 @@
 
 <style>
   nav {
-    padding: 32px 32px 16px;
+    padding: 2rem 2rem 1rem;
     position: absolute;
     top: 0;
     right: 0;
   }
 
   ul {
-    margin: 0 -0.5rem;
+    margin: 0 -.5rem;
     padding: 0;
     display: flex;
     justify-content: right;
@@ -24,19 +24,19 @@
 
   a {
     position: relative;
-    padding: 0 0.5rem;
+    padding: 0 .5rem;
     font-family: var(--monospace);
-    font-size: 12px;
+    font-size: .75rem;
   }
 
   a::after {
     position: absolute;
     content: '';
-    bottom: -0.2rem;
-    left: 0.4rem;
+    bottom: -.2rem;
+    left: .4rem;
     display: block;
     height: 1px;
-    width: calc(100% - 0.8rem);
+    width: calc(100% - .8rem);
   }
 
   a:hover {
@@ -63,22 +63,22 @@
     }
 
     ul {
-      margin: 0 0 0 -0.8rem;
+      margin: 0 0 0 -.8rem;
     }
 
     a {
-      padding: 0 0.8rem;
+      padding: 0 .8rem;
       font-family: var(--sans-serif);
-      font-size: 14px;
+      font-size: .875rem;
     }
 
     a::after {
-      left: 0.7rem;
+      left: .7rem;
       width: calc(100% - 1.4rem);
     }
 
     li {
-      margin-top: 0.5rem;
+      margin-top: .5rem;
     }
   }
 

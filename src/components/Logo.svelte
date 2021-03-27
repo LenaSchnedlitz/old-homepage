@@ -7,7 +7,7 @@
 
 <style>
   a {
-    margin: 30px 32px 34px;
+    margin: calc(2rem - 2px) 2rem calc(2rem + 2px);
     display: inline-block;
     position: relative;
     z-index: 100;
@@ -15,8 +15,8 @@
 
   .scrolled {
     position: fixed;
-    top: 12px;
-    left: 12px;
+    top: .75rem;
+    left: .75rem;
   }
 
   circle {
@@ -34,8 +34,8 @@
   @media (min-width: 800px) {
     a {
       position: fixed;
-      height: 32px;
-      width: 32px;
+      height: 2rem;
+      width: 2rem;
     }
 
     .scrolled {

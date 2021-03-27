@@ -52,7 +52,7 @@
     min-height: calc(1rem + 4px);
     width: 180px;
     margin-bottom: -1rem;
-    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .2);
+    box-shadow: 5px 10px 1.25rem 0 rgba(0, 0, 0, .2);
     border-radius: 15px 15px 0 0;
   }
 
@@ -63,7 +63,7 @@
 
   .project-title {
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
     font-size: 1.2rem;
     font-weight: 800;
   }
@@ -119,11 +119,15 @@
     .rectangle > img {
       margin-bottom: 3rem;
       width: 206px;
-      box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, .2);
+      box-shadow: 5px 10px 1.25rem 0 rgba(0, 0, 0, .2);
     }
 
     .rectangle .project-name {
       margin-bottom: 1.3rem;
+    }
+
+    .rectangle .project-subtitle {
+      font-size: calc(1rem - 2px);
     }
 
     .preview-left {
@@ -154,11 +158,11 @@
 
     .square .project-title {
       font-size: 1.4rem;
-      margin-bottom: 0.6rem;
+      margin-bottom: .6rem;
     }
 
     .square .project-subtitle {
-      font-size: 15px;
+      font-size: calc(1rem - 1px);
     }
 
     .portfolio-card {
