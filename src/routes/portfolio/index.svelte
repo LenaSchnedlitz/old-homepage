@@ -26,7 +26,7 @@
 </script>
 
 <svelte:head>
-  <title>Lena Schnedlitz - Portfolio</title>
+  <title>Lena Schnedlitz - Projects</title>
 </svelte:head>
 
 <style>

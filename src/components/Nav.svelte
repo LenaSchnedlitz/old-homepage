@@ -109,12 +109,14 @@
 
 <nav>
   <ul>
+    <!-- Temporarily hidden until there are posts
     <li>
       <a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>Blog</a>
     </li>
+    -->
     <li>
       <a rel=prefetch  aria-current='{segment === "portfolio" ? "page" : undefined}'
-         href='portfolio'>Portfolio</a>
+         href='portfolio'>Projects</a>
     </li>
     <li>
       <a aria-current='{segment === "about" ? "page" : undefined}' href='about'>About</a>
