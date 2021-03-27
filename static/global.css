@@ -94,6 +94,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: var(--serif);
   font-size: 14px;
   color: var(--gray-9);
@@ -322,6 +323,29 @@ figure > img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+
+.dotted {
+  position: relative;
+}
+
+.dotted::after {
+  position: absolute;
+  top: 0;
+  left: -200%;
+  display: block;
+  width: 500%;
+  height: 100%;
+
+  background-color: transparent;
+  background-image: radial-gradient(circle, var(--gray-3) 11%, transparent 10%),
+  radial-gradient(circle, var(--gray-3) 11%, transparent 10%);
+  background-size: 16px 16px;
+  background-position: 0 0, 16px 16px;
+
+  content: '';
+  z-index: -1;
 }
 
 
