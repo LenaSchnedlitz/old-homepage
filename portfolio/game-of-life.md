@@ -16,7 +16,7 @@ start configuration, duration, and color palette.
 
 While researching for this project, I stumbled upon a very 
 informative <a class="link" href="https://davidsiaw.github.io/blog/2014/11/21/hexlife">article</a> that
-recommends the rule set <span class="emph">B2/S34</span>, which means that cells are born if surrounded 
+recommends the rule set <mark>B2/S34</mark>, which means that cells are born if surrounded 
 by exactly 2 living cells and they survive if surrounded by 3 or 4 other live cells. This configuration 
 produces some nice oscillators, e.g. this one:
 
@@ -27,7 +27,7 @@ produces some nice oscillators, e.g. this one:
 
   
 I experimented with the rules configuration a bit and found another interesting 
-set of rules: <span class="emph">B1/S12</span>.
+set of rules: <mark>B1/S12</mark>.
 This configuration allows for very fast growth and often results in mesmerizing evolutions like the one below:
 
 

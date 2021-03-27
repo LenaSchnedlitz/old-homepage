@@ -25,7 +25,7 @@ The tool also offers guidance which skills to choose for role-playing.
 Results can be exported as a text file.
 
 
-## <span class="emph">More Screenshots:</span>
+## <mark>More Screenshots:</mark>
 
 <figure class="left">
 <figcaption>SkyCalc <strong>Level Selection</strong></figcaption>

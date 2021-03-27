@@ -30,7 +30,7 @@
   <h1>About Me</h1>
 
   <p>
-    My name is <span class="emph">Lena Schnedlitz</span> and I’m a <em>software engineer</em>
+    My name is <mark>Lena Schnedlitz</mark> and I’m a <em>software engineer</em>
     from Vienna, Austria.
   </p>
   <p>

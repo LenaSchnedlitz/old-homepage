@@ -18,7 +18,7 @@ Check out the official
 to learn more.
 
 
-## <span class="emph">Some Screenshots:</span>
+## <mark>Some Screenshots:</mark>
 
 
 <figure>

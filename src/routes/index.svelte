@@ -91,6 +91,6 @@
 
   <p>
     My name is <em>Lena.</em><br>
-    I’m a <span class="emph">software engineer</span> from Vienna, Austria.
+    I’m a <mark>software engineer</mark> from Vienna, Austria.
   </p>
 </article>
