@@ -66,7 +66,9 @@ html {
   --primary-color-2: #fabad1;
   --primary-color-3: #f68db3;
   --primary-color-6: #ce336c;
+  --primary-color-7: #ae3561;
   --primary-color-8: #8e3656;
+  --primary-color-9: #6e384c;
   --secondary-color: #f9c940;
   --secondary-color-2: #fcf0cd;
   --secondary-color-3: #fbe39e;
@@ -74,6 +76,7 @@ html {
   --tertiary-color: #33bbee;
   --tertiary-color-6: #309dc6;
   --tertiary-color-8: #2c6479;
+  --tertiary-color-9: #2b4954;
   --gray-1: #fefefe;
   --gray-2: #dfdfdf;
   --gray-3: #c2c2c2;

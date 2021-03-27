@@ -1,10 +1,6 @@
 @media (prefers-color-scheme: dark) {
 
   html {
-    --primary-color-7: #ae3561;
-    --primary-color-9: #6e384c;
-    --tertiary-color-9: #2b4954;
-
     background: var(--gray-9);
   }
 
