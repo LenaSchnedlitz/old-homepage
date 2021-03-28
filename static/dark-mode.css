@@ -26,12 +26,12 @@
   }
 
   mark::after {
-    background: linear-gradient(to right, var(--tertiary-color-8), var(--tertiary-color-9));
+    background: var(--tertiary-color-8) linear-gradient(to right, transparent, var(--tertiary-color-9));
   }
 
   @media (min-width: 800px) {
-    mark:not(:hover)::after {
-      background: var(--tertiary-color-9);
+    mark:hover::after {
+      background: var(--tertiary-color-8);
     }
   }
 
