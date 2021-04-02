@@ -36,10 +36,11 @@
   section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .wrapper {
-    flex: 1 1 min-content;
+    flex: 1 1 0;
     min-width: 220px;
     max-width: 354px;
     padding: 9px;
@@ -48,6 +49,7 @@
 
   .wrapper > a {
     display: block;
+    height: 100%;
     padding: 0;
   }
 
