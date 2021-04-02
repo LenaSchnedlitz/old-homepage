@@ -35,6 +35,8 @@ test:
   script:
     - npm run cy:verify
     - npm run test
+  except:
+    - master
 
 deploy:
   stage: deploy
