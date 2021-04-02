@@ -1,5 +1,5 @@
 import {fetchPosts} from '../../helpers/get-posts';
 
 export function get(req, res) {
-  fetchPosts(req, res, 'portfolio');
+  fetchPosts(req, res, 'projects');
 }

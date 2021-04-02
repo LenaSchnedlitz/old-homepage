@@ -23,12 +23,12 @@ to learn more.
 
 <figure>
 <figcaption>SatVis <strong>Graph</strong></figcaption>
-<img src="portfolio/satvis/visualization.png" alt="Graph"/>
+<img src="projects/satvis/visualization.png" alt="Graph"/>
 </figure>
 
 <figure class="right">
 <figcaption>SatVis <strong>Clause Rearrangement</strong></figcaption>
-<img src="portfolio/satvis/rearrangement.png" alt="Clause Rearrangement"/>
+<img src="projects/satvis/rearrangement.png" alt="Clause Rearrangement"/>
 </figure>
 
 

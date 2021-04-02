@@ -9,7 +9,7 @@
   }
 
   export function preload({params, query}) {
-    return this.fetch('portfolio.json').then(r => r.json()).then(posts => {
+    return this.fetch('projects.json').then(r => r.json()).then(posts => {
       posts.sort(sortPostsByRankDescendingly);
       return {posts};
     });
@@ -97,11 +97,11 @@
 <section>
   {#each posts as post, i}
     <div class="wrapper">
-      <a href="portfolio/{post.slug}" rel="prefetch" title={post.title}>
+      <a href="projects/{post.slug}" rel="prefetch" title={post.title}>
         {#if small || i === 0}
-          <GrowingCard content={post} previewFile="portfolio/{post.slug}.{post.previewType}"/>
+          <GrowingCard content={post} previewFile="projects/{post.slug}.{post.previewType}"/>
         {:else}
-          <RectangleCard content={post} previewFile="portfolio/{post.slug}.{post.previewType}"/>
+          <RectangleCard content={post} previewFile="projects/{post.slug}.{post.previewType}"/>
         {/if}
       </a>
     </div>

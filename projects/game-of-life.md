@@ -22,7 +22,7 @@ produces some nice oscillators, e.g. this one:
 
 <figure class="center">
 <figcaption>B2/S34 <strong>Oscillator</strong></figcaption>
-<img src="portfolio/game-of-life.gif" alt="B2/S34 - Oscillator"/>
+<img src="projects/game-of-life.gif" alt="B2/S34 - Oscillator"/>
 </figure>
 
   
@@ -33,7 +33,7 @@ This configuration allows for very fast growth and often results in mesmerizing 
 
 <figure>
 <figcaption>B1/S12 <strong>Expansion</strong></figcaption>
-<img src="portfolio/game-of-life/expansion.gif" alt="B1/S12 - Expansion"/>
+<img src="projects/game-of-life/expansion.gif" alt="B1/S12 - Expansion"/>
 </figure>
 
 Feel free to play around as well!

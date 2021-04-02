@@ -18,7 +18,7 @@ to develop exactly this.
 
 <figure>
 <figcaption>LUUPS Map <strong>Screenshot</strong></figcaption>
-<img src="portfolio/luups-map/map.png" alt="Screenshot"/>
+<img src="projects/luups-map/map.png" alt="Screenshot"/>
 </figure>
 
 Our tool consists of a map with a marker for each voucher location. Clicking on a marker reveals
@@ -28,7 +28,7 @@ by voucher type and/or tag.
 
 <figure class="right">
 <figcaption>LUUPS Map <strong>Filter</strong></figcaption>
-<img src="portfolio/luups-map/filter.png" alt="Filter"/>
+<img src="projects/luups-map/filter.png" alt="Filter"/>
 </figure>
 
 *Note:* A year after the development of LUUPS Map, LUUPS added an official map to their homepage. As a result,

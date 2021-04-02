@@ -7,14 +7,14 @@ describe('My Homepage', () => {
     cy.contains('h1', 'Hi.')
   });
 
-  it('navigates to /blog', () => {
+  xit('navigates to /blog', () => {
     cy.get('nav a').contains('Blog').click();
     cy.url().should('include', '/blog');
   });
 
-  it('navigates to /portfolio', () => {
-    cy.get('nav a').contains('Portfolio').click();
-    cy.url().should('include', '/portfolio');
+  it('navigates to /projects', () => {
+    cy.get('nav a').contains('Projects').click();
+    cy.url().should('include', '/projects');
   });
 
   it('navigates to /about', () => {

@@ -16,7 +16,7 @@ That’s why I decided to make a tool for character progress optimization.
 
 <figure class="right">
 <figcaption>SkyCalc <strong>Landing Page</strong></figcaption>
-<img src="portfolio/skycalc/landing.png" alt="Landing Page"/>
+<img src="projects/skycalc/landing.png" alt="Landing Page"/>
 </figure>
 
 SkyCalc uses level information to predict how much training of user-selected skills is needed to 
@@ -29,17 +29,17 @@ Results can be exported as a text file.
 
 <figure class="left">
 <figcaption>SkyCalc <strong>Level Selection</strong></figcaption>
-<img src="portfolio/skycalc/level.png" alt="Level Selection"/>
+<img src="projects/skycalc/level.png" alt="Level Selection"/>
 </figure>
 
 <figure class="right">
 <figcaption>SkyCalc <strong>Skill Selection</strong></figcaption>
-<img src="portfolio/skycalc/skill.png" alt="Skill Selection"/>
+<img src="projects/skycalc/skill.png" alt="Skill Selection"/>
 </figure>
 
 <figure class="center">
 <figcaption>SkyCalc <strong>Results</strong></figcaption>
-<img src="portfolio/skycalc/results.png" alt="Results"/>
+<img src="projects/skycalc/results.png" alt="Results"/>
 </figure>
 
 

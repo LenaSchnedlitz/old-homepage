@@ -22,32 +22,32 @@ folded paper. It can be accessed via
 
 <figure>
 <figcaption>Origamicons <strong>Alice</strong></figcaption>
-<img src="portfolio/origamicons/origamicon_Alice.png" alt="Alice"/>
+<img src="projects/origamicons/origamicon_Alice.png" alt="Alice"/>
 </figure>
 
 <figure>
 <figcaption>Origamicons <strong>Bob</strong></figcaption>
-<img src="portfolio/origamicons/origamicon_Bob.png" alt="Bob"/>
+<img src="projects/origamicons/origamicon_Bob.png" alt="Bob"/>
 </figure>
 
 <figure>
 <figcaption>Origamicons <strong>origamicons</strong></figcaption>
-<img src="portfolio/origamicons/origamicon_origamicons.png" alt="origamicons"/>
+<img src="projects/origamicons/origamicon_origamicons.png" alt="origamicons"/>
 </figure>
 
 <figure>
 <figcaption>Origamicons <strong>SHA-1 Origamicons</strong></figcaption>
-<img src="portfolio/origamicons/origamicon_SHA-1 Origamicons.png" alt="SHA-1 Origamicons"/>
+<img src="projects/origamicons/origamicon_SHA-1 Origamicons.png" alt="SHA-1 Origamicons"/>
 </figure>
 
 <figure>
 <figcaption>Origamicons <strong>SHA-1 Origamicon</strong></figcaption>
-<img src="portfolio/origamicons/origamicon_SHA-1 Origamicon.png" alt="SHA-1 Origamicon"/>
+<img src="projects/origamicons/origamicon_SHA-1 Origamicon.png" alt="SHA-1 Origamicon"/>
 </figure>
 
 <figure>
 <figcaption>Origamicons <strong>lena</strong></figcaption>
-<img src="portfolio/origamicons/origamicon_lena.png" alt="lena"/>
+<img src="projects/origamicons/origamicon_lena.png" alt="lena"/>
 </figure>
 
 </section>

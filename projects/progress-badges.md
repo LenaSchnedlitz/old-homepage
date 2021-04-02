@@ -17,7 +17,7 @@ for adding progress bars to markdown files.
 When using the *minimal theme*, a simple black and gray bar is generated:
 
 <figure class="stretch">
-<img src="portfolio/progress-badges/minimal.svg" alt="Minimal Theme"/>
+<img src="projects/progress-badges/minimal.svg" alt="Minimal Theme"/>
 </figure>
 
 <br><br><br>
@@ -27,19 +27,19 @@ The *badge theme* imitates the style of badges by shields.io:
 
 <section class="figrow">
 <figure>
-<img src="portfolio/progress-badges/badge_low.svg" alt="Badge Theme - Low"/>
+<img src="projects/progress-badges/badge_low.svg" alt="Badge Theme - Low"/>
 </figure>
 
 <figure>
-<img src="portfolio/progress-badges/badge_medium.svg" alt="Badge Theme - Medium"/>
+<img src="projects/progress-badges/badge_medium.svg" alt="Badge Theme - Medium"/>
 </figure>
 
 <figure>
-<img src="portfolio/progress-badges/badge_medium_high.svg" alt="Badge Theme - Medium-High"/>
+<img src="projects/progress-badges/badge_medium_high.svg" alt="Badge Theme - Medium-High"/>
 </figure>
 
 <figure>
-<img src="portfolio/progress-badges/badge_high.svg" alt="Badge Theme - High"/>
+<img src="projects/progress-badges/badge_high.svg" alt="Badge Theme - High"/>
 </figure>
 </section>
 
@@ -48,7 +48,7 @@ The *badge theme* imitates the style of badges by shields.io:
 The *default/custom color theme* allows users to select a custom bar color:
 
 <figure class="stretch">
-<img src="portfolio/progress-badges/default.svg" alt="Default Theme"/>
+<img src="projects/progress-badges/default.svg" alt="Default Theme"/>
 </figure>
 
 <p>
