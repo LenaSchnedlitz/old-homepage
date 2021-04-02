@@ -1,6 +1,7 @@
 <script>
   import Nav from '../components/Nav.svelte';
   import Logo from '../components/Logo.svelte';
+  import Aside from '../components/Aside.svelte';
 
   export let segment;
 </script>
@@ -34,41 +35,4 @@
   <slot/>
 </main>
 
-<aside id="follow-me">
-  <strong>Follow me</strong>
-  <div class="dot"></div>
-  <ul>
-    <li>
-      <a href="https://github.com/LenaSchnedlitz">
-        <svg viewBox="0 0 24 24" class="icon icon-small">
-          <use xlink:href="icons/sprite.svg#github"/>
-        </svg>
-        <span class="label">GitHub</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://gitlab.com/LenaSchnedlitz">
-        <svg viewBox="0 0 24 24" class="icon icon-small">
-          <use xlink:href="icons/sprite.svg#gitlab"/>
-        </svg>
-        <span class="label">GitLab</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/LenaSchnedlitz">
-        <svg viewBox="0 0 24 24" class="icon icon-small">
-          <use xlink:href="icons/sprite.svg#twitter"/>
-        </svg>
-        <span class="label">Twitter</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/lenaschnedlitz">
-        <svg viewBox="0 0 24 24" class="icon icon-small">
-          <use xlink:href="icons/sprite.svg#linkedin"/>
-        </svg>
-        <span class="label">LinkedIn</span>
-      </a>
-    </li>
-  </ul>
-</aside>
+<Aside/>
