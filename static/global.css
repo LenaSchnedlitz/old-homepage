@@ -235,14 +235,20 @@ a.meta .icon-inline {
   height: .9rem;
 }
 
-/* SELECTION **************************************************************************************/
+/* SELECTION & FOCUS ******************************************************************************/
 
 ::selection {
   background-color: var(--secondary-color);
   color: var(--gray-9);
 }
 
-a::selection {
+:focus-visible {
+  box-shadow: 0 0 0 4px var(--secondary-color);
+  outline: none;
+}
+
+a::selection,
+a:focus-visible {
   /* Fixes selection style of links with prettier underline */
   text-shadow: none;
 }

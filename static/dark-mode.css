@@ -60,7 +60,12 @@
     color: var(--gray-1);
   }
 
-  a::selection {
+  :focus-visible {
+    box-shadow: 0 0 0 4px var(--tertiary-color-6);
+  }
+
+  a::selection,
+  a:focus-visible {
     /* Fixes selection style of links with prettier underline */
     text-shadow: none;
   }
