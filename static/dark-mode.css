@@ -21,10 +21,8 @@
     background: var(--tertiary-color-8) linear-gradient(to right, transparent, var(--tertiary-color-9));
   }
 
-  @media (min-width: 800px) {
-    mark:hover::after {
-      background: var(--tertiary-color-8);
-    }
+  mark:hover::after {
+    background: var(--tertiary-color-8);
   }
 
   /* LINK *****************************************************************************************/
@@ -54,7 +52,6 @@
   }
 
   /* SELECTION ************************************************************************************/
-
   ::selection {
     background-color: var(--tertiary-color);
     color: var(--gray-1);
@@ -71,7 +68,6 @@
   }
 
   /* SVG ******************************************************************************************/
-
   svg.icon {
     stroke: var(--gray-1);
   }
@@ -92,7 +88,6 @@
   }
 
   /* CODE *****************************************************************************************/
-
   pre {
     background: #181818;
   }
