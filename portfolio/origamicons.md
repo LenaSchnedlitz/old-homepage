@@ -8,12 +8,12 @@ background: 'gray-light'
 align: 'right'
 ---
 
-After a long and slow demise, <a class="link" href="https://shattered.io/">SHA-1</a> is finally dead.
+After a long and slow demise, <a href="https://shattered.io/">SHA-1</a> is finally dead.
 What can you do with broken cryptographic functions? Create identicons, of course.
 
 The origamicon generator uses SHA-1 hashes to create *almost* unique pictures that slightly resemble
 folded paper. It can be accessed via 
-<a href="https://origamicons.herokuapp.com/" class="link">web&nbsp;interface</a> or used offline as a command line tool.
+<a href="https://origamicons.herokuapp.com/">web&nbsp;interface</a> or used offline as a command line tool.
 
 
 ## <mark>Examples:</mark>

@@ -9,13 +9,13 @@ align: 'right'
 ---
 
 I implemented a variant of the 
-famous <a class="link" href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Game of Life</a> on 
+famous <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Game of Life</a> on 
 a hexagonal grid.
 Pretty much all parameters of the game can be configured: rules for birth and survival,
 start configuration, duration, and color palette.  
 
 While researching for this project, I stumbled upon a very 
-informative <a class="link" href="https://davidsiaw.github.io/blog/2014/11/21/hexlife">article</a> that
+informative <a href="https://davidsiaw.github.io/blog/2014/11/21/hexlife">article</a> that
 recommends the rule set <mark>B2/S34</mark>, which means that cells are born if surrounded 
 by exactly 2 living cells and they survive if surrounded by 3 or 4 other live cells. This configuration 
 produces some nice oscillators, e.g. this one:

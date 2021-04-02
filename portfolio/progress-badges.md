@@ -9,7 +9,7 @@ align: 'left'
 tiny: true
 ---
 
-This web app was inspired by <a class="link" href="https://shields.io/">shields.io</a> and offers an API 
+This web app was inspired by <a href="https://shields.io/">shields.io</a> and offers an API 
 for adding progress bars to markdown files.
 
 <br><br><br>

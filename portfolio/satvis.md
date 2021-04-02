@@ -8,13 +8,13 @@ background: 'secondary'
 align: 'right'
 ---
 
-<a class="link" href="https://vprover.github.io/">Vampire</a> is a theorem prover for first order logic 
+<a href="https://vprover.github.io/">Vampire</a> is a theorem prover for first order logic 
 that is able to produce detailed proofs in a short time. However, debugging failed proof attempts can be
 quite cumbersome. SatVis attempts to change this by providing features such as *derivation visualization*,
 *clause reformatting*, *common parent and/or consequence search*, and many more.
 
 Check out the official
-<a class="link" href="https://link.springer.com/chapter/10.1007%2F978-3-030-34968-4_28">SatVis&nbsp;paper</a>
+<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-34968-4_28">SatVis&nbsp;paper</a>
 to learn more.
 
 

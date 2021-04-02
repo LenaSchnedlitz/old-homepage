@@ -12,7 +12,7 @@ We all take the current pandemic very seriously and have adapted our lifestyles 
 Shouldn't we focus on our physical and mental wellbeing instead of spending a whole afternoon tracking death statistics?  
 To help with that, I made a simple Firefox add-on that hides *most* articles about COVID-19.
 The tool uses basic text matching to identify posts about SARS-CoV-2 and its consequences.
-It gained some traction on <a class="link" href="https://news.ycombinator.com/item?id=22781113">Hacker&nbsp;News</a>.
+It gained some traction on <a href="https://news.ycombinator.com/item?id=22781113">Hacker&nbsp;News</a>.
 
 
 

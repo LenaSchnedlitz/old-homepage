@@ -8,12 +8,12 @@ background: 'gray-light'
 align: 'right'
 ---
 
-<a class="link" href="https://www.luups.net/">LUUPS</a> is a city guide with vouchers that is
+<a href="https://www.luups.net/">LUUPS</a> is a city guide with vouchers that is
 published annually. I've been using the booklet for some years now and can strongly recommend
 it, but it lacks one important feature: <em>an interactive, filterable map</em>.
 
 I teamed up with another Viennese software engineer,
-<a class="link" href="https://github.com/hschne">Hans&nbsp;Schnedlitz</a> (the name is no coincidence),
+<a href="https://github.com/hschne">Hans&nbsp;Schnedlitz</a> (the name is no coincidence),
 to develop exactly this.
 
 <figure>

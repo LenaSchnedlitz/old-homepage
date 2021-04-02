@@ -2,9 +2,6 @@
   <title>Lena Schnedlitz - About</title>
 </svelte:head>
 
-<style>
-</style>
-
 <article>
   <h1>About Me</h1>
 
@@ -14,7 +11,7 @@
   </p>
   <p>
     I enjoy implementing and optimizing things. You can find most of my stuff on
-    <a class="link" href="https://github.com/LenaSchnedlitz">GitHub</a>.
+    <a href="https://github.com/LenaSchnedlitz">GitHub</a>.
   </p>
   <br>
   <p>

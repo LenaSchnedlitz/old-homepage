@@ -8,19 +8,11 @@
     color: var(--gray-1);
   }
 
-  .link {
-    color: var(--primary-color-3);
-
-    /* Prettier underline, adapted from https://edwardtufte.github.io/tufte-css/ */
-    text-shadow: 0.03em 0 var(--gray-9), -0.03em 0 var(--gray-9), 0 0.03em var(--gray-9), 0 -0.03em var(--gray-9), 0.06em 0 var(--gray-9), -0.06em 0 var(--gray-9), 0.09em 0 var(--gray-9), -0.09em 0 var(--gray-9), 0.12em 0 var(--gray-9), -0.12em 0 var(--gray-9), 0.15em 0 var(--gray-9), -0.15em 0 var(--gray-9);
-    background-image: linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--gray-7), var(--gray-7));
+  img {
+    filter: grayscale(16%);
   }
 
-  .link:hover {
-    color: var(--primary-color-4);
-    background-image: linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--primary-color-4), var(--primary-color-4));
-  }
-
+  /* EMPHASIS *************************************************************************************/
   mark {
     color: var(--gray-1);
   }
@@ -35,26 +27,33 @@
     }
   }
 
-  .meta {
+  /* LINK *****************************************************************************************/
+  p a {
+    color: var(--primary-color-3);
+
+    /* Prettier underline, adapted from https://edwardtufte.github.io/tufte-css/ */
+    text-shadow: 0.03em 0 var(--gray-9), -0.03em 0 var(--gray-9), 0 0.03em var(--gray-9), 0 -0.03em var(--gray-9), 0.06em 0 var(--gray-9), -0.06em 0 var(--gray-9), 0.09em 0 var(--gray-9), -0.09em 0 var(--gray-9), 0.12em 0 var(--gray-9), -0.12em 0 var(--gray-9), 0.15em 0 var(--gray-9), -0.15em 0 var(--gray-9);
+    background-image: linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--gray-7), var(--gray-7));
+  }
+
+  p a:hover {
+    color: var(--primary-color-4);
+    background-image: linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--gray-9), var(--gray-9)), linear-gradient(var(--primary-color-4), var(--primary-color-4));
+  }
+
+  a.meta {
     color: var(--gray-1);
   }
 
-  .meta:hover {
+  a.meta:hover {
     color: var(--primary-color-3);
   }
 
-  .meta:hover svg.icon {
+  a.meta:hover svg.icon {
     stroke: var(--primary-color-3);
   }
 
-  svg.icon {
-    stroke: var(--gray-1);
-  }
-
-
-  .dot {
-    background: var(--gray-8);
-  }
+  /* SELECTION ************************************************************************************/
 
   ::selection {
     background-color: var(--tertiary-color);
@@ -66,48 +65,32 @@
     text-shadow: none;
   }
 
-  pre {
-    background: #181818;
+  /* SVG ******************************************************************************************/
+
+  svg.icon {
+    stroke: var(--gray-1);
   }
 
-  /* FOLLOW ME ************************************************************************************/
-  @media (min-width: 800px) {
-    #follow-me a:hover {
-      color: var(--secondary-color);
-    }
-
-    #follow-me a:hover svg {
-      stroke: var(--secondary-color);
-    }
-
-    #follow-me a:active {
-      color: var(--secondary-color-3);
-    }
-
-    #follow-me a:active svg {
-      stroke: var(--secondary-color-3);
-    }
-  }
-
-  /* PORTFOLIO CARDS ******************************************************************************/
-  .portfolio-card {
+  /* SECTIONS *************************************************************************************/
+  .portfolio-card { /* TODO */
     box-shadow: 5px 10px 25px 0 rgba(0, 0, 0, 1);
   }
 
-  .portfolio-card.secondary {
+  section.secondary {
     background: var(--secondary-color-3);
     color: var(--gray-9);
   }
 
-  .portfolio-card.gray-dark {
+  section.gray-dark {
     background: var(--gray-8);
     color: var(--gray-1);
   }
 
-  img {
-    filter: grayscale(16%);
-  }
+  /* CODE *****************************************************************************************/
 
+  pre {
+    background: #181818;
+  }
 
   /* HLJS *****************************************************************************************/
   .hljs {
