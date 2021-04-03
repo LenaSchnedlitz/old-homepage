@@ -111,7 +111,7 @@
   <ul>
     <li>
       <a href="https://github.com/LenaSchnedlitz">
-        <svg viewBox="0 0 24 24" class="icon" aria-hidden>
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
           <use xlink:href="icons/sprite.svg#github"/>
         </svg>
         <span class="label">GitHub</span>
@@ -119,7 +119,7 @@
     </li>
     <li>
       <a href="https://gitlab.com/LenaSchnedlitz">
-        <svg viewBox="0 0 24 24" class="icon" aria-hidden>
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
           <use xlink:href="icons/sprite.svg#gitlab"/>
         </svg>
         <span class="label">GitLab</span>
@@ -127,7 +127,7 @@
     </li>
     <li>
       <a href="https://twitter.com/LenaSchnedlitz">
-        <svg viewBox="0 0 24 24" class="icon" aria-hidden>
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
           <use xlink:href="icons/sprite.svg#twitter"/>
         </svg>
         <span class="label">Twitter</span>
@@ -135,7 +135,7 @@
     </li>
     <li>
       <a href="https://www.linkedin.com/in/lenaschnedlitz">
-        <svg viewBox="0 0 24 24" class="icon" aria-hidden>
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
           <use xlink:href="icons/sprite.svg#linkedin"/>
         </svg>
         <span class="label">LinkedIn</span>
