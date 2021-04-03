@@ -75,6 +75,7 @@ html {
   --secondary-color-3: #fbe39e;
   --secondary-color-6: #cba539;
   --tertiary-color: #33bbee;
+  --tertiary-color-1: #c4e6f2;
   --tertiary-color-6: #309dc6;
   --tertiary-color-8: #2c6479;
   --tertiary-color-9: #2b4954;
@@ -245,6 +246,7 @@ a.meta .icon-inline {
 :focus-visible {
   box-shadow: 0 0 0 4px var(--secondary-color);
   outline: none;
+  transition-delay: .1s;
 }
 
 a::selection,
@@ -256,8 +258,8 @@ a:focus-visible {
 /* SVG ********************************************************************************************/
 
 svg.icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   fill: none;
   stroke: var(--gray-9);
   stroke-width: 1px;
@@ -265,15 +267,7 @@ svg.icon {
   stroke-linejoin: round;
 }
 
-svg.icon-small {
-  width: 1rem;
-  height: 1rem;
-  margin-top: -.1rem;
-}
-
 svg.icon-inline {
-  width: 1rem;
-  height: 1rem;
   margin-bottom: -.1rem;
 }
 

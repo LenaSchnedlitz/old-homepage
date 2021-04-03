@@ -2,6 +2,8 @@
   import Nav from '../components/Nav.svelte';
   import Logo from '../components/Logo.svelte';
   import Aside from '../components/Aside.svelte';
+  import DarkModeToggle from '../components/DarkModeToggle.svelte';
+  import ConvenienceButtonGroup from '../components/ConvenienceButtonGroup.svelte';
 
   export let segment;
 </script>
@@ -30,6 +32,10 @@
 
 <Logo/>
 <Nav {segment}/>
+
+<ConvenienceButtonGroup right>
+  <DarkModeToggle/>
+</ConvenienceButtonGroup>
 
 <main>
   <slot/>

@@ -1,0 +1,39 @@
+<style>
+  .convenience-button {
+    width: 2rem;
+    height: 2rem;
+    padding: .25rem;
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid 1px transparent;
+    border-radius: 2rem;
+    background: transparent;
+
+    cursor: pointer;
+    transition: all ease-in .3s;
+  }
+
+  .convenience-button:hover {
+    border-color: var(--primary-color-7);
+  }
+
+  :global(.convenience-button) > :global(svg.icon) {
+    width: 1.25rem;
+    height: 1.25rem;
+    stroke-width: 1.25;
+    stroke: var(--gray-5);
+  }
+
+  :global(.convenience-button:hover) > :global(svg.icon) {
+    stroke: var(--primary-color-7);
+    stroke-width: 1.5;
+  }
+</style>
+
+<button class="convenience-button">
+  <slot/>
+</button>
