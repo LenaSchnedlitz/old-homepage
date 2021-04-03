@@ -67,6 +67,10 @@
       padding: 0 40px 40px 0;
     }
 
+    .wrapper > a {
+      height: auto;
+    }
+
     .wrapper:first-child {
       padding-right: 0;
     }
