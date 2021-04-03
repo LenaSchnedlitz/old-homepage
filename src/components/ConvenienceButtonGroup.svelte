@@ -1,12 +1,19 @@
 <script>
-  export let left;
-  export let right;
+  export let left = false;
+  export let right = false;
 </script>
 
 <style>
   section {
     position: fixed;
     top: 5rem;
+    display: none;
+  }
+
+  @media (min-width: 800px) {
+    section {
+      display: initial;
+    }
   }
 
   .left {
@@ -20,5 +27,5 @@
 
 
 <section class:left class:right>
-  <slot />
+  <slot/>
 </section>

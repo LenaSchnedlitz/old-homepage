@@ -1,3 +1,7 @@
+<script>
+  export let onclick;
+</script>
+
 <style>
   .convenience-button {
     width: 2rem;
@@ -26,6 +30,7 @@
     height: 1.25rem;
     stroke-width: 1.25;
     stroke: var(--gray-5);
+    transition: all ease-in .2s;
   }
 
   :global(.convenience-button:hover) > :global(svg.icon) {
@@ -34,6 +39,6 @@
   }
 </style>
 
-<button class="convenience-button">
+<button class="convenience-button" on:click={onclick}>
   <slot/>
 </button>
