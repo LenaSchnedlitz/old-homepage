@@ -59,7 +59,7 @@
   @media (min-width: 800px) {
     nav {
       position: fixed;
-      background: #fefefedd;
+      background: var(--gray-1--90);
     }
 
     ul {
@@ -81,30 +81,6 @@
       margin-top: .5rem;
     }
   }
-
-  @media (prefers-color-scheme: dark) {
-    a:hover {
-      color: var(--primary-color-4);
-    }
-
-    a:hover::after {
-      background-color: var(--primary-color-4);
-    }
-
-    a:active {
-      color: var(--primary-color-3);
-    }
-
-    [aria-current]::after {
-      background-color: var(--gray-1);
-    }
-
-    @media (min-width: 800px) {
-      nav {
-        background: #111111dd;
-      }
-    }
-  }
 </style>
 
 <nav>
@@ -115,7 +91,7 @@
     </li>
     -->
     <li>
-      <a rel=prefetch  aria-current='{segment === "projects" ? "page" : undefined}'
+      <a rel=prefetch aria-current='{segment === "projects" ? "page" : undefined}'
          href='projects'>Projects</a>
     </li>
     <li>

@@ -62,23 +62,24 @@ html {
   --serif: 'Lora', serif;
   --monospace: 'Fira Code', monospace;
 
-  --primary-color: #ee3377;
   --primary-color-2: #fabad1;
   --primary-color-3: #f68db3;
   --primary-color-4: #f15f94;
+  --primary-color: #ee3377;
   --primary-color-6: #ce336c;
   --primary-color-7: #ae3561;
   --primary-color-8: #8e3656;
   --primary-color-9: #6e384c;
-  --secondary-color: #f9c940;
+
   --secondary-color-2: #fcf0cd;
   --secondary-color-3: #fbe39e;
+  --secondary-color: #f9c940;
   --secondary-color-6: #cba539;
+
   --tertiary-color: #33bbee;
-  --tertiary-color-1: #c4e6f2;
   --tertiary-color-6: #309dc6;
   --tertiary-color-8: #2c6479;
-  --tertiary-color-9: #2b4954;
+
   --gray-1: #fefefe;
   --gray-2: #dfdfdf;
   --gray-3: #c2c2c2;
@@ -89,11 +90,19 @@ html {
   --gray-8: #2d2d2d;
   --gray-9: #111111;
 
-  background: var(--gray-1);
-  color: var(--gray-9);
+  --gray-1--90: #fefefedd;
 
   font-family: var(--serif);
   font-size: 16px;
+}
+
+/* GENERAL ****************************************************************************************/
+
+body {
+  overflow-x: hidden;
+
+  background: var(--gray-1);
+  color: var(--gray-9);
 }
 
 html,
@@ -104,10 +113,6 @@ body,
 
   margin: 0;
   padding: 0;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 /* HEADLINES & TEXT *******************************************************************************/
@@ -163,6 +168,7 @@ em {
 mark {
   position: relative;
   background: transparent;
+  color: var(--gray-9);
 }
 
 mark::after {
@@ -510,4 +516,54 @@ code {
 
 .hljs-strong {
   font-weight: bold;
+}
+
+/* DARK MODE **************************************************************************************/
+
+body.dark-mode {
+  --primary-color-9: #fabad1;
+  --primary-color-8: #f68db3;
+  --primary-color-7: #f15f94;
+  --primary-color-6: #ee3377;
+  --primary-color: #ce336c;
+  --primary-color-4: #ae3561;
+  --primary-color-3: #8e3656;
+  --primary-color-2: #6e384c;
+
+  --tertiary-color-8: #fbe39e;
+  --tertiary-color-6: #f9c940;
+  --tertiary-color: #cba539;
+
+  --secondary-color-6: #33bbee;
+  --secondary-color: #309dc6;
+  --secondary-color-3: #2c6479;
+  --secondary-color-2: #2b4954;
+
+  --gray-9: #fefefe;
+  --gray-8: #dfdfdf;
+  --gray-7: #c2c2c2;
+  --gray-6: #a4a4a4;
+  --gray-5: #878787;
+  --gray-4: #686868;
+  --gray-3: #4b4b4b;
+  --gray-2: #2d2d2d;
+  --gray-1: #111111;
+
+  --gray-1--90: #111111dd;
+}
+
+body.dark-mode img {
+  filter: grayscale(16%);
+}
+
+body.dark-mode pre {
+  background: #181818;
+}
+
+body.dark-mode .hljs-deletion {
+  background: #291a17;
+}
+
+body.dark-mode .hljs-addition {
+  background: #152422;
 }

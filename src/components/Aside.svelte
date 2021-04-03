@@ -103,30 +103,6 @@
       }
     }
   }
-
-  @media (prefers-color-scheme: dark) {
-    @media (min-width: 800px) {
-      .dot {
-        background: var(--gray-8);
-      }
-
-      a:hover {
-        color: var(--secondary-color);
-      }
-
-      a:hover svg {
-        stroke: var(--secondary-color);
-      }
-
-      a:active {
-        color: var(--secondary-color-3);
-      }
-
-      a:active svg {
-        stroke: var(--secondary-color-3);
-      }
-    }
-  }
 </style>
 
 <aside id="follow-me">

@@ -44,11 +44,19 @@
       box-shadow: none;
       z-index: -1;
     }
+
+    :global(body.dark-mode) #portrait {
+      background-image: url('../../me/optimized/me-dark-m-min.jpg');
+    }
   }
 
   @media (min-width: 2000px) {
     #portrait {
       background-image: url('../../me/optimized/me-l-min.jpg');
+    }
+
+    :global(body.dark-mode) #portrait {
+      background-image: url('../../me/optimized/me-dark-l-min.jpg');
     }
   }
 
@@ -56,26 +64,9 @@
     #portrait {
       background-image: url('../../me/optimized/me-xl-min.jpg');
     }
-  }
 
-
-  @media (prefers-color-scheme: dark) {
-    @media (min-width: 700px) {
-      #portrait {
-        background-image: url('../../me/optimized/me-dark-m-min.jpg');
-      }
-    }
-
-    @media (min-width: 2000px) {
-      #portrait {
-        background-image: url('../../me/optimized/me-dark-l-min.jpg');
-      }
-    }
-
-    @media (min-width: 3000px) {
-      #portrait {
-        background-image: url('../../me/optimized/me-dark-xl-min.jpg');
-      }
+    :global(body.dark-mode) #portrait {
+      background-image: url('../../me/optimized/me-dark-xl-min.jpg');
     }
   }
 </style>
