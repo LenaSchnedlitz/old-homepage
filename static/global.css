@@ -90,6 +90,7 @@ html {
   --gray-8: #2d2d2d;
   --gray-9: #111111;
 
+  --secondary-color-2--transparent: #fcf0cd00; /* avoid safari bug */
   --gray-1--90: #fefefedd;
 
   font-family: var(--serif);
@@ -179,7 +180,7 @@ mark::after {
   display: block;
   height: 1.2rem;
   width: calc(100% + .5rem);
-  background: var(--secondary-color-3) linear-gradient(to right, transparent, var(--secondary-color-2));
+  background: var(--secondary-color-3) linear-gradient(to right, var(--secondary-color-2--transparent), var(--secondary-color-2));
   border-radius: 0;
   z-index: -1;
   transition: all ease-in-out .2s;
@@ -538,6 +539,8 @@ body.dark-mode {
   --secondary-color: #309dc6;
   --secondary-color-3: #2c6479;
   --secondary-color-2: #2b4954;
+
+  --secondary-color-2--transparent: #2b495400;
 
   --gray-9: #fefefe;
   --gray-8: #dfdfdf;
