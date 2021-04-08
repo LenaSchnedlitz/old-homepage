@@ -26,6 +26,7 @@
   @media (min-width: 800px) {
     main {
       box-sizing: content-box;
+      min-height: auto;
     }
   }
 </style>

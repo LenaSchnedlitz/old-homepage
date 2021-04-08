@@ -1,10 +1,8 @@
 <style>
   article {
-    position: absolute;
-    top: calc(50% + 4.25rem);
     width: 250px;
     margin: 0 0 0 -2rem;
-    padding: 0 2rem 2rem;
+    padding: 2rem 2rem 0;
     box-sizing: border-box;
   }
 
@@ -18,55 +16,31 @@
     line-height: 22px;
   }
 
-  #portrait {
-    position: absolute;
-    height: 36%;
-    width: calc(100% - 4rem);
-    background-size: contain;
-    background-image: url('../../me/optimized/me-s-min.jpg');
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-    box-shadow: 0 1.25rem 1.25rem -25px rgba(0, 0, 0, .3);
+  img {
+    width: 100%;
+    border-radius: 100%;
   }
 
   @media (min-width: 700px) {
     article {
+      position: absolute;
       top: 166px;
     }
 
-    #portrait {
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-image: url('../../me/optimized/me-m-min.jpg');
-      box-shadow: none;
-      z-index: -1;
-    }
-
-    :global(body.dark-mode) #portrait {
-      background-image: url('../../me/optimized/me-dark-m-min.jpg');
+    img {
+      position: absolute;
+      right: 4rem;
+      bottom: 8rem;
+      width: 70%;
+      height: 70%;
     }
   }
 
-  @media (min-width: 2000px) {
-    #portrait {
-      background-image: url('../../me/optimized/me-l-min.jpg');
-    }
-
-    :global(body.dark-mode) #portrait {
-      background-image: url('../../me/optimized/me-dark-l-min.jpg');
-    }
-  }
-
-  @media (min-width: 3000px) {
-    #portrait {
-      background-image: url('../../me/optimized/me-xl-min.jpg');
-    }
-
-    :global(body.dark-mode) #portrait {
-      background-image: url('../../me/optimized/me-dark-xl-min.jpg');
+  @media (min-width: 800px) {
+    img {
+      right: 0;
+      width: 80%;
+      height: 80%;
     }
   }
 </style>
@@ -75,7 +49,7 @@
   <title>Lena Schnedlitz</title>
 </svelte:head>
 
-<div id="portrait"></div>
+<img alt="Self Portrait" src="me.svg">
 
 <article>
   <h1>Hi.</h1>
