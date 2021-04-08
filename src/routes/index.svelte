@@ -1,3 +1,7 @@
+<script>
+  import SelfPortrait from '../components/SelfPortrait.svelte';
+</script>
+
 <style>
   article {
     width: 250px;
@@ -16,7 +20,7 @@
     line-height: 22px;
   }
 
-  img {
+  #portrait :global(svg.self-portrait) {
     width: 100%;
     border-radius: 100%;
   }
@@ -27,7 +31,7 @@
       top: 166px;
     }
 
-    img {
+    #portrait :global(svg.self-portrait) {
       position: absolute;
       right: 4rem;
       bottom: 8rem;
@@ -37,7 +41,7 @@
   }
 
   @media (min-width: 800px) {
-    img {
+    #portrait :global(svg.self-portrait) {
       right: 0;
       width: 80%;
       height: 80%;
@@ -49,13 +53,17 @@
   <title>Lena Schnedlitz</title>
 </svelte:head>
 
-<img alt="Self Portrait" src="me.svg">
+<section id="portrait">
+  <SelfPortrait/>
+</section>
 
 <article>
   <h1>Hi.</h1>
 
   <p>
     My name is <em>Lena.</em><br>
-    I’m a <mark>software engineer</mark> from Vienna, Austria.
+    I’m a
+    <mark>software engineer</mark>
+    from Vienna, Austria.
   </p>
 </article>
