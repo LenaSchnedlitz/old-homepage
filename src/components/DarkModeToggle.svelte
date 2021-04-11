@@ -3,13 +3,15 @@
   import ConvenienceButton from './ConvenienceButton.svelte';
 
   const STORAGE_KEY = 'theme';
+  const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
 
-  let icon = 'moon';
+  let icon, manuallySelectedTheme, prefersDarkThemes = undefined;
+
   const applyTheme = () => {
-    const selectedTheme = localStorage.getItem(STORAGE_KEY);
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    manuallySelectedTheme = manuallySelectedTheme || localStorage.getItem(STORAGE_KEY);
+    prefersDarkThemes = prefersDarkThemes || window.matchMedia(DARK_PREFERENCE).matches;
 
-    if (selectedTheme === 'dark' || (!selectedTheme && prefersDarkScheme)) {
+    if (manuallySelectedTheme === 'dark' || (!manuallySelectedTheme && prefersDarkThemes)) {
       document.body.classList.add('dark-mode');
       icon = 'sun';
     } else {
@@ -19,13 +21,13 @@
   };
 
   const toggleTheme = () => {
-    const currentTheme = localStorage.getItem(STORAGE_KEY);
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (currentTheme) {
+    if (manuallySelectedTheme) {
       localStorage.removeItem(STORAGE_KEY);
+      manuallySelectedTheme = undefined;
     } else {
-      localStorage.setItem(STORAGE_KEY, prefersDarkScheme ? 'light' : 'dark'); // opposite of preference
+      const newTheme = prefersDarkThemes ? 'light' : 'dark'; // opposite of preference
+      localStorage.setItem(STORAGE_KEY, newTheme);
+      manuallySelectedTheme = newTheme;
     }
 
     applyTheme();
