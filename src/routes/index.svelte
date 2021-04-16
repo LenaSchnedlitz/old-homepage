@@ -4,7 +4,7 @@
 
 <style>
   article {
-    width: 250px;
+    width: 280px;
     margin: 0 0 -2rem -2rem;
     padding: 2rem 2rem 0;
     box-sizing: border-box;
@@ -49,6 +49,10 @@
   }
 
   @media (min-width: 1200px) {
+    article {
+      width: 250px;
+    }
+
     #portrait :global(svg.self-portrait) {
       bottom: 4rem;
     }
