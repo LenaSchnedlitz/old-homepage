@@ -5,7 +5,7 @@
 <style>
   article {
     width: 250px;
-    margin: 0 0 0 -2rem;
+    margin: 0 0 -2rem -2rem;
     padding: 2rem 2rem 0;
     box-sizing: border-box;
   }
@@ -34,7 +34,7 @@
     #portrait :global(svg.self-portrait) {
       position: absolute;
       right: 4rem;
-      bottom: 8rem;
+      bottom: 2rem;
       width: 70%;
       height: 70%;
     }
@@ -45,6 +45,12 @@
       right: 0;
       width: 80%;
       height: 80%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #portrait :global(svg.self-portrait) {
+      bottom: 4rem;
     }
   }
 </style>

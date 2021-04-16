@@ -13,15 +13,15 @@
   }
 
   .thin {
-    stroke-width: 0.68;
+    stroke-width: 0.47;
   }
 
   .medium {
-    stroke-width: 0.84;
+    stroke-width: 0.63;
   }
 
   .thick {
-    stroke-width: 1.11;
+    stroke-width: 0.9;
   }
 
   @media (min-width: 700px) {
