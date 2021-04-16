@@ -93,6 +93,8 @@ html {
   --secondary-color-2--transparent: #fcf0cd00; /* avoid safari bug */
   --gray-1--90: #fefefedd;
 
+  --logo-color: var(--primary-color);
+
   font-family: var(--serif);
   font-size: 16px;
 }

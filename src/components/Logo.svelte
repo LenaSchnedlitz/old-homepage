@@ -20,7 +20,7 @@
   }
 
   circle {
-    fill: var(--primary-color);
+    fill: var(--logo-color);
   }
 
   path {
@@ -28,7 +28,7 @@
   }
 
   svg:active circle {
-    fill: var(--primary-color-6);
+    opacity: .8;
   }
 
   @media (min-width: 800px) {
