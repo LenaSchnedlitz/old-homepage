@@ -9,7 +9,7 @@
 <style>
   img {
     width: 100%;
-    box-shadow: 0 1.25rem 1.25rem -25px rgba(0, 0, 0, .3);
+    margin-bottom: -1.5rem;
   }
 
   @media (min-width: 700px) {
@@ -21,7 +21,6 @@
 
   @media (min-width: 800px) {
     img {
-      box-shadow: none;
       margin-top: 2rem;
       margin-bottom: -2.5rem;
     }
@@ -32,17 +31,17 @@
   <h1>About Me</h1>
 
   <p>
-    My name is <mark>Lena Schnedlitz</mark> and I’m a <em>software engineer</em>
-    from Vienna, Austria.
+    Hi! I'm <mark>Lena Schnedlitz</mark>, a full stack software engineer from Vienna.
+    You can find me on
+    <a href="https://github.com/LenaSchnedlitz">GitHub</a>,
+    <a href="https://gitlab.com/LenaSchnedlitz">GitLab</a>,
+    <a href="https://twitter.com/LenaSchnedlitz">Twitter</a>, and
+    <a href="https://www.linkedin.com/in/lenaschnedlitz">LinkedIn</a>.
   </p>
   <p>
-    I enjoy implementing and optimizing things. You can find most of my stuff on
-    <a href="https://github.com/LenaSchnedlitz">GitHub</a>.
-  </p>
-  <br>
-  <p>
-    This website is about my personal projects and opinions. There might be a slight bias towards
-    content related to programming, but I also post about topics like math puzzles,
+    This website is about my personal projects and opinions.<br>
+    There might be a slight bias towards
+    content related to programming, but I also write about math puzzles,
     origami, and video games.
   </p>
 
