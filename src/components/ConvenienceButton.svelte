@@ -29,13 +29,19 @@
     width: 1.25rem;
     height: 1.25rem;
     stroke-width: 1.25;
-    stroke: var(--gray-5);
+    stroke: var(--gray-9);
     transition: all ease-in .2s;
   }
 
-  :global(.convenience-button:hover) > :global(svg.icon) {
-    stroke: var(--primary-color-7);
-    stroke-width: 1.5;
+  @media (min-width: 800px) {
+    :global(.convenience-button) > :global(svg.icon) {
+      stroke: var(--gray-5);
+    }
+
+    :global(.convenience-button:hover) > :global(svg.icon) {
+      stroke: var(--primary-color-7);
+      stroke-width: 1.5;
+    }
   }
 </style>
 
