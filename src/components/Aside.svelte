@@ -110,7 +110,7 @@
   <div class="dot"></div>
   <ul>
     <li>
-      <a href="https://github.com/LenaSchnedlitz">
+      <a href="https://github.com/LenaSchnedlitz" title="GitHub">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
           <use xlink:href="icons/sprite.svg#github"/>
         </svg>
@@ -118,7 +118,7 @@
       </a>
     </li>
     <li>
-      <a href="https://gitlab.com/LenaSchnedlitz">
+      <a href="https://gitlab.com/LenaSchnedlitz" title="GitLab">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
           <use xlink:href="icons/sprite.svg#gitlab"/>
         </svg>
@@ -126,7 +126,7 @@
       </a>
     </li>
     <li>
-      <a href="https://twitter.com/LenaSchnedlitz">
+      <a href="https://twitter.com/LenaSchnedlitz" title="Twitter">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
           <use xlink:href="icons/sprite.svg#twitter"/>
         </svg>
@@ -134,7 +134,7 @@
       </a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/lenaschnedlitz">
+      <a href="https://www.linkedin.com/in/lenaschnedlitz" title="LinkedIn">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
           <use xlink:href="icons/sprite.svg#linkedin"/>
         </svg>
