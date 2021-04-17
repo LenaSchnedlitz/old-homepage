@@ -1,4 +1,5 @@
 <script>
+  import DarkModeToggle from './DarkModeToggle.svelte';
   export let segment;
 </script>
 
@@ -56,9 +57,14 @@
     background-color: var(--gray-9);
   }
 
+  .mobile-only {
+    margin-top: -.7rem;
+  }
+
   @media (min-width: 800px) {
     nav {
       position: fixed;
+      right: 0;
       background: var(--gray-1--90);
     }
 
@@ -80,6 +86,10 @@
     li {
       margin-top: .5rem;
     }
+
+    .mobile-only {
+      display: none;
+    }
   }
 </style>
 
@@ -96,6 +106,9 @@
     </li>
     <li>
       <a aria-current='{segment === "about" ? "page" : undefined}' href='about'>About</a>
+    </li>
+    <li class="mobile-only">
+      <DarkModeToggle/>
     </li>
   </ul>
 </nav>
