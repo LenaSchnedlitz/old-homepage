@@ -40,8 +40,7 @@
   </p>
   <p>
     This website is about my personal projects and opinions.<br>
-    There might be a slight bias towards
-    content related to programming, but I also write about math puzzles,
+    I usually write about software development and web design, but sometimes also about math puzzles,
     origami, and video games.
   </p>
 
