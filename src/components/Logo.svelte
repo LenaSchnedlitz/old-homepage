@@ -7,44 +7,41 @@
 
 <style>
   a {
-    margin: calc(2rem - 2px) 2rem calc(2rem + 2px);
-    display: inline-block;
-    position: relative;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     z-index: 100;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .scrolled {
-    position: fixed;
-    top: .75rem;
-    left: .75rem;
+  svg {
+    height: 100%;
+    width: 100%;
   }
 
   circle {
-    fill: var(--logo-color);
+    fill: var(--grey-950);
   }
 
   path {
-    fill: var(--gray-9);
+    fill: var(--grey-000);
   }
 
+  svg:hover circle,
+  svg:focus circle,
   svg:active circle {
-    opacity: .8;
+    fill: var(--primary-color);
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     a {
       position: fixed;
       height: 2rem;
       width: 2rem;
-    }
-
-    .scrolled {
-      position: static;
-    }
-
-    svg {
-      height: 100%;
-      width: 100%;
     }
   }
 </style>

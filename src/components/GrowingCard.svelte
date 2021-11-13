@@ -16,7 +16,6 @@
 
   .text-wrapper {
     margin: 2rem 2.4rem 2rem 2rem;
-    font-family: var(--sans-serif);
   }
 
   h3 {

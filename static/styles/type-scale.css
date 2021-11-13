@@ -1,5 +1,6 @@
+/* Augmented Fourth */
 .gigantic {
-  font-size: 7.993rem;
+  font-size: 11.302rem;
 }
 
 h1 {
@@ -26,9 +27,42 @@ small {
   font-size: 0.707rem;
 }
 
-@media all and (min-width: 576px) {
+
+@media all and (min-width: 768px) {
+  /* Perfect Fifth */
   .gigantic {
-    font-size: 17.942rem;
+    font-size: 17.086rem;
+  }
+
+  h1 {
+    font-size: 7.594rem;
+  }
+
+  h2 {
+    font-size: 5.063rem;
+  }
+
+  h3 {
+    font-size: 3.375rem;
+  }
+
+  h4 {
+    font-size: 2.25rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  small {
+    font-size: 0.667rem;
+  }
+}
+
+@media all and (min-width: 1366px) {
+  /* Golden Ratio */
+  .gigantic {
+    font-size: 29.03rem;
   }
 
   h1 {

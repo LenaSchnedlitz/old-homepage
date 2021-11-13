@@ -1,44 +1,162 @@
 <script>
-  import {onMount} from 'svelte';
-  import ConvenienceButton from './ConvenienceButton.svelte';
+  import { onMount } from 'svelte';
 
   const STORAGE_KEY = 'theme';
   const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
 
-  let icon, manuallySelectedTheme, prefersDarkThemes = undefined;
+  const THEMES = {
+    DARK: 'dark',
+    LIGHT: 'light',
+  };
+  let currentTheme;
+
+  const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE).matches;
 
   const applyTheme = () => {
-    manuallySelectedTheme = manuallySelectedTheme || localStorage.getItem(STORAGE_KEY);
-    prefersDarkThemes = prefersDarkThemes || window.matchMedia(DARK_PREFERENCE).matches;
+    const preferredTheme = prefersDarkThemes() ? THEMES.DARK : THEMES.LIGHT;
 
-    if (manuallySelectedTheme === 'dark' || (!manuallySelectedTheme && prefersDarkThemes)) {
-      document.body.classList.add('dark-mode');
-      icon = 'sun';
+    currentTheme = localStorage.getItem(STORAGE_KEY) || preferredTheme;
+
+    if (currentTheme === THEMES.DARK) {
+      document.body.classList.remove(THEMES.LIGHT);
+      document.body.classList.add(THEMES.DARK);
     } else {
-      document.body.classList.remove('dark-mode');
-      icon = 'moon';
+      document.body.classList.remove(THEMES.DARK);
+      document.body.classList.add(THEMES.LIGHT);
     }
   };
 
   const toggleTheme = () => {
-    if (manuallySelectedTheme) {
+    const stored = localStorage.getItem(STORAGE_KEY);
+
+    if (stored) {
+      // clear storage
       localStorage.removeItem(STORAGE_KEY);
-      manuallySelectedTheme = undefined;
     } else {
-      const newTheme = prefersDarkThemes ? 'light' : 'dark'; // opposite of preference
-      localStorage.setItem(STORAGE_KEY, newTheme);
-      manuallySelectedTheme = newTheme;
+      // store opposite of preference
+      localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
     }
 
     applyTheme();
   };
 
-  onMount(applyTheme);
+  onMount(() => {
+    applyTheme();
+    window.matchMedia(DARK_PREFERENCE).addEventListener('change', applyTheme);
+  });
 </script>
 
-<ConvenienceButton onclick={toggleTheme}>
-  <svg viewBox="0 0 24 24" class="icon">
-    <title>Toggle Dark Mode</title>
-    <use xlink:href="icons/sprite.svg#{icon}"/>
-  </svg>
-</ConvenienceButton>
+<label>
+  <span class="aria-label">{currentTheme} mode</span>
+  <input type="checkbox" checked={currentTheme !== THEMES.DARK} on:click={toggleTheme} />
+  <span class="toggle">
+    <span class="toggle-icons">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+          <use href="icons/sprite.svg#moon"/>
+        </svg>
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+          <use href="icons/sprite.svg#sun"/>
+        </svg>
+    </span>
+  </span>
+</label>
+
+<style>
+  label {
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+
+    --toggle-height: 20px;
+  }
+
+
+  @media all and (min-width: 1366px) {
+    label {
+      --toggle-height: 16px;
+    }
+  }
+
+  .aria-label {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: calc(var(--toggle-height) * 2);
+    height: var(--toggle-height);
+    margin: 0;
+
+    background: var(--grey-950);
+    color: var(--grey-950);
+
+    border-radius: var(--toggle-height);
+    cursor: pointer;
+  }
+
+  .toggle::after {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: calc(var(--toggle-height) - 2px);
+    height: calc(var(--toggle-height) - 2px);
+
+    background: var(--grey-000);
+    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
+
+    border-radius: var(--toggle-height);
+    content: '';
+    transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  input:checked ~ .toggle:after {
+    left: calc(var(--toggle-height) + 1px);
+  }
+
+  .toggle-icons {
+    --icon-padding: 6px;
+
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: calc(100% - var(--icon-padding));
+    height: 100%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+  }
+
+  svg {
+    stroke: currentColor;
+    stroke-width: 2px;
+    height: calc(var(--toggle-height) - var(--icon-padding));
+    width: calc(var(--toggle-height) - var(--icon-padding));
+  }
+
+  label:focus-within .toggle {
+    background: var(--secondary-color);
+    color: var(--secondary-color);
+  }
+</style>

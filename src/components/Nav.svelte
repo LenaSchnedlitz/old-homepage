@@ -1,114 +1,75 @@
 <script>
-  import DarkModeToggle from './DarkModeToggle.svelte';
   export let segment;
 </script>
 
 <style>
   nav {
-    padding: 2rem 2rem 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
+    font-weight: 500;
+    --height: 1.5rem;
   }
 
   ul {
-    margin: 0 -.5rem;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: right;
+    align-items: center;
+    font-family: 'Basier Mono Circle', monospace;
+    text-transform: uppercase;
+    text-shadow: 0 0 48px var(--grey-000), 0 0 16px var(--grey-000);
   }
 
   li {
     list-style: none;
-    transition: all ease-out 150ms;
+    height: var(--height);
+    line-height: var(--height);
   }
 
   a {
     position: relative;
-    padding: 0 .5rem;
-    font-family: var(--monospace);
-    font-size: .75rem;
+    padding: 0 var(--item-padding);
+  }
+
+  a:hover {
+    color: var(--tertiary-color);
   }
 
   a::after {
     position: absolute;
     content: '';
     bottom: -.2rem;
-    left: .4rem;
+    left: calc(100% - var(--item-padding));
     display: block;
     height: 1px;
-    width: calc(100% - .8rem);
-  }
-
-  a:hover {
-    color: var(--primary-color);
-  }
-
-  a:hover::after {
-    background-color: var(--primary-color);
-  }
-
-  a:active {
-    color: var(--primary-color-6);
+    width: 0;
+    background-color: var(--grey-950);
+    transition: all ease-out .1s;
   }
 
   [aria-current]::after {
-    height: 1px;
-    background-color: var(--gray-9);
+    left: var(--item-padding);
+    width: calc(100% - calc(var(--item-padding) * 2));
+    transition: width ease-in .2s;
   }
 
-  .mobile-only {
-    margin-top: -.7rem;
-  }
-
-  @media (min-width: 800px) {
+  @media all and (min-width: 768px) {
     nav {
-      position: fixed;
-      right: 0;
-      background: var(--gray-1--90);
-    }
-
-    ul {
-      margin: 0 0 0 -.8rem;
-    }
-
-    a {
-      padding: 0 .8rem;
-      font-family: var(--sans-serif);
-      font-size: .875rem;
-    }
-
-    a::after {
-      left: .7rem;
-      width: calc(100% - 1.4rem);
-    }
-
-    li {
-      margin-top: .5rem;
-    }
-
-    .mobile-only {
-      display: none;
+      --height: 2rem;
     }
   }
 </style>
 
 <nav>
   <ul>
-    <!-- Temporarily hidden until there are posts
     <li>
       <a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>Blog</a>
     </li>
-    -->
     <li>
       <a rel=prefetch aria-current='{segment === "projects" ? "page" : undefined}'
          href='projects'>Projects</a>
     </li>
     <li>
       <a aria-current='{segment === "about" ? "page" : undefined}' href='about'>About</a>
-    </li>
-    <li class="mobile-only">
-      <DarkModeToggle/>
     </li>
   </ul>
 </nav>

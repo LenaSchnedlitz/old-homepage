@@ -1,144 +1,135 @@
 <style>
   aside {
-    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 1rem;
+    width: 3rem;
   }
 
-  strong,
-  .dot,
-  .label {
-    display: none;
+
+  @media (min-width: 768px) {
+    aside {
+      width: 4rem;
+    }
   }
 
   ul {
+    height: 100%;
     margin: 0;
-    padding: 1.5rem;
+    padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
   li {
-    padding: 0 .6rem;
+    padding: 0;
     list-style: none;
   }
 
-  a svg {
-    width: 1.25rem;
-    height: 1.25rem;
+  a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
   }
 
-  @media (min-width: 800px) {
-    aside {
-      position: fixed;
-      left: 40px;
-      bottom: 26px;
-      display: flex;
-      width: auto;
-      font-family: var(--sans-serif);
-      transform: rotate(-90deg);
-      transform-origin: top left;
+  a svg {
+    width: 1rem;
+    height: 1rem;
+    padding: .5rem;
+    stroke-width: 1.5;
+    box-sizing: content-box;
+    stroke-dasharray: 3, 0, 300;
+    transition: all ease-out 150ms;
+  }
+
+  a::after {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    top: 20%;
+    left: 40%;
+    border-radius: 50px;
+    content: '';
+    z-index: -1;
+  }
+
+  li:nth-child(even) a::after {
+    top: 20%;
+    left: 20%;
+  }
+
+  a:hover {
+    color: var(--tertiary-color);
+  }
+
+  a:hover svg {
+    fill: rgba(255, 255, 255, .3);
+    stroke-width: 2;
+    stroke-linecap: round;
+    animation: draw .7s;
+  }
+
+  a[title='GitHub']:hover::after,
+  a[title='GitHub']:active::after {
+    background: var(--tertiary-color-600);
+  }
+
+  a[title='GitLab']:hover::after,
+  a[title='GitLab']:active::after {
+    background: var(--secondary-color);
+  }
+
+  a[title='Twitter']:hover::after,
+  a[title='Twitter']:active::after {
+    background: var(--tertiary-color);
+  }
+
+  a[title='LinkedIn']:hover::after,
+  a[title='LinkedIn']:active::after {
+    background: var(--tertiary-color-800);
+  }
+
+  @keyframes draw {
+    10% {
+      stroke-dasharray: 3, 10, 300;
     }
-
-    strong {
-      font-weight: 800;
-      font-style: normal;
-      text-transform: uppercase;
-    }
-
-    .dot {
-      height: 4px;
-      width: 4px;
-      border-radius: .5rem;
-      margin: auto .1rem .55rem .8rem;
-      background: var(--gray-3);
-    }
-
-    strong,
-    .dot,
-    .label {
-      display: initial;
-    }
-
-    ul {
-      padding: 0;
-      justify-content: flex-start;
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-    }
-
-    a svg {
-      width: 1rem;
-      height: 1rem;
-      transition: all ease-out 150ms;
-      padding-right: .3rem;
-    }
-
-    a:hover {
-      color: var(--tertiary-color);
-    }
-
-    a:hover svg {
-      stroke: var(--tertiary-color);
-      stroke-width: 2;
-    }
-
-    a:active {
-      color: var(--tertiary-color-6);
-    }
-
-    a:active svg {
-      stroke: var(--tertiary-color-6);
-    }
-
-    @media (max-height: 800px) {
-      li {
-        padding-right: 0;
-      }
-
-      .label {
-        display: none;
-      }
+    100% {
+      stroke-dasharray: 33, 10, 300;
     }
   }
 </style>
 
 <aside id="follow-me">
-  <strong>Follow me</strong>
-  <div class="dot"></div>
   <ul>
     <li>
       <a href="https://github.com/LenaSchnedlitz" title="GitHub">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use xlink:href="icons/sprite.svg#github"/>
+          <use href="icons/sprite.svg#github"/>
         </svg>
-        <span class="label">GitHub</span>
       </a>
     </li>
     <li>
       <a href="https://gitlab.com/LenaSchnedlitz" title="GitLab">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use xlink:href="icons/sprite.svg#gitlab"/>
+          <use href="icons/sprite.svg#gitlab"/>
         </svg>
-        <span class="label">GitLab</span>
       </a>
     </li>
     <li>
       <a href="https://twitter.com/LenaSchnedlitz" title="Twitter">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use xlink:href="icons/sprite.svg#twitter"/>
+          <use href="icons/sprite.svg#twitter"/>
         </svg>
-        <span class="label">Twitter</span>
       </a>
     </li>
     <li>
       <a href="https://www.linkedin.com/in/lenaschnedlitz" title="LinkedIn">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use xlink:href="icons/sprite.svg#linkedin"/>
+          <use href="icons/sprite.svg#linkedin"/>
         </svg>
-        <span class="label">LinkedIn</span>
       </a>
     </li>
   </ul>

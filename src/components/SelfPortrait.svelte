@@ -2,7 +2,7 @@
   svg {
     width: 100%;
     height: 100%;
-    stroke: var(--gray-9);
+    stroke: var(--gray-900);
   }
 
   path {

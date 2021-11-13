@@ -3,40 +3,35 @@
   import Logo from '../components/Logo.svelte';
   import Aside from '../components/Aside.svelte';
   import DarkModeToggle from '../components/DarkModeToggle.svelte';
-  import ConvenienceButtonGroup from '../components/ConvenienceButtonGroup.svelte';
 
   export let segment;
 </script>
 
 <style>
-  main {
-    min-height: calc(100% - 168px);
-    max-width: 650px;
-    padding: 0 2rem 2rem;
-    margin: 0 auto;
-    box-sizing: border-box;
+  header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+
+    --item-padding: .75rem;
   }
 
-  @media (min-width: 700px) {
-    main {
-      padding-top: 146px;
+  @media all and (min-width: 768px) {
+    header {
+      --item-padding: 2rem;
     }
   }
 
-  @media (min-width: 800px) {
-    main {
-      box-sizing: content-box;
-      min-height: auto;
-    }
+  header > :global(label) {
+    margin: 0 .5rem 0 var(--item-padding);
   }
 </style>
 
-<Logo/>
-<Nav {segment}/>
-
-<ConvenienceButtonGroup right>
+<header>
+  <Logo/>
+  <Nav {segment}/>
   <DarkModeToggle/>
-</ConvenienceButtonGroup>
+</header>
 
 <main>
   <slot/>

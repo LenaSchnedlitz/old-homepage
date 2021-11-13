@@ -19,7 +19,6 @@
 
 <style>
   h2.teaser {
-    font-family: var(--sans-serif);
     font-style: normal;
     font-weight: normal;
     margin: -1rem 0 2rem;
