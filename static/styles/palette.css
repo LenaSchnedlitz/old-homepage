@@ -32,6 +32,8 @@
   --grey-950: #131418;
   --grey-1000: #000000;
   --grey: var(--grey-200);
+  --text: var(--grey-950);
+  --bg: var(--grey-050);
 
   --logo-color: var(--primary-color);
 }

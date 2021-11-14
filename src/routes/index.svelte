@@ -115,7 +115,7 @@
 </svelte:head>
 
 <section>
-  <h1>
+  <h1 class="huge">
     <small class="left">I'm</small>
     <strong>Lena<br/><span class="desktop-only">Schnedlitz</span></strong>
     <small class="right">

@@ -34,11 +34,11 @@ html {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
+  margin: .1em 0 .3em;
   line-height: 1.3;
   font-family: 'Basier Mono Square', monospace;
   font-weight: 400;
@@ -59,13 +59,11 @@ h1 {
 /* GENERAL ****************************************************************************************/
 
 body {
-  background: var(--grey-050);
-  color: var(--grey-950);
+  background: var(--bg);
+  color: var(--text);
 }
 
-html,
-body,
-#sapper {
+html {
   width: 100vw;
   height: 100vh; /* TODO */
 
@@ -76,8 +74,23 @@ body,
   position: relative;
 }
 
+body,
+#sapper {
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
 @media not screen and (min-width: 1024px) {
   .desktop-only {
+    display: none;
+  }
+}
+
+@media not screen and (min-width: 1366px) {
+  .huge-only {
     display: none;
   }
 }
@@ -88,53 +101,98 @@ main {
 }
 
 article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--grey-000);
+  width: 100%;
+  padding: 0 1.5rem 0 3rem;
+
+  --bg: var(--grey-000);
+  background: var(--bg);
 }
 
 article h1 {
-  max-width: 1000px;
   margin-top: .75em;
-  align-self: flex-start;
 }
 
-article p {
-  max-width: 680px;
+@media all and (min-width: 768px) {
+  article {
+    padding: 0 7rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 0 3rem;
+    grid-auto-flow: row dense;
+  }
+
+  article > * {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  article > .text {
+    grid-column-end: 3;
+  }
+
+  article > .text-alternate {
+    grid-column-start: 2;
+  }
+
+  article > .pic {
+    grid-column-start: 3;
+  }
+
+  article > .pic-alternate {
+    grid-column-end: 2;
+  }
+}
+
+@media all and (min-width: 1366px) {
+  article {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-gap: 0 6rem;
+  }
+
+  article > * {
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
+
+  article > h1 {
+    grid-column-start: 1;
+  }
+
+  article > .text {
+    grid-column-end: 4;
+  }
+
+  article > .text-alternate {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  article > .pic {
+    grid-column-start: 4;
+    grid-column-end: 6;
+  }
+
+  article > .pic-alternate {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 /* EMPHASIS ***************************************************************************************/
 
 mark {
-  position: relative;
-  background: transparent;
-  color: var(--grey-900);
+  background-color: var(--secondary-color-200);
+  box-shadow: inset 0 -.5em 0 0 var(--bg);
+  text-shadow: var(--bg) 0 -1px 16px;
+  transition: all .5s;
 }
 
-mark::after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: -.1rem;
-  display: block;
-  height: 1.2rem;
-  width: calc(100% + .2rem);
-  background: var(--secondary-color-300) linear-gradient(to right, var(--secondary-color-200--o-0), var(--secondary-color-200));
+mark:hover {
   border-radius: 0;
-  z-index: -1;
-  transition: all ease-in-out .2s;
+  box-shadow: none;
+  background-color: var(--secondary-color-300);
 }
 
-mark:hover::after {
-  background: var(--secondary-color-300);
-  height: 1.6rem;
-  bottom: -.2rem;
-}
-
-.dot {
-  color: var(--primary-color);
-}
 
 /* LINK *******************************************************************************************/
 
@@ -148,8 +206,8 @@ p a {
   color: var(--primary-color-600);
 
   /* Prettier underline, adapted from https://edwardtufte.github.io/tufte-css/ */
-  text-shadow: .03em 0 var(--gray-100), -.03em 0 var(--gray-100), 0 .03em var(--gray-100), 0 -.03em var(--gray-100), .06em 0 var(--gray-100), -.06em 0 var(--gray-100), .09em 0 var(--gray-100), -.09em 0 var(--gray-100), .12em 0 var(--gray-100), -.12em 0 var(--gray-100), .15em 0 var(--gray-100), -.15em 0 var(--gray-100);
-  background-image: linear-gradient(var(--gray-100), var(--gray-100)), linear-gradient(var(--gray-100), var(--gray-100)), linear-gradient(var(--gray-200), var(--gray-200));
+  text-shadow: .03em 0 var(--bg), -.03em 0 var(--bg), 0 .03em var(--bg), 0 -.03em var(--bg), .06em 0 var(--bg), -.06em 0 var(--bg), .09em 0 var(--bg), -.09em 0 var(--bg), .12em 0 var(--bg), -.12em 0 var(--bg), .15em 0 var(--bg), -.15em 0 var(--bg);
+  background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--grey-050), var(--grey-050));
   background-position: 0 99%, 100% 99%, 0 99%;
   background-size: .05em 1px, .05em 1px, 1px 1px;
   background-repeat: no-repeat, no-repeat, repeat-x;
@@ -157,7 +215,7 @@ p a {
 
 p a:hover {
   color: var(--primary-color);
-  background-image: linear-gradient(var(--gray-100), var(--gray-100)), linear-gradient(var(--gray-100), var(--gray-100)), linear-gradient(var(--primary-color), var(--primary-color));
+  background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--primary-color), var(--primary-color));
 }
 
 p a .icon-inline {
@@ -166,7 +224,7 @@ p a .icon-inline {
 }
 
 a.meta {
-  color: var(--gray-900);
+  color: var(--grey-900);
   margin-right: .1rem;
   font-weight: 600;
   font-size: .75rem;
@@ -204,6 +262,23 @@ a::selection,
 a:focus-visible {
   /* Fixes selection style of links with prettier underline */
   text-shadow: none;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 2%, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.appear {
+  animation: appear 0.8s ease-in-out both;
 }
 
 /* SVG ********************************************************************************************/
@@ -300,8 +375,8 @@ section.dotted::after {
   height: 100%;
 
   background-color: transparent;
-  background-image: radial-gradient(circle, var(--gray-300) 11%, transparent 10%),
-  radial-gradient(circle, var(--gray-300) 11%, transparent 10%);
+  background-image: radial-gradient(circle, var(--grey-300) 11%, transparent 10%),
+  radial-gradient(circle, var(--grey-300) 11%, transparent 10%);
   background-size: 1rem 1rem;
   background-position: 0 0, 1rem 1rem;
 
@@ -311,37 +386,37 @@ section.dotted::after {
 
 section.primary-light {
   background: var(--primary-color-200);
-  color: var(--gray-900);
+  color: var(--grey-900);
 }
 
 section.primary {
   background: var(--primary-color);
-  color: var(--gray-900);
+  color: var(--grey-900);
 }
 
 section.primary-dark {
   background: var(--primary-color-800);
-  color: var(--gray-100);
+  color: var(--grey-100);
 }
 
 section.secondary {
   background: var(--secondary-color);
-  color: var(--gray-900);
+  color: var(--grey-900);
 }
 
 section.tertiary {
   background: var(--tertiary-color);
-  color: var(--gray-900);
+  color: var(--grey-900);
 }
 
 section.gray-light {
-  background: var(--gray-200);
-  color: var(--gray-900);
+  background: var(--grey-200);
+  color: var(--grey-900);
 }
 
 section.gray-dark {
-  background: var(--gray-700);
-  color: var(--gray-100);
+  background: var(--grey-700);
+  color: var(--grey-100);
 }
 
 
@@ -372,19 +447,19 @@ code {
   display: block;
   overflow-x: auto;
   padding: .5em;
-  color: var(--gray-900);
+  color: var(--grey-900);
 }
 
 .hljs-comment,
 .hljs-quote {
-  color: var(--gray-500);
+  color: var(--grey-500);
   font-style: italic;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
-  color: var(--gray-900);
+  color: var(--grey-900);
   font-weight: bold;
 }
 
@@ -398,7 +473,7 @@ code {
 
 .hljs-string,
 .hljs-doctag {
-  color: var(--gray-700);
+  color: var(--grey-700);
 }
 
 .hljs-title,
@@ -437,11 +512,11 @@ code {
 
 .hljs-built_in,
 .hljs-builtin-name {
-  color: var(--gray-500);
+  color: var(--grey-500);
 }
 
 .hljs-meta {
-  color: var(--gray-500);
+  color: var(--grey-500);
   font-weight: bold;
 }
 

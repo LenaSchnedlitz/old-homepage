@@ -3,47 +3,64 @@
 </svelte:head>
 
 <script>
-  let src = '../../me/optimized/me-s-min.jpg';
+  import RectangleSelfPortrait from '../components/RectangleSelfPortrait.svelte';
 </script>
 
 <style>
-  img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: -1.5rem;
+  .svg-wrapper :global(svg) {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
   }
 
-  @media (min-width: 700px) {
-    img {
-      width: 80%;
-      margin-left: 10%;
+  @media all and (min-width: 768px) {
+    .svg-wrapper :global(svg) {
+      margin: 0 0 8rem;
+      transition: all ease-out .2s;
+    }
+
+    .svg-wrapper :global(svg):hover {
+      transform: translate3d(-1rem, -.5rem, 0) scale(1.01, 1.01);
+      transition: all ease-out .5s;
     }
   }
 
-  @media (min-width: 800px) {
-    img {
-      margin-top: 2rem;
-      margin-bottom: -2.5rem;
+  @media all and (min-width: 1366px) {
+    .svg-wrapper :global(svg):hover {
+      transform: translate3d(-3rem, -1rem, 0) scale(1.01, 1.01);
     }
   }
 </style>
 
 <article>
-  <h1>About Me</h1>
+  <h1 class="huge">About <span class="huge-only"><br/>&nbsp; &nbsp; </span>Me</h1>
 
-  <p>
-    Hi! I'm <mark>Lena Schnedlitz</mark>, a full stack software engineer from Vienna.
-    You can find me on
-    <a href="https://github.com/LenaSchnedlitz">GitHub</a>,
-    <a href="https://gitlab.com/LenaSchnedlitz">GitLab</a>,
-    <a href="https://twitter.com/LenaSchnedlitz">Twitter</a>, and
-    <a href="https://www.linkedin.com/in/lenaschnedlitz">LinkedIn</a>.
-  </p>
-  <p>
-    This website is about my personal projects and opinions.<br>
-    I usually write about software development and web design, but sometimes also about math puzzles,
-    origami, and video games.
-  </p>
-
-  <img {src} alt="That's me"/>
+  <section class="text appear">
+    <p>
+      Welcome! My name is Lena Schnedlitz
+      and I'm a full stack software engineer from Vienna.
+      You can find me on
+      <a href="https://github.com/LenaSchnedlitz">GitHub</a>,
+      <a href="https://gitlab.com/LenaSchnedlitz">GitLab</a>,
+      <a href="https://twitter.com/LenaSchnedlitz">Twitter</a>, and
+      <a href="https://www.linkedin.com/in/lenaschnedlitz">LinkedIn</a>.
+    </p>
+    <p>
+      This website is about my personal projects and opinions.<br>
+      I like to write about
+      <mark>software development and web design</mark>
+      , but sometimes also about
+      <mark>math
+        puzzles
+      </mark>
+      ,
+      <mark>origami</mark>
+      , and
+      <mark>video games</mark>
+      .
+    </p>
+  </section>
+  <div class="svg-wrapper pic appear">
+    <RectangleSelfPortrait/>
+  </div>
 </article>
