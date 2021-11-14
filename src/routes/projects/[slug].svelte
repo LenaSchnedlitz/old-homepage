@@ -18,20 +18,15 @@
 </script>
 
 <style>
-  h2.teaser {
-    font-style: normal;
-    font-weight: normal;
-    margin: -1rem 0 2rem;
-  }
 </style>
 
 <svelte:head>
   <title>Lena Schnedlitz - {post.title}</title>
 </svelte:head>
 
-<article>
+<article class="portfolio">
   <h1>{post.title}</h1>
-  <h2 class="teaser">{post.teaser}</h2>
+  <p><strong>{post.teaser}</strong></p>
 
   {@html post.html}
 </article>
