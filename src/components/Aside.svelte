@@ -1,11 +1,29 @@
+<script>
+  import {onMount} from 'svelte';
+
+  let visible = true;
+
+  onMount(() => {
+    window.onscroll = function () {
+      const bottom = document.body.scrollHeight - window.innerHeight;
+      visible = window.scrollY < 5 || window.scrollY > (bottom - 5);
+    };
+  });
+</script>
+
 <style>
   aside {
     position: fixed;
     left: 0;
     bottom: 1rem;
     width: 3rem;
+    transition: all ease-out .1s;
   }
 
+  aside:not(.visible) {
+    opacity: 0;
+    transition: all ease-in .3s;
+  }
 
   @media (min-width: 768px) {
     aside {
@@ -65,11 +83,14 @@
     color: var(--tertiary-color);
   }
 
+  .visible a svg {
+    animation: draw .7s;
+  }
+
   a:hover svg {
     fill: rgba(255, 255, 255, .3);
     stroke-width: 2;
     stroke-linecap: round;
-    animation: draw .7s;
   }
 
   a[title='GitHub']:hover::after,
@@ -102,7 +123,7 @@
   }
 </style>
 
-<aside id="follow-me">
+<aside id="follow-me" class:visible>
   <ul>
     <li>
       <a href="https://github.com/LenaSchnedlitz" title="GitHub">
