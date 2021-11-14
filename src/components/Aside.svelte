@@ -1,14 +1,5 @@
 <script>
-  import {onMount} from 'svelte';
-
-  let visible = true;
-
-  onMount(() => {
-    window.onscroll = function () {
-      const bottom = document.body.scrollHeight - window.innerHeight;
-      visible = window.scrollY < 5 || window.scrollY > (bottom - 5);
-    };
-  });
+  export let visible = true;
 </script>
 
 <style>

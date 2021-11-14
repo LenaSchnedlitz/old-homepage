@@ -8,12 +8,16 @@
   export let segment;
 
   let oldPosition = 0;
-  let visible = true;
+  let headerVisible = true;
+  let asideVisible = true;
 
   onMount(() => {
     window.onscroll = function () {
-      visible = window.scrollY < 64 || window.scrollY < oldPosition;
+      headerVisible = window.scrollY < 64 || window.scrollY < oldPosition;
       oldPosition = window.scrollY;
+
+      const bottom = document.body.scrollHeight - window.innerHeight;
+      asideVisible = window.scrollY < 5 || window.scrollY > (bottom - 5);
     };
   });
 </script>
@@ -44,7 +48,7 @@
   }
 </style>
 
-<header class:visible>
+<header class:visible={headerVisible}>
   <Logo/>
   <Nav {segment}/>
   <DarkModeToggle/>
@@ -54,4 +58,4 @@
   <slot/>
 </main>
 
-<Aside/>
+<Aside visible={asideVisible}/>
