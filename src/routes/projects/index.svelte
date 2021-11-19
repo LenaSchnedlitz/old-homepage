@@ -17,15 +17,32 @@
 </script>
 
 <script>
-  import GrowingCard from '../../components/GrowingCard.svelte';
-  import RectangleCard from '../../components/RectangleCard.svelte';
-
   export let posts;
 </script>
 
 <svelte:head>
   <title>Lena Schnedlitz - Projects</title>
 </svelte:head>
+
+<article>
+  <h1 class="huge">Projects</h1>
+
+  {#each posts as post, i}
+    <section class={post.slug}>
+      <a class="pic-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
+        <img alt="{post.title}" src="projects/{post.slug}.{post.previewType}"
+             class:tiny={post.tiny}/>
+      </a>
+      <div class="text-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
+        <a href="projects/{post.slug}" rel="prefetch" title={post.title} tabindex="-1">
+          <h3>{post.title}</h3>
+          <span>{post.teaser}</span>
+        </a>
+      </div>
+    </section>
+  {/each}
+</article>
+
 
 <style>
   section {
@@ -176,24 +193,3 @@
   }
 
 </style>
-
-<svelte:window/>
-
-<article>
-  <h1 class="huge">Projects</h1>
-
-  {#each posts as post, i}
-    <section class={post.slug}>
-      <a class="pic-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
-        <img alt="{post.title}" src="projects/{post.slug}.{post.previewType}"
-             class:tiny={post.tiny}/>
-      </a>
-      <div class="text-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
-        <a href="projects/{post.slug}" rel="prefetch" title={post.title} tabindex="-1">
-          <h3>{post.title}</h3>
-          <span>{post.teaser}</span>
-        </a>
-      </div>
-    </section>
-  {/each}
-</article>

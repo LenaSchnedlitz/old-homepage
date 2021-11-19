@@ -1,5 +1,21 @@
-<script>
-</script>
+<svelte:head>
+  <title>Lena Schnedlitz</title>
+</svelte:head>
+
+<section>
+  <h1 class="huge">
+    <small class="left">I'm</small>
+    <strong>Lena<br/><span class="desktop-only">Schnedlitz</span></strong>
+    <small class="right">
+      a <em>software engineer</em><br/>
+      based in <em>Vienna.</em>
+    </small>
+  </h1>
+
+  <span class="gigantic greeting">
+    Welcome
+  </span>
+</section>
 
 <style>
   section {
@@ -96,6 +112,18 @@
     }
   }
 
+  @media not screen and (min-width: 768px) {
+    .huge {
+      font-size: 5.653rem;
+    }
+  }
+
+  @media not screen and (min-width: 1024px) {
+    .desktop-only {
+      display: none;
+    }
+  }
+
   @keyframes slide-up {
     0% {
       opacity: 0;
@@ -109,22 +137,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>Lena Schnedlitz</title>
-</svelte:head>
-
-<section>
-  <h1 class="huge">
-    <small class="left">I'm</small>
-    <strong>Lena<br/><span class="desktop-only">Schnedlitz</span></strong>
-    <small class="right">
-      a <em>software engineer</em><br/>
-      based in <em>Vienna.</em>
-    </small>
-  </h1>
-
-  <span class="gigantic greeting">
-    Welcome
-  </span>
-</section>

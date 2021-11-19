@@ -3,37 +3,11 @@
 </svelte:head>
 
 <script>
-  import RectangleSelfPortrait from '../components/RectangleSelfPortrait.svelte';
+  import SelfPortrait from '../components/SelfPortrait.svelte';
 </script>
 
-<style>
-  .svg-wrapper :global(svg) {
-    max-width: 100%;
-    height: auto;
-    margin: 2rem 0;
-  }
-
-  @media all and (min-width: 768px) {
-    .svg-wrapper :global(svg) {
-      margin: 0 0 8rem;
-      transition: all ease-out .2s;
-    }
-
-    .svg-wrapper :global(svg):hover {
-      transform: translate3d(-1rem, -.5rem, 0) scale(1.01, 1.01);
-      transition: all ease-out .5s;
-    }
-  }
-
-  @media all and (min-width: 1366px) {
-    .svg-wrapper :global(svg):hover {
-      transform: translate3d(-3rem, -1rem, 0) scale(1.01, 1.01);
-    }
-  }
-</style>
-
 <article>
-  <h1 class="huge">About <span class="huge-only"><br/>&nbsp; &nbsp; </span>Me</h1>
+  <h1 class="huge">About <span class="large-screen-only"><br/>&nbsp; &nbsp; </span>Me</h1>
 
   <section class="text appear">
     <p>
@@ -60,6 +34,38 @@
     </p>
   </section>
   <div class="svg-wrapper pic appear">
-    <RectangleSelfPortrait/>
+    <SelfPortrait/>
   </div>
 </article>
+
+<style>
+  .svg-wrapper :global(svg) {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  @media all and (min-width: 768px) {
+    .svg-wrapper :global(svg) {
+      margin: 0 0 8rem;
+      transition: all ease-out .2s;
+    }
+
+    .svg-wrapper :global(svg):hover {
+      transform: translate3d(-1rem, -.5rem, 0) scale(1.01, 1.01);
+      transition: all ease-out .5s;
+    }
+  }
+
+  @media all and (min-width: 1366px) {
+    .svg-wrapper :global(svg):hover {
+      transform: translate3d(-3rem, -1rem, 0) scale(1.01, 1.01);
+    }
+  }
+
+  @media not screen and (min-width: 1366px) {
+    .large-screen-only {
+      display: none;
+    }
+  }
+</style>

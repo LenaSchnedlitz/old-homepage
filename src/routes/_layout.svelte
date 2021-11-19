@@ -22,6 +22,18 @@
   });
 </script>
 
+<header class:visible={headerVisible}>
+  <Logo/>
+  <Nav {segment}/>
+  <DarkModeToggle/>
+</header>
+
+<main>
+  <slot/>
+</main>
+
+<Aside visible={asideVisible}/>
+
 <style>
   header {
     position: fixed;
@@ -44,18 +56,7 @@
   }
 
   header > :global(label) {
+    /* e.g. for dark mode toggle */
     margin: 0 .5rem 0 var(--item-padding);
   }
 </style>
-
-<header class:visible={headerVisible}>
-  <Logo/>
-  <Nav {segment}/>
-  <DarkModeToggle/>
-</header>
-
-<main>
-  <slot/>
-</main>
-
-<Aside visible={asideVisible}/>
