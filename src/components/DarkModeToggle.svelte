@@ -121,7 +121,7 @@
     width: calc(var(--toggle-height) - 2px);
     height: calc(var(--toggle-height) - 2px);
 
-    background: var(--grey-000);
+    background: var(--grey-0);
     box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
 
     border-radius: var(--toggle-height);

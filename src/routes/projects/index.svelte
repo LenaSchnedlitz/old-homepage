@@ -79,7 +79,7 @@
   .progress-badges img {
     object-fit: contain;
     padding: 20%;
-    background: var(--grey-025);
+    background: var(--grey-25);
   }
 
   .phagocyte img {

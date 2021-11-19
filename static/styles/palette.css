@@ -2,24 +2,27 @@
   --primary-color-200: #fabad1;
   --primary-color-300: #f68db3;
   --primary-color-400: #f15f94;
-  --primary-color: #ee3377;
+  --primary-color-500: #ee3377;
   --primary-color-600: #ce336c;
   --primary-color-700: #ae3561;
   --primary-color-800: #8e3656;
   --primary-color-900: #6e384c;
+  --primary-color: var(--primary-color-500);
 
   --secondary-color-200: #fcf0cd;
   --secondary-color-300: #fbe39e;
-  --secondary-color: #f9c940;
+  --secondary-color-500: #f9c940;
   --secondary-color-600: #cba539;
+  --secondary-color: var(--secondary-color-500);
 
-  --tertiary-color: #33bbee;
+  --tertiary-color-500: #33bbee;
   --tertiary-color-600: #309dc6;
   --tertiary-color-800: #2c6479;
+  --tertiary-color: var(--tertiary-color-500);
 
-  --grey-000: #ffffff;
-  --grey-025: #f1f2f4;
-  --grey-050: #eaebef;
+  --grey-0: #ffffff;
+  --grey-25: #f1f2f4;
+  --grey-50: #eaebef;
   --grey-100: #d2d4dc;
   --grey-200: #b9bdca;
   --grey-300: #a1a5b7;
@@ -32,47 +35,121 @@
   --grey-950: #131418;
   --grey-1000: #000000;
   --grey: var(--grey-200);
-  --text: var(--grey-950);
-  --bg: var(--grey-050);
 
+  --bg-article: var(--grey-0);
+  --bg-special: var(--grey-50);
+  --bg: var(--bg-special);
+
+  --text: var(--grey-950);
   --logo-color: var(--primary-color);
+  --mark: var(--secondary-color-300);
+  --line: var(--grey-50);
 }
 
 /* DARK MODE **************************************************************************************/
 
-body.dark-mode {
+@media (prefers-color-scheme: dark) {
+  body:not(.light) {
+    --primary-color-900: #fabad1;
+    --primary-color-800: #f68db3;
+    --primary-color-700: #f15f94;
+    --primary-color-600: #ee3377;
+    --primary-color-500: #ce336c;
+    --primary-color-400: #ae3561;
+    --primary-color-300: #8e3656;
+    --primary-color-200: #6e384c;
+    --primary-color: var(--primary-color-600);
+
+    --tertiary-color-800: #fbe39e;
+    --tertiary-color-600: #f9c940;
+    --tertiary-color-500: #cba539;
+    --tertiary-color: var(--tertiary-color-600);
+
+    --secondary-color-600: #33bbee;
+    --secondary-color-500: #309dc6;
+    --secondary-color-300: #2c6479;
+    --secondary-color-200: #2b4954;
+    --secondary-color: var(--secondary-color-600);
+
+    --grey-1000: #ffffff;
+    --grey-950: #eaebef;
+    --grey-900: #d2d4dc;
+    --grey-800: #b9bdca;
+    --grey-700: #a1a5b7;
+    --grey-600: #888ea5;
+    --grey-500: #707792;
+    --grey-400: #5d637a;
+    --grey-300: #4a4f62;
+    --grey-200: #383b49;
+    --grey-100: #252831;
+    --grey-50: #131418;
+    --grey-25: #0b0c0f;
+    --grey-0: #000000;
+    --grey: var(--grey-200);
+
+    --bg-article: var(--grey-50);
+    --bg-special: var(--grey-100);
+    --bg: var(--bg-special);
+
+    --text: var(--grey-1000);
+    --logo-color: var(--primary-color);
+    --mark: var(--secondary-color-200);
+    --line: var(--grey-100);
+  }
+
+  img {
+    filter: grayscale(16%);
+  }
+}
+
+body.dark {
   --primary-color-900: #fabad1;
   --primary-color-800: #f68db3;
   --primary-color-700: #f15f94;
   --primary-color-600: #ee3377;
-  --primary-color: #ce336c;
+  --primary-color-500: #ce336c;
   --primary-color-400: #ae3561;
   --primary-color-300: #8e3656;
   --primary-color-200: #6e384c;
+  --primary-color: var(--primary-color-600);
 
   --tertiary-color-800: #fbe39e;
   --tertiary-color-600: #f9c940;
-  --tertiary-color: #cba539;
+  --tertiary-color-500: #cba539;
+  --tertiary-color: var(--tertiary-color-600);
 
   --secondary-color-600: #33bbee;
-  --secondary-color: #309dc6;
+  --secondary-color-500: #309dc6;
   --secondary-color-300: #2c6479;
   --secondary-color-200: #2b4954;
-
-  --secondary-color-200--o-0: #2b495400;
+  --secondary-color: var(--secondary-color-600);
 
   --grey-1000: #ffffff;
-  --grey-950: #ebebeb;
-  --grey-900: #d7d7d7;
-  --grey-800: #c3c3c3;
-  --grey-700: #afafaf;
-  --grey-600: #9b9b9b;
-  --grey-500: #878787;
-  --grey-400: #717171;
-  --grey-300: #5a5a5a;
-  --grey-200: #444444;
-  --grey-100: #2d2d2d;
-  --grey-050: #161616;
-  --grey-000: #000000;
+  --grey-950: #eaebef;
+  --grey-900: #d2d4dc;
+  --grey-800: #b9bdca;
+  --grey-700: #a1a5b7;
+  --grey-600: #888ea5;
+  --grey-500: #707792;
+  --grey-400: #5d637a;
+  --grey-300: #4a4f62;
+  --grey-200: #383b49;
+  --grey-100: #252831;
+  --grey-50: #131418;
+  --grey-25: #0b0c0f;
+  --grey-0: #000000;
   --grey: var(--grey-200);
+
+  --bg-article: var(--grey-50);
+  --bg-special: var(--grey-100);
+  --bg: var(--bg-special);
+
+  --text: var(--grey-1000);
+  --logo-color: var(--primary-color);
+  --mark: var(--secondary-color-200);
+  --line: var(--grey-100);
+}
+
+body.dark img {
+  filter: grayscale(16%);
 }

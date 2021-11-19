@@ -33,7 +33,7 @@
     align-items: center;
     padding: 0 20vw 16vh;
     text-transform: uppercase;
-    text-shadow: 0 0 256px var(--grey-000), 0 0 128px var(--grey-000);
+    text-shadow: 0 0 256px var(--bg-article), 0 0 128px var(--bg-article);
 
     animation: slide-up 0.8s ease-in-out both;
   }

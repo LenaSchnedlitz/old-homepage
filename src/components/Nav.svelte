@@ -33,7 +33,7 @@
     align-items: center;
     font-family: 'Basier Mono Circle', monospace;
     text-transform: uppercase;
-    text-shadow: 0 0 48px var(--grey-000), 0 0 16px var(--grey-000);
+    text-shadow: 0 0 48px var(--grey-0), 0 0 16px var(--grey-0);
   }
 
   li {

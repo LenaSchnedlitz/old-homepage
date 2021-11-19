@@ -22,7 +22,7 @@
   }
 
   path {
-    fill: var(--grey-000);
+    fill: var(--grey-0);
   }
 
   svg:hover circle,
