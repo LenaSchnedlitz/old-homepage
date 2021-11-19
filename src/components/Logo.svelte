@@ -1,13 +1,6 @@
-<script>
-  let y = 0;
-  let logoClass;
-
-  $: logoClass = y > 5 ? 'scrolled' : '';
-</script>
-
 <style>
   a {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     left: 1rem;
     z-index: 100;
@@ -21,6 +14,7 @@
   svg {
     height: 100%;
     width: 100%;
+    fill: none;
   }
 
   circle {
@@ -39,18 +33,14 @@
 
   @media (min-width: 768px) {
     a {
-      position: fixed;
       height: 2rem;
       width: 2rem;
     }
   }
 </style>
 
-<svelte:window bind:scrollY={y}/>
-
 <a href=".">
-  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" class={logoClass}
-       xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
     <title>Lena's Logo</title>
     <circle cx="11" cy="10" r="10"/>
     <path

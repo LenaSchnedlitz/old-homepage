@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte';
+  import {onMount} from 'svelte';
 
   const STORAGE_KEY = 'theme';
   const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
@@ -8,21 +8,22 @@
     DARK: 'dark',
     LIGHT: 'light',
   };
-  let currentTheme;
+  let lightOn;
 
   const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE).matches;
 
   const applyTheme = () => {
     const preferredTheme = prefersDarkThemes() ? THEMES.DARK : THEMES.LIGHT;
+    const currentTheme = localStorage.getItem(STORAGE_KEY) || preferredTheme;
 
-    currentTheme = localStorage.getItem(STORAGE_KEY) || preferredTheme;
+    lightOn = currentTheme !== THEMES.DARK;
 
-    if (currentTheme === THEMES.DARK) {
-      document.body.classList.remove(THEMES.LIGHT);
-      document.body.classList.add(THEMES.DARK);
-    } else {
+    if (lightOn) {
       document.body.classList.remove(THEMES.DARK);
       document.body.classList.add(THEMES.LIGHT);
+    } else {
+      document.body.classList.remove(THEMES.LIGHT);
+      document.body.classList.add(THEMES.DARK);
     }
   };
 
@@ -47,8 +48,8 @@
 </script>
 
 <label>
-  <span class="aria-label">{currentTheme} mode</span>
-  <input type="checkbox" checked={currentTheme !== THEMES.DARK} on:click={toggleTheme} />
+  <span class="aria-label">{lightOn ? THEMES.LIGHT : THEMES.DARK} mode</span>
+  <input type="checkbox" bind:checked={lightOn} on:click={toggleTheme}/>
   <span class="toggle">
     <span class="toggle-icons">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
