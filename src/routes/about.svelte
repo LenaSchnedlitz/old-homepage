@@ -48,8 +48,7 @@
     <p>
       This website is about my personal projects and opinions.<br>
       I like to write about
-      <mark>software development and web design</mark>
-      , but sometimes also about
+      <mark>software development and web design</mark>, but sometimes also about
       <mark>math
         puzzles
       </mark>

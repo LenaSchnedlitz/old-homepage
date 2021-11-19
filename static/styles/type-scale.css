@@ -3,19 +3,23 @@
   font-size: 11.302rem;
 }
 
+/*
 .huge {
   font-size: 5.653rem;
 }
 
-.large {
+.huge {
   font-size: 3.998rem;
 }
+ */
 
-h1 {
+h1,
+.huge {
   font-size: 2.827rem;
 }
 
-h2 {
+h2,
+.large {
   font-size: 1.999rem;
 }
 

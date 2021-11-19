@@ -1,6 +1,6 @@
 ---
 slug: 'satvis'
-rank: 5
+rank: 1
 title: 'SatVis'
 teaser: 'Visualize Vampire saturation runs.'
 previewType: 'png'
@@ -17,18 +17,9 @@ Check out the official
 <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-34968-4_28">SatVis&nbsp;paper</a>
 to learn more.
 
-
-## <mark>Some Screenshots:</mark>
-
-
 <figure>
 <figcaption>SatVis <strong>Graph</strong></figcaption>
 <img src="projects/satvis/visualization.png" alt="Graph"/>
-</figure>
-
-<figure class="right">
-<figcaption>SatVis <strong>Clause Rearrangement</strong></figcaption>
-<img src="projects/satvis/rearrangement.png" alt="Clause Rearrangement"/>
 </figure>
 
 

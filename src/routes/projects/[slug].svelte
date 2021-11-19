@@ -26,7 +26,7 @@
 
 <article class="portfolio">
   <h1>{post.title}</h1>
-  <p><strong>{post.teaser}</strong></p>
+  <p><strong class="teaser">{post.teaser}</strong></p>
 
   {@html post.html}
 </article>

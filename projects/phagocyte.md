@@ -1,6 +1,6 @@
 ---
 slug: 'phagocyte'
-rank: 6
+rank: 3
 title: 'Phagocyte'
 teaser: 'Hide articles about COVID-19 in Firefox.'
 previewType: 'png'

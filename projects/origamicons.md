@@ -16,7 +16,7 @@ folded paper. It can be accessed via
 <a href="https://origamicons.herokuapp.com/">web&nbsp;interface</a> or used offline as a command line tool.
 
 
-## <mark>Examples:</mark>
+**<mark>Examples:</mark>**
 
 <section class="figrow">
 

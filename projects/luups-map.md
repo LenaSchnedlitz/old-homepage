@@ -1,6 +1,6 @@
 ---
 slug: 'luups-map'
-rank: 4
+rank: 6
 title: 'LUUPS Map'
 teaser: 'An interactive, filterable voucher map.'
 previewType: 'png'

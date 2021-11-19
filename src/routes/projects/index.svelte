@@ -21,11 +21,6 @@
   import RectangleCard from '../../components/RectangleCard.svelte';
 
   export let posts;
-
-  let width;
-  let small;
-
-  $: small = width && width < 800;
 </script>
 
 <svelte:head>
@@ -34,80 +29,171 @@
 
 <style>
   section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-bottom: 3rem;
   }
 
-  .wrapper {
-    flex: 1 1 0;
-    min-width: 220px;
-    max-width: 354px;
-    padding: 9px;
-    box-sizing: border-box;
+  .pic-wrapper img {
+    width: 100%;
+    height: 62vw;
+    object-fit: cover;
   }
 
-  .wrapper > a {
-    display: block;
-    height: 100%;
-    padding: 0;
+  .text-wrapper {
+    padding: .25rem .5rem;
   }
 
-  @media (min-width: 800px) {
+  .game-of-life .pic-wrapper {
+    background: #d8dee9;
+    filter: grayscale(70%);
+  }
+
+  .game-of-life img {
+    object-fit: contain;
+  }
+
+  .luups-map img {
+    object-position: top;
+  }
+
+  .satvis img {
+    object-position: top;
+  }
+
+  .progress-badges img {
+    object-fit: contain;
+    padding: 20%;
+    background: var(--grey-025);
+  }
+
+  .phagocyte img {
+    object-position: right;
+  }
+
+  @media all and (min-width: 768px) {
     section {
-      margin-top: 121px;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-gap: 0;
+      grid-auto-flow: dense;
+      margin-bottom: 6rem;
     }
 
-    .wrapper {
-      flex: 0 0 auto;
-      min-width: initial;
-      max-width: initial;
-      padding: 0 40px 40px 0;
+    .pic-wrapper, .text-wrapper {
+      grid-column-end: span 1;
     }
 
-    .wrapper > a {
-      height: auto;
+    .pic-wrapper {
+      height: 20vw;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .wrapper:first-child {
-      padding-right: 0;
+    .pic-wrapper img {
+      height: 100%;
     }
 
-    .wrapper:nth-child(odd) {
-      margin-top: -191px;
+    .text-wrapper {
+      padding: 1rem 2rem;
+      align-self: end;
     }
 
-    .wrapper:nth-child(odd):not(:nth-child(7)):last-child {
-      margin-left: 296px;
+    .text-wrapper h3 {
+      margin-top: 0;
     }
 
-    .wrapper:nth-child(4):not(:nth-child(8)) {
-      margin-left: -40px;
-      margin-right: 40px;
+    section:nth-child(even) .pic-wrapper {
+      grid-column-start: 1;
     }
 
-    .wrapper:nth-child(7) {
-      margin-left: 336px;
+    section:nth-child(odd) .text-wrapper {
+      grid-column-start: 2;
+    }
+
+    section:nth-child(even) .text-wrapper,
+    section:nth-child(odd) .pic-wrapper {
+      grid-column-start: 2;
+    }
+
+    section:nth-child(4n - 2) .text-wrapper {
+      align-self: start;
+    }
+
+    section:nth-child(4n - 1) .text-wrapper {
+      text-align: right;
+    }
+
+    section:nth-child(4n - 1) .pic-wrapper {
+      grid-column-start: 3;
+    }
+
+    section:nth-child(4n + 1) .text-wrapper {
+      grid-column-start: 3;
     }
   }
+
+  @media all and (min-width: 1366px) {
+    section {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-bottom: 9rem;
+    }
+
+    .pic-wrapper, .text-wrapper {
+      grid-column-end: span 2;
+    }
+
+    .pic-wrapper {
+      height: 16vw;
+    }
+
+    section:nth-child(even) .pic-wrapper,
+    section:nth-child(odd) .text-wrapper {
+      grid-column-start: 1;
+    }
+
+    section:nth-child(even) .text-wrapper,
+    section:nth-child(odd) .pic-wrapper {
+      grid-column-start: 3;
+    }
+
+    section:nth-child(4n + 1) .pic-wrapper {
+      grid-column-end: span 1;
+    }
+
+    section:nth-child(4n - 2) .text-wrapper {
+      align-self: start;
+    }
+
+    section:nth-child(4n - 1) .text-wrapper {
+      text-align: right;
+    }
+
+    section:nth-child(4n + 1) .text-wrapper {
+      grid-column-end: span 1;
+      grid-column-start: 4;
+    }
+  }
+
 </style>
 
-<svelte:window bind:innerWidth={width}/>
+<svelte:window/>
 
-<h1>Projects</h1>
+<article>
+  <h1 class="huge">Projects</h1>
 
-<section>
   {#each posts as post, i}
-    <div class="wrapper">
-      <a href="projects/{post.slug}" rel="prefetch" title={post.title}>
-        {#if small || i === 0}
-          <GrowingCard content={post} previewFile="projects/{post.slug}.{post.previewType}"/>
-        {:else}
-          <RectangleCard content={post} previewFile="projects/{post.slug}.{post.previewType}"/>
-        {/if}
+    <section class={post.slug}>
+      <a class="pic-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
+        <img alt="{post.title}" src="projects/{post.slug}.{post.previewType}"
+             class:tiny={post.tiny}/>
       </a>
-    </div>
+      <div class="text-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
+        <a href="projects/{post.slug}" rel="prefetch" title={post.title} tabindex="-1">
+          <h3>{post.title}</h3>
+          <span>{post.teaser}</span>
+        </a>
+      </div>
+    </section>
   {/each}
-</section>
+</article>

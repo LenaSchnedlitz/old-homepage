@@ -1,6 +1,6 @@
 ---
 slug: 'skycalc'
-rank: 1
+rank: 4
 title: 'SkyCalc'
 teaser: 'A small tool for character progress optimization in Skyrim.'
 previewType: 'png'
@@ -14,7 +14,7 @@ However, at higher levels, it gets difficult to plan ahead and figure out
 how much training will be needed to reach a long-yearned-for level up.
 That’s why I decided to make a tool for character progress optimization.
 
-<figure class="right">
+<figure >
 <figcaption>SkyCalc <strong>Landing Page</strong></figcaption>
 <img src="projects/skycalc/landing.png" alt="Landing Page"/>
 </figure>
@@ -25,23 +25,20 @@ The tool also offers guidance which skills to choose for role-playing.
 Results can be exported as a text file.
 
 
-## <mark>More Screenshots:</mark>
-
-<figure class="left">
+<figure class="grouped">
 <figcaption>SkyCalc <strong>Level Selection</strong></figcaption>
 <img src="projects/skycalc/level.png" alt="Level Selection"/>
 </figure>
 
-<figure class="right">
+<figure class="pic-alternate grouped">
 <figcaption>SkyCalc <strong>Skill Selection</strong></figcaption>
 <img src="projects/skycalc/skill.png" alt="Skill Selection"/>
 </figure>
 
-<figure class="center">
+<figure class="grouped">
 <figcaption>SkyCalc <strong>Results</strong></figcaption>
 <img src="projects/skycalc/results.png" alt="Results"/>
 </figure>
-
 
 <p>
 <a href="https://github.com/LenaSchnedlitz/skycalc" class="meta link">Source Code&nbsp;
