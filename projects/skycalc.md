@@ -15,8 +15,8 @@ how much training will be needed to reach a long-yearned-for level up.
 That’s why I decided to make a tool for character progress optimization.
 
 <figure >
-<figcaption>SkyCalc <strong>Landing Page</strong></figcaption>
 <img src="projects/skycalc/landing.png" alt="Landing Page"/>
+<figcaption>SkyCalc <strong>Landing Page</strong></figcaption>
 </figure>
 
 SkyCalc uses level information to predict how much training of user-selected skills is needed to 
@@ -26,18 +26,18 @@ Results can be exported as a text file.
 
 
 <figure class="grouped">
-<figcaption>SkyCalc <strong>Level Selection</strong></figcaption>
 <img src="projects/skycalc/level.png" alt="Level Selection"/>
+<figcaption>SkyCalc <strong>Level Selection</strong></figcaption>
 </figure>
 
 <figure class="pic-alternate grouped">
-<figcaption>SkyCalc <strong>Skill Selection</strong></figcaption>
 <img src="projects/skycalc/skill.png" alt="Skill Selection"/>
+<figcaption>SkyCalc <strong>Skill Selection</strong></figcaption>
 </figure>
 
 <figure class="grouped">
-<figcaption>SkyCalc <strong>Results</strong></figcaption>
 <img src="projects/skycalc/results.png" alt="Results"/>
+<figcaption>SkyCalc <strong>Results</strong></figcaption>
 </figure>
 
 <p>

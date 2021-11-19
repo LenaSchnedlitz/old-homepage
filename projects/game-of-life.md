@@ -21,8 +21,8 @@ by exactly 2 living cells and they survive if surrounded by 3 or 4 other live ce
 produces some nice oscillators, like the one in figure 1.
 
 <figure>
-<figcaption>Figure 1: B2/S34 <strong>Oscillator</strong></figcaption>
 <img src="projects/game-of-life.gif" alt="B2/S34 - Oscillator"/>
+<figcaption>Figure 1: B2/S34 <strong>Oscillator</strong></figcaption>
 </figure>
 
   
@@ -32,8 +32,8 @@ This configuration allows for very fast growth and often results in mesmerizing 
 
 
 <figure class="no-margin">
-<figcaption>Figure 2: B1/S12 <strong>Expansion</strong></figcaption>
 <img src="projects/game-of-life/expansion.gif" alt="B1/S12 - Expansion"/>
+<figcaption>Figure 2: B1/S12 <strong>Expansion</strong></figcaption>
 </figure>
 
 Feel free to play around as well!

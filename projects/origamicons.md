@@ -21,33 +21,33 @@ folded paper. It can be accessed via
 <section class="figrow">
 
 <figure>
-<figcaption>Origamicons <strong>Alice</strong></figcaption>
 <img src="projects/origamicons/origamicon_Alice.png" alt="Alice"/>
+<figcaption>Origamicons <strong>Alice</strong></figcaption>
 </figure>
 
 <figure>
-<figcaption>Origamicons <strong>Bob</strong></figcaption>
 <img src="projects/origamicons/origamicon_Bob.png" alt="Bob"/>
+<figcaption>Origamicons <strong>Bob</strong></figcaption>
 </figure>
 
 <figure>
-<figcaption>Origamicons <strong>origamicons</strong></figcaption>
 <img src="projects/origamicons/origamicon_origamicons.png" alt="origamicons"/>
+<figcaption>Origamicons <strong>origamicons</strong></figcaption>
 </figure>
 
 <figure>
-<figcaption>Origamicons <strong>SHA-1 Origamicons</strong></figcaption>
 <img src="projects/origamicons/origamicon_SHA-1 Origamicons.png" alt="SHA-1 Origamicons"/>
+<figcaption>Origamicons <strong>SHA-1 Origamicons</strong></figcaption>
 </figure>
 
 <figure>
-<figcaption>Origamicons <strong>SHA-1 Origamicon</strong></figcaption>
 <img src="projects/origamicons/origamicon_SHA-1 Origamicon.png" alt="SHA-1 Origamicon"/>
+<figcaption>Origamicons <strong>SHA-1 Origamicon</strong></figcaption>
 </figure>
 
 <figure>
-<figcaption>Origamicons <strong>lena</strong></figcaption>
 <img src="projects/origamicons/origamicon_lena.png" alt="lena"/>
+<figcaption>Origamicons <strong>lena</strong></figcaption>
 </figure>
 
 </section>

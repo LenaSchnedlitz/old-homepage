@@ -6,6 +6,7 @@
 
 html {
   font-family: 'Inter', sans-serif;
+  font-feature-settings: 'calt';
   font-size: 1rem;
   line-height: 1.75;
 }
@@ -58,7 +59,6 @@ em {
 }
 
 /* GENERAL ****************************************************************************************/
-
 
 html {
   width: 100vw;
@@ -231,12 +231,14 @@ svg.icon-inline {
 /* FIGURE *****************************************************************************************/
 
 figure {
-  position: relative;
   margin: 0;
 }
 
 figcaption {
-  position: absolute;
+  font-family: 'Basier Mono Square', monospace;
+  font-size: var(--font--small);
+  text-transform: uppercase;
+  margin: -.25rem 0 1.25rem;
 }
 
 figure > img {

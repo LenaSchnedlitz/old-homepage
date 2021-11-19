@@ -18,8 +18,8 @@ Check out the official
 to learn more.
 
 <figure>
-<figcaption>SatVis <strong>Graph</strong></figcaption>
 <img src="projects/satvis/visualization.png" alt="Graph"/>
+<figcaption>SatVis <strong>Graph</strong></figcaption>
 </figure>
 
 

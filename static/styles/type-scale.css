@@ -1,95 +1,68 @@
-/* Augmented Fourth */
-.gigantic {
-  font-size: 11.302rem;
+:root {
+  /* Augmented Fourth */
+  --font--gigantic: 11.302rem;
+  /* unused:
+  5.653rem
+  3.998rem
+   */
+  --font--huge: 2.827rem;
+  --font--h1: 2.827rem;
+  --font--large: 1.999rem;
+  --font--h2: 1.999rem;
+  --font--h3: 1.414rem;
+  --font--small: 0.707rem;
 }
-
-/*
-.huge {
-  font-size: 5.653rem;
-}
-
-.huge {
-  font-size: 3.998rem;
-}
- */
-
-h1,
-.huge {
-  font-size: 2.827rem;
-}
-
-h2,
-.large {
-  font-size: 1.999rem;
-}
-
-h3 {
-  font-size: 1.414rem;
-}
-
-small {
-  font-size: 0.707rem;
-}
-
 
 @media all and (min-width: 768px) {
-  /* Perfect Fifth */
-  .gigantic {
-    font-size: 17.086rem;
-  }
-
-  .huge {
-    font-size: 7.594rem;
-  }
-
-  h1 {
-    font-size: 5.063rem;
-  }
-
-  .large {
-    font-size: 3.375rem;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  small {
-    font-size: 0.667rem;
+  :root {
+    /* Perfect Fifth */
+    --font--gigantic: 17.086rem;
+    --font--huge: 7.594rem;
+    --font--h1: 5.063rem;
+    --font--large: 3.375rem;
+    --font--h2: 2.25rem;
+    --font--h3: 1.5rem;
+    --font--small: 0.667rem;
   }
 }
 
 @media all and (min-width: 1366px) {
   /* Golden Ratio */
-  .gigantic {
-    font-size: 29.03rem;
+  :root {
+    --font--gigantic: 29.03rem;
+    --font--huge: 11.089rem;
+    --font--h1: 6.854rem;
+    --font--large: 4.236rem;
+    --font--h2: 2.618rem;
+    --font--h3: 1.618rem;
+    --font--small: 0.618rem;
   }
+}
 
-  .huge {
-    font-size: 11.089rem;
-  }
+.gigantic {
+  font-size: var(--font--gigantic);
+}
 
-  h1 {
-    font-size: 6.854rem;
-  }
+.huge {
+  font-size: var(--font--huge);
+}
 
-  .large {
-    font-size: 4.236rem;
-  }
+h1 {
+  font-size: var(--font--h1);
+}
 
-  h2 {
-    font-size: 2.618rem;
-  }
+.large {
+  font-size: var(--font--large);
+}
 
-  h3 {
-    font-size: 1.618rem;
-  }
+h2 {
+  font-size: var(--font--h2);
+}
 
-  small {
-    font-size: 0.618rem;
-  }
+h3 {
+  font-size: var(--font--h3);
+}
+
+small {
+  font-size: var(--font--small);
 }
