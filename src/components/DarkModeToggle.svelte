@@ -47,6 +47,10 @@
   });
 </script>
 
+<svelte:head>
+  <meta content={lightOn ? '#eaebef' : '#252831'} name='theme-color'>
+</svelte:head>
+
 <label>
   <span class="aria-label">{lightOn ? THEMES.LIGHT : THEMES.DARK} mode</span>
   <input type="checkbox" bind:checked={lightOn} on:click={toggleTheme}/>
