@@ -18,6 +18,9 @@
 </script>
 
 <style>
+  .portfolio > :global(*:not(h1)) {
+    animation: appear 0.8s ease-in-out both;
+  }
 </style>
 
 <svelte:head>

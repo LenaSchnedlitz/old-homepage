@@ -387,7 +387,7 @@ a:focus-visible {
 @keyframes appear {
   0% {
     opacity: 0;
-    transform: translate3d(0, 2%, 0);
+    transform: translate3d(0, 1vw, 0);
   }
   90% {
     opacity: 1;

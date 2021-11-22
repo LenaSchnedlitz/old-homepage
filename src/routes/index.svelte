@@ -127,7 +127,7 @@
   @keyframes slide-up {
     0% {
       opacity: 0;
-      transform: translate3d(-0.6%, 5%, 0);
+      transform: translate3d(0, 5%, 0);
     }
     90% {
       opacity: 1;

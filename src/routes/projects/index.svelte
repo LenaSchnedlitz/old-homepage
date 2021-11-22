@@ -28,7 +28,7 @@
   <h1 class="huge">Projects</h1>
 
   {#each posts as post, i}
-    <section class={post.slug}>
+    <section class="{post.slug} appear">
       <a class="pic-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
         <img alt="{post.title}" src="projects/{post.slug}.{post.previewType}"
              class:tiny={post.tiny}/>
@@ -87,6 +87,10 @@
   }
 
   @media all and (min-width: 768px) {
+    h1 {
+      margin-bottom: 1.3em;
+    }
+
     section {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -148,12 +152,22 @@
     section:nth-child(4n + 1) .text-wrapper {
       grid-column-start: 3;
     }
+
+    section:nth-child(even) .pic-wrapper:hover {
+      transform: translate3d(1rem, -.5rem, 0) scale(1.01, 1.01);
+      transition: all ease-out .5s;
+    }
+
+    section:nth-child(odd) .pic-wrapper:hover {
+      transform: translate3d(-1rem, -.5rem, 0) scale(1.01, 1.01);
+      transition: all ease-out .5s;
+    }
   }
 
   @media all and (min-width: 1366px) {
     section {
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      margin-bottom: 9rem;
+      margin-bottom: 16rem;
     }
 
     .pic-wrapper, .text-wrapper {
@@ -161,7 +175,7 @@
     }
 
     .pic-wrapper {
-      height: 16vw;
+      height: 24vw;
     }
 
     section:nth-child(even) .pic-wrapper,
@@ -176,6 +190,7 @@
 
     section:nth-child(4n + 1) .pic-wrapper {
       grid-column-end: span 1;
+      height: 16vw;
     }
 
     section:nth-child(4n - 2) .text-wrapper {
@@ -190,6 +205,13 @@
       grid-column-end: span 1;
       grid-column-start: 4;
     }
-  }
 
+    section:nth-child(even) .pic-wrapper:hover {
+      transform: translate3d(3rem, -1rem, 0) scale(1.01, 1.01);
+    }
+
+    section:nth-child(odd) .pic-wrapper:hover {
+      transform: translate3d(-3rem, -1rem, 0) scale(1.01, 1.01);
+    }
+  }
 </style>
