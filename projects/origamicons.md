@@ -53,18 +53,15 @@ folded paper. It can be accessed via
 </section>
 
 
-<p>
+<section class="meta-links">
 <a href="https://origamicons.herokuapp.com/" class="meta link">
-Try it out!&nbsp;
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg>
+    Try it out!
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
 </a>
-</p>
 
-<p>
-<a href="https://github.com/LenaSchnedlitz/origamicons" class="meta link">Source Code&nbsp;
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg>
-</a>
-</p>
-
-<br>
-<br>
+<a href="https://github.com/LenaSchnedlitz/origamicons">
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#github"/></svg>
+    Fork me on GitHub
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
+    </a>
+</section>

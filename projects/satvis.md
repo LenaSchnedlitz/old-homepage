@@ -22,12 +22,10 @@ to learn more.
 <figcaption>SatVis <strong>Graph</strong></figcaption>
 </figure>
 
-
-<p>
-<a href="https://github.com/gleiss/saturation-visualization" class="meta link">Source Code&nbsp;
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg>
-</a>
-</p>
-
-<br>
-<br>
+<section class="meta-links">
+    <a href="https://github.com/gleiss/saturation-visualization">
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#github"/></svg>
+        Fork me on GitHub
+        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
+    </a>
+</section>

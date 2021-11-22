@@ -22,19 +22,15 @@ It gained some traction on <a href="https://news.ycombinator.com/item?id=2278111
 </figure>
 
 
-<p>
-<a href="https://addons.mozilla.org/firefox/addon/phagocyte/" class="meta link">
-Try it out!&nbsp;
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg>
+<section class="meta-links">
+<a href="https://addons.mozilla.org/firefox/addon/phagocyte/">
+Try it out!
+<svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
 </a>
-</p>
 
-<p>
-<a href="https://github.com/LenaSchnedlitz/phagocyte" class="meta link">Source Code&nbsp;
-<svg viewBox="0 0 24 24" class="icon icon-inline"><use xlink:href="icons/sprite.svg#link"/></svg>
+<a href="https://github.com/LenaSchnedlitz/phagocyte">
+<svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#github"/></svg>
+Fork me on GitHub
+<svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
 </a>
-</p>
-
-<br>
-<br>
-
+</section>
