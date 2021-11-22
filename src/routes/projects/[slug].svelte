@@ -18,6 +18,12 @@
 </script>
 
 <style>
+  .portfolio {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 9rem;
+  }
+
   .portfolio > :global(*:not(h1)) {
     animation: appear 0.8s ease-in-out both;
   }

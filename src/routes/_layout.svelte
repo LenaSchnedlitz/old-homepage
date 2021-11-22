@@ -41,6 +41,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
+    z-index: 100;
 
     --item-padding: .75rem;
   }
@@ -57,6 +58,6 @@
 
   header > :global(label) {
     /* e.g. for dark mode toggle */
-    margin: 0 .5rem 0 var(--item-padding);
+    margin: 0 1rem 0 var(--item-padding);
   }
 </style>

@@ -212,11 +212,6 @@ p a:hover {
   background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--primary-color), var(--primary-color));
 }
 
-.portfolio {
-  padding-bottom: 9rem;
-  position: relative;
-}
-
 .portfolio .meta-links {
   position: absolute;
   bottom: 6rem;
