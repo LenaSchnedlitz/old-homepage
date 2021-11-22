@@ -63,6 +63,7 @@
     border-radius: 50px;
     content: '';
     z-index: -1;
+    transform: scale(.5, .5);
   }
 
   li:nth-child(even) a::after {
@@ -82,6 +83,11 @@
     fill: rgba(255, 255, 255, .3);
     stroke-width: 2;
     stroke-linecap: round;
+  }
+
+  a:hover::after {
+    transform: scale(1, 1);
+    transition: all cubic-bezier(.18,.89,.32,1.28) .2s;
   }
 
   a[title='GitHub']:hover::after,

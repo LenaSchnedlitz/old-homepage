@@ -59,7 +59,7 @@
     display: block;
     height: 1px;
     width: 0;
-    background-color: var(--grey-950);
+    background-color: currentColor;
     transition: all ease-out .1s;
   }
 
