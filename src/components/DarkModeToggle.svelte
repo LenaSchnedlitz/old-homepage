@@ -48,7 +48,7 @@
 </script>
 
 <svelte:head>
-  <meta content={lightOn ? '#eaebef' : '#252831'} name='theme-color'>
+  <meta content={lightOn ? '#ffffff' : '#131418'} name='theme-color'>
 </svelte:head>
 
 <label>
