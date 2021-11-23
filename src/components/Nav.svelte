@@ -31,7 +31,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    font-family: 'Basier Mono Circle', monospace;
+    font-family: 'Basier Mono Square', monospace;
     text-transform: uppercase;
     text-shadow: 0 0 48px var(--grey-0), 0 0 16px var(--grey-0);
   }
