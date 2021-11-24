@@ -1,28 +1,23 @@
 <script>
   import Nav from '../components/Nav.svelte';
   import Logo from '../components/Logo.svelte';
-  import Aside from '../components/Aside.svelte';
   import DarkModeToggle from '../components/DarkModeToggle.svelte';
   import {onMount} from 'svelte';
 
   export let segment;
 
   let oldPosition = 0;
-  let headerVisible = true;
-  let asideVisible = true;
+  let visible = true;
 
   onMount(() => {
     window.onscroll = function () {
-      headerVisible = window.scrollY < 64 || window.scrollY < oldPosition;
+      visible = window.scrollY < 64 || window.scrollY < oldPosition;
       oldPosition = window.scrollY;
-
-      const bottom = document.body.scrollHeight - window.innerHeight;
-      asideVisible = window.scrollY < 5 || window.scrollY > (bottom - 5);
     };
   });
 </script>
 
-<header class:visible={headerVisible}>
+<header class:visible>
   <Logo/>
   <Nav {segment}/>
   <DarkModeToggle/>
@@ -32,12 +27,10 @@
   <slot/>
 </main>
 
-<Aside visible={asideVisible}/>
-
 <style>
   header {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
@@ -50,14 +43,14 @@
     display: none;
   }
 
+  header > :global(label) {
+    /* e.g. for dark mode toggle */
+    margin: 0 0 0 var(--item-padding);
+  }
+
   @media all and (min-width: 768px) {
     header {
       --item-padding: 2rem;
     }
-  }
-
-  header > :global(label) {
-    /* e.g. for dark mode toggle */
-    margin: 0 1rem 0 var(--item-padding);
   }
 </style>

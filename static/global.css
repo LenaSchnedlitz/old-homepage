@@ -65,16 +65,11 @@ em {
 /* GENERAL ****************************************************************************************/
 
 html {
-  width: 100vw;
-  height: 100vh; /* TODO */
-
-  margin: 0;
-  padding: 0;
-
-  overflow-x: hidden;
   position: relative;
+  overflow-x: hidden;
 }
 
+html,
 body,
 #sapper {
   width: 100%;
@@ -96,7 +91,7 @@ main {
 
 article {
   width: 100%;
-  padding: 0 1.5rem 0 3rem;
+  padding: 0 2rem;
 
   --bg: var(--bg-article);
   background: var(--bg);
