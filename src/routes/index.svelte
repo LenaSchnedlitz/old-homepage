@@ -19,8 +19,9 @@
 
 <style>
   section {
+    position: relative;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -31,6 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
     padding: 0 20vw 16vh;
     text-transform: uppercase;
     text-shadow: 0 0 256px var(--bg-article), 0 0 128px var(--bg-article);

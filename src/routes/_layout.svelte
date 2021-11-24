@@ -53,4 +53,9 @@
       --item-padding: 2rem;
     }
   }
+
+  main {
+    min-height: 90vh;
+    width: 100%;
+  }
 </style>
