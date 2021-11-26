@@ -40,6 +40,8 @@
   --bg-special: var(--grey-50);
   --bg: var(--bg-special);
 
+  --header: #ffffff99;
+
   --text: var(--grey-950);
   --logo-color: var(--primary-color);
   --mark: var(--secondary-color-300);
@@ -90,6 +92,8 @@
     --bg-article: var(--grey-50);
     --bg-special: var(--grey-100);
     --bg: var(--bg-special);
+
+    --header: #13141899;
 
     --text: var(--grey-1000);
     --logo-color: var(--primary-color);
@@ -143,6 +147,8 @@ body.dark {
   --bg-article: var(--grey-50);
   --bg-special: var(--grey-100);
   --bg: var(--bg-special);
+
+  --header: #13141899;
 
   --text: var(--grey-1000);
   --logo-color: var(--primary-color);

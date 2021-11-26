@@ -6,6 +6,9 @@
 
   export let segment;
 
+  let transparent;
+  $: transparent = !segment;
+
   let oldPosition = 0;
   let visible = true;
 
@@ -17,7 +20,7 @@
   });
 </script>
 
-<header class:visible>
+<header class:visible class:transparent>
   <Logo/>
   <Nav {segment}/>
   <DarkModeToggle/>
@@ -35,8 +38,13 @@
     justify-content: flex-end;
     padding: 1rem;
     z-index: 100;
+    background: var(--header);
 
     --item-padding: .75rem;
+  }
+
+  header.transparent {
+    background: transparent;
   }
 
   header:not(.visible) {

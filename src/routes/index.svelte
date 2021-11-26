@@ -35,7 +35,7 @@
     margin: 0;
     padding: 0 20vw 16vh;
     text-transform: uppercase;
-    text-shadow: 0 0 256px var(--bg-article), 0 0 128px var(--bg-article);
+    /* text-shadow: 0 0 256px var(--bg-article), 0 0 128px var(--bg-article); */
 
     animation: slide-up 0.8s ease-in-out both;
   }

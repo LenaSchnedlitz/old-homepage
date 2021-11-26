@@ -198,8 +198,7 @@ a {
 p a {
   color: var(--primary-color-600);
 
-  /* Prettier underline, adapted from https://edwardtufte.github.io/tufte-css/ */
-  text-shadow: .03em 0 var(--bg), -.03em 0 var(--bg), 0 .03em var(--bg), 0 -.03em var(--bg), .06em 0 var(--bg), -.06em 0 var(--bg), .09em 0 var(--bg), -.09em 0 var(--bg), .12em 0 var(--bg), -.12em 0 var(--bg), .15em 0 var(--bg), -.15em 0 var(--bg);
+  text-shadow: 0 .03em var(--bg);
   background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--line), var(--line));
   background-position: 0 99%, 100% 99%, 0 99%;
   background-size: .05em 1px, .05em 1px, 1px 1px;
