@@ -35,9 +35,6 @@
     margin: 0;
     padding: 0 20vw 16vh;
     text-transform: uppercase;
-    /* text-shadow: 0 0 256px var(--bg-article), 0 0 128px var(--bg-article); */
-
-    animation: slide-up 0.8s ease-in-out both;
   }
 
   h1 small {
@@ -56,18 +53,12 @@
   h1 small.left {
     align-self: flex-start;
     font-style: italic;
-
-    animation: slide-up 0.8s ease-in-out both;
-    animation-delay: .2s;
   }
 
   h1 small.right {
     align-self: flex-end;
     text-align: right;
     font-style: italic;
-
-    animation: slide-up 0.8s ease-in-out both;
-    animation-delay: .3s;
   }
 
   h1 small.right::first-line {
@@ -123,6 +114,21 @@
   @media not screen and (min-width: 1024px) {
     .desktop-only {
       display: none;
+    }
+  }
+
+  @media all and (min-width: 768px) {
+    h1,
+    h1 small {
+      animation: slide-up 0.8s ease-in-out both;
+    }
+
+    h1 small.left {
+      animation-delay: .2s;
+    }
+
+    h1 small.right {
+      animation-delay: .3s;
     }
   }
 

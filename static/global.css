@@ -390,6 +390,8 @@ a:focus-visible {
   }
 }
 
-.appear {
-  animation: appear 0.8s ease-in-out both;
+@media all and (min-width: 768px) {
+  .appear {
+    animation: appear 0.8s ease-in-out both;
+  }
 }
