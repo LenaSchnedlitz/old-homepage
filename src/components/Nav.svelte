@@ -10,7 +10,7 @@
     </li>
     -->
     <li>
-      <a rel=prefetch aria-current={segment === "projects" ? "page" : undefined}
+      <a aria-current={segment === "projects" ? "page" : undefined}
          href='projects'>Projects</a>
     </li>
     <li>
