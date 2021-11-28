@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let currentRoute: string;
+  export let segment: '' | 'projects' | 'blog' | 'about';
 </script>
 
 <nav>
@@ -10,11 +10,11 @@
     </li>
     -->
     <li>
-      <a aria-current='{currentRoute.startsWith("/projects") ? "page" : undefined}'
+      <a aria-current='{segment === "projects" ? "page" : undefined}'
          href='/projects'>Projects</a>
     </li>
     <li>
-      <a aria-current='{currentRoute.startsWith("/about") ? "page" : undefined}' href='/about'>About</a>
+      <a aria-current='{segment === "about" ? "page" : undefined}' href='/about'>About</a>
     </li>
   </ul>
 </nav>
