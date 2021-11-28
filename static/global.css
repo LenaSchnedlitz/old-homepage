@@ -188,7 +188,7 @@ mark {
   color: var(--text);
   background-color: transparent;
   background-image: linear-gradient(var(--bg) 60%, var(--mark) 60%, var(--mark) 90%, var(--bg) 90%);
-  box-shadow: inset 0 .8em 0 1px var(--bg);
+  box-shadow: inset 0 .5em 0 1px var(--bg);
   transition: all ease-in .3s;
 }
 
