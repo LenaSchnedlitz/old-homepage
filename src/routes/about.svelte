@@ -4,7 +4,6 @@
 
 <script>
   import SelfPortrait from '$lib/components/SelfPortrait.svelte';
-  import Mark from '$lib/components/Mark.svelte';
 </script>
 
 <!-- workaround for svelte bug;
@@ -27,14 +26,14 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     <p>
       This website is about my personal projects and opinions.<br>
       I like to write about
-      <Mark>software development and web design</Mark>, but sometimes also about
-      <Mark>math
+      <mark>software development and web design</mark>, but sometimes also about
+      <mark>math
         puzzles
-      </Mark>
+      </mark>
       ,
-      <Mark>origami</Mark>
+      <mark>origami</mark>
       , and
-      <Mark>video games</Mark>
+      <mark>video games</mark>
       .
     </p>
   </section>
