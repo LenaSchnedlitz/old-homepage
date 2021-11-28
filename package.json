@@ -20,29 +20,22 @@
     "type": "git",
     "url": "git://gitlab.com/LenaSchnedlitz/personal-homepage.git"
   },
-  "dependencies": {
-    "compression": "^1.7.1",
-    "cypress": "^4.2.0",
-    "gray-matter": "^4.0.2",
-    "highlight.js": "^9.18.1",
-    "marked": "^0.8.1"
-  },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.17",
+    "@sveltejs/adapter-static": "^1.0.0-next.21",
     "@sveltejs/kit": "next",
-    "@typescript-eslint/eslint-plugin": "^4.31.1",
-    "@typescript-eslint/parser": "^4.31.1",
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-svelte3": "^3.2.0",
-    "mdsvex": "^0.9.8",
-    "prettier": "~2.2.1",
-    "prettier-plugin-svelte": "^2.2.0",
-    "svelte": "^3.34.0",
-    "svelte-check": "^2.2.6",
-    "svelte-preprocess": "^4.7.4",
-    "svelte-sitemap": "^2.1.2",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.3"
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "eslint": "8.3.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-svelte3": "3.2.1",
+    "mdsvex": "0.9.8",
+    "prettier": "2.5.0",
+    "prettier-plugin-svelte": "2.5.0",
+    "svelte": "3.44.2",
+    "svelte-check": "2.2.10",
+    "svelte-preprocess": "4.9.8",
+    "svelte-sitemap": "2.1.2",
+    "tslib": "2.3.1",
+    "typescript": "4.5.2"
   }
 }
