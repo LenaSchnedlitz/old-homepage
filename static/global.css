@@ -186,7 +186,8 @@ article {
 
 mark {
   color: var(--text);
-  background-color: var(--mark);
+  background-color: transparent;
+  background-image: linear-gradient(var(--bg) 60%, var(--mark) 60%, var(--mark) 90%, var(--bg) 90%);
   box-shadow: inset 0 .8em 0 1px var(--bg);
   transition: all ease-in .3s;
 }
@@ -194,7 +195,7 @@ mark {
 mark:hover {
   border-radius: 0;
   box-shadow: none;
-  background-color: var(--secondary-color-200);
+  background-image: linear-gradient(var(--secondary-color-200), var(--secondary-color-200));
 }
 
 
