@@ -15,6 +15,16 @@ html {
   html {
     font-family: 'Inter var', sans-serif;
   }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      font-weight: 410;
+    }
+  }
+
+  body.dark {
+    font-weight: 410;
+  }
 }
 
 * {
