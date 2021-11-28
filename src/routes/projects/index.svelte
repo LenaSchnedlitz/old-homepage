@@ -24,6 +24,10 @@
   export let posts;
 </script>
 
+<!-- workaround for svelte bug;
+see https://github.com/sveltejs/svelte/issues/6325 -->
+{#if false}<slot/>{/if}
+
 <svelte:head>
   <title>Lena Schnedlitz - Projects</title>
 </svelte:head>

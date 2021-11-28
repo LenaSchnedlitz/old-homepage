@@ -4,7 +4,12 @@
 
 <script>
   import SelfPortrait from '$lib/components/SelfPortrait.svelte';
+  import Mark from '$lib/components/Mark.svelte';
 </script>
+
+<!-- workaround for svelte bug;
+see https://github.com/sveltejs/svelte/issues/6325 -->
+{#if false}<slot/>{/if}
 
 <article>
   <h1 class="huge">About <span class="large-screen-only"><br/>&nbsp; &nbsp; </span>Me</h1>
@@ -22,14 +27,14 @@
     <p>
       This website is about my personal projects and opinions.<br>
       I like to write about
-      <mark>software development and web design</mark>, but sometimes also about
-      <mark>math
+      <Mark>software development and web design</Mark>, but sometimes also about
+      <Mark>math
         puzzles
-      </mark>
+      </Mark>
       ,
-      <mark>origami</mark>
+      <Mark>origami</Mark>
       , and
-      <mark>video games</mark>
+      <Mark>video games</Mark>
       .
     </p>
   </section>

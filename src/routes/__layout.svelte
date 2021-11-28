@@ -1,12 +1,21 @@
+<script context="module">
+  export async function load({page}) {
+    return {
+      props: {route: page.path}
+    }
+  }
+</script>
+
 <script>
   import Nav from '$lib/components/Nav.svelte';
   import Logo from '$lib/components/Logo.svelte';
   import DarkModeToggle from '$lib/components/DarkModeToggle.svelte';
   import {onMount} from 'svelte';
-  import { base } from '$app/paths';
+
+  export let route;
 
   let transparent;
-  $: transparent = !base;
+  $: transparent = route === '/';
 
   let oldPosition = 0;
   let visible = true;
@@ -21,7 +30,7 @@
 
 <header class:visible class:transparent>
   <Logo/>
-  <Nav basePath={base}/>
+  <Nav currentRoute={route}/>
   <DarkModeToggle/>
 </header>
 

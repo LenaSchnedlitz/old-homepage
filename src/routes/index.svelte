@@ -2,6 +2,10 @@
   <title>Lena Schnedlitz</title>
 </svelte:head>
 
+<!-- workaround for svelte bug;
+see https://github.com/sveltejs/svelte/issues/6325 -->
+{#if false}<slot/>{/if}
+
 <section>
   <h1 class="huge">
     <small class="left">I'm</small>

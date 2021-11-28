@@ -1,5 +1,5 @@
-<script>
-  export let basePath;
+<script lang="ts">
+  export let currentRoute: string;
 </script>
 
 <nav>
@@ -10,11 +10,11 @@
     </li>
     -->
     <li>
-      <a aria-current={basePath === "projects" ? "page" : undefined}
-         href='projects'>Projects</a>
+      <a aria-current='{currentRoute.startsWith("/projects") ? "page" : undefined}'
+         href='/projects'>Projects</a>
     </li>
     <li>
-      <a aria-current='{basePath === "about" ? "page" : undefined}' href='about'>About</a>
+      <a aria-current='{currentRoute.startsWith("/about") ? "page" : undefined}' href='/about'>About</a>
     </li>
   </ul>
 </nav>

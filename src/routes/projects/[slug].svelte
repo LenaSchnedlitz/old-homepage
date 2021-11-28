@@ -13,17 +13,9 @@
   export let post;
 </script>
 
-<style>
-  .portfolio {
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 9rem;
-  }
-
-  .portfolio > :global(*:not(h1)) {
-    animation: appear 0.8s ease-in-out both;
-  }
-</style>
+<!-- workaround for svelte bug;
+see https://github.com/sveltejs/svelte/issues/6325 -->
+{#if false}<slot/>{/if}
 
 <svelte:head>
   <title>Lena Schnedlitz - {post.title}</title>
@@ -35,3 +27,15 @@
 
   {@html post.html}
 </article>
+
+<style>
+  .portfolio {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 9rem;
+  }
+
+  .portfolio > :global(*:not(h1)) {
+    animation: appear 0.8s ease-in-out both;
+  }
+</style>

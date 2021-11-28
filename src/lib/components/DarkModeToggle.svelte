@@ -57,10 +57,10 @@
   <span class="toggle">
     <span class="toggle-icons">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use href="icons/sprite.svg#moon"/>
+          <use href="/icons/sprite.svg#moon"/>
         </svg>
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use href="icons/sprite.svg#sun"/>
+          <use href="/icons/sprite.svg#sun"/>
         </svg>
     </span>
   </span>

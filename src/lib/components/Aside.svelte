@@ -125,28 +125,28 @@
     <li>
       <a href="https://github.com/LenaSchnedlitz" title="GitHub">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use href="icons/sprite.svg#github"/>
+          <use href="/icons/sprite.svg#github"/>
         </svg>
       </a>
     </li>
     <li>
       <a href="https://gitlab.com/LenaSchnedlitz" title="GitLab">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use href="icons/sprite.svg#gitlab"/>
+          <use href="/icons/sprite.svg#gitlab"/>
         </svg>
       </a>
     </li>
     <li>
       <a href="https://twitter.com/LenaSchnedlitz" title="Twitter">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use href="icons/sprite.svg#twitter"/>
+          <use href="/icons/sprite.svg#twitter"/>
         </svg>
       </a>
     </li>
     <li>
       <a href="https://www.linkedin.com/in/lenaschnedlitz" title="LinkedIn">
         <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use href="icons/sprite.svg#linkedin"/>
+          <use href="/icons/sprite.svg#linkedin"/>
         </svg>
       </a>
     </li>
