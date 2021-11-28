@@ -1,4 +1,4 @@
-image: cypress/base:12.16.1
+image: 16.13-alpine3.12
 
 # VARIABLES AND CACHE #
 
@@ -10,13 +10,10 @@ cache:
   key: the-one-and-only-cache-key
   paths:
     - .npm
-    - cache/Cypress
     - node_modules
 
 before_script:
   - npm ci --cache .npm --prefer-offline
-  - npx cypress cache path
-  - npx cypress cache list
 
 
 # JOBS #
