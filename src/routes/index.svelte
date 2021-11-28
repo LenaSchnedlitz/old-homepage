@@ -38,6 +38,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     align-items: center;
     margin: 0;
     padding: 0 20vw 16vh;
+    letter-spacing: 0;
     text-transform: uppercase;
   }
 
