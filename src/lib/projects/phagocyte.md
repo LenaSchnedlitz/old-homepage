@@ -25,12 +25,12 @@ It gained some traction on <a href="https://news.ycombinator.com/item?id=2278111
 <section class="meta-links">
 <a href="https://addons.mozilla.org/firefox/addon/phagocyte/">
 Try it out!
-<svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
+<svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
 </a>
 
 <a href="https://github.com/LenaSchnedlitz/phagocyte">
-<svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#github"/></svg>
+<svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
 Fork me on GitHub
-<svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
+<svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
 </a>
 </section>

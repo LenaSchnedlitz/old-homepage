@@ -12,8 +12,7 @@ After a long and slow demise, <a href="https://shattered.io/">SHA-1</a> is final
 What can you do with broken cryptographic functions? Create identicons, of course.
 
 The origamicon generator uses SHA-1 hashes to create *almost* unique pictures that slightly resemble
-folded paper. It can be accessed via 
-<a href="https://origamicons.herokuapp.com/">web interface</a> or used offline as a command line tool.
+folded paper. It can be accessed via <a href="https://origamicons.herokuapp.com/">web interface</a> or used offline as a command line tool.
 
 
 **<mark>Examples:</mark>**
@@ -56,12 +55,12 @@ folded paper. It can be accessed via
 <section class="meta-links">
 <a href="https://origamicons.herokuapp.com/" class="meta link">
     Try it out!
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
 </a>
 
 <a href="https://github.com/LenaSchnedlitz/origamicons">
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#github"/></svg>
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
     Fork me on GitHub
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
     </a>
 </section>

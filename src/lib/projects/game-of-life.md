@@ -38,8 +38,8 @@ Feel free to play around as well!
 
 <section class="meta-links">
     <a href="https://github.com/LenaSchnedlitz/hexagonal-game-of-life">
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#github"/></svg>
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
     Fork me on GitHub
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
     </a>
 </section>

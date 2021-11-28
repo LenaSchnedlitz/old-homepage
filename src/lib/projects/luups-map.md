@@ -8,12 +8,11 @@ background: 'gray-light'
 align: 'right'
 ---
 
-<a href="https://www.luups.net/">LUUPS</a> is a city guide with vouchers that is
+&shy;<a href="https://www.luups.net/">LUUPS</a> is a city guide with vouchers that is
 published annually. I've been using the booklet for some years now and can strongly recommend
 it, but it lacks one important feature: <em>an interactive, filterable map</em>.
 
-I teamed up with another Viennese software engineer,
-<a href="https://github.com/hschne">Hans&nbsp;Schnedlitz</a> (the name is no coincidence),
+I teamed up with another Viennese software engineer, <a href="https://github.com/hschne">Hans&nbsp;Schnedlitz</a> (the name is no coincidence),
 to develop exactly this.
 
 <figure>
@@ -37,8 +36,8 @@ this project will not be updated any more.
 
 <section class="meta-links">
     <a href="https://github.com/Team-LANS/luups-map">
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#github"/></svg>
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
     Fork me on GitHub
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="icons/sprite.svg#arrow-right"/></svg>
+    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
     </a>
 </section>
