@@ -24,19 +24,6 @@ before_script:
 stages:
   - deploy
 
-
-test:
-  stage: test
-  before_script:
-    - npm ci --cache .npm --prefer-offline
-    - npx cypress cache path
-    - npx cypress cache list
-  script:
-    - npm run cy:verify
-    - npm run test
-  except:
-    - master
-
 deploy:
   stage: deploy
   before_script:
