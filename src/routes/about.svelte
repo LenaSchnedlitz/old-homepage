@@ -20,7 +20,8 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
       You can find me on
       <a href="https://github.com/LenaSchnedlitz">GitHub</a>,
       <a href="https://gitlab.com/LenaSchnedlitz">GitLab</a>,
-      <a href="https://twitter.com/LenaSchnedlitz">Twitter</a>, and
+      <a href="https://twitter.com/LenaSchnedlitz">Twitter</a>,
+      <a href="https://codepen.io/LenaSchnedlitz">CodePen</a>, and
       <a href="https://www.linkedin.com/in/lenaschnedlitz">LinkedIn</a>.
     </p>
     <p>
