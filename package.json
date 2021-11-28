@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "svelte-kit dev",
-    "export": "svelte-kit export",
+    "export": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
