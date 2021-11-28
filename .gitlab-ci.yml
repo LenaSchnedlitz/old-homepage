@@ -33,7 +33,7 @@ deploy:
     - mkdir ${DEPLOY_REPO_NAME}
     - mv -t ${DEPLOY_REPO_NAME} ${DEPLOY_REPO_NAME}-old/.git ${DEPLOY_REPO_NAME}-old/CNAME
     # add newly built content
-    - cp -rf __sapper__/export/* ${DEPLOY_REPO_NAME}
+    - cp -rf build/* ${DEPLOY_REPO_NAME}
     - cd ${DEPLOY_REPO_NAME}
     - git add .
     # commit and push
