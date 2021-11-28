@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script>
-  import SelfPortrait from '../components/SelfPortrait.svelte';
+  import SelfPortrait from '$lib/components/SelfPortrait.svelte';
 </script>
 
 <article>

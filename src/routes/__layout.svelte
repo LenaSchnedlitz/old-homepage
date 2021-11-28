@@ -1,7 +1,7 @@
 <script>
-  import Nav from '../components/Nav.svelte';
-  import Logo from '../components/Logo.svelte';
-  import DarkModeToggle from '../components/DarkModeToggle.svelte';
+  import Nav from '$lib/components/Nav.svelte';
+  import Logo from '$lib/components/Logo.svelte';
+  import DarkModeToggle from '$lib/components/DarkModeToggle.svelte';
   import {onMount} from 'svelte';
   import { base } from '$app/paths';
 
