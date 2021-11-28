@@ -35,6 +35,7 @@ deploy:
     # add newly built content
     - cp -rf build/* ${DEPLOY_REPO_NAME}
     - cd ${DEPLOY_REPO_NAME}
+    - touch .nojekyll # add .nojekyll to allow serving of folders that start with "_"
     - git add .
     # commit and push
     - git config user.name "Lena Schnedlitz"
