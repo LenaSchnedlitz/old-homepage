@@ -22,7 +22,6 @@ before_script:
 # JOBS #
 
 stages:
-  - test
   - deploy
 
 

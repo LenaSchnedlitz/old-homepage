@@ -3,11 +3,10 @@
   import Logo from '../components/Logo.svelte';
   import DarkModeToggle from '../components/DarkModeToggle.svelte';
   import {onMount} from 'svelte';
-
-  export let segment;
+  import { base } from '$app/paths';
 
   let transparent;
-  $: transparent = !segment;
+  $: transparent = !base;
 
   let oldPosition = 0;
   let visible = true;
@@ -22,7 +21,7 @@
 
 <header class:visible class:transparent>
   <Logo/>
-  <Nav {segment}/>
+  <Nav basePath={base}/>
   <DarkModeToggle/>
 </header>
 

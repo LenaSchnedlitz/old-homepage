@@ -1,5 +1,13 @@
-import {fetchPosts} from '../../helpers/get-posts';
+import projects from '$lib/projects';
 
-export function get(req, res) {
-  fetchPosts(req, res, 'projects');
+export async function get() {
+  const body = Object.keys(projects).map((slug) => ({
+    slug,
+    ...projects[slug],
+  }));
+
+  return {
+    status: 200,
+    body: JSON.stringify(body)
+  };
 }

@@ -17,7 +17,7 @@ I teamed up with another Viennese software engineer,
 to develop exactly this.
 
 <figure>
-<img src="projects/luups-map/map.png" alt="Screenshot"/>
+<img src="luups-map/map.png" alt="Screenshot"/>
 <figcaption>LUUPS Map <strong>Screenshot</strong></figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ by voucher type and/or tag.
 
 
 <figure class="right">
-<img src="projects/luups-map/filter.png" alt="Filter"/>
+<img src="luups-map/filter.png" alt="Filter"/>
 <figcaption>LUUPS Map <strong>Filter</strong></figcaption>
 </figure>
 

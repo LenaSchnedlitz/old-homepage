@@ -8,11 +8,15 @@
     return 0;
   }
 
-  export function preload({params, query}) {
-    return this.fetch('projects.json').then(r => r.json()).then(posts => {
-      posts.sort(sortPostsByRankDescendingly);
-      return {posts};
-    });
+  export async function load({fetch}) {
+    const url = '/projects.json';
+    const res = await fetch(url);
+    const posts = await res.json();
+    posts.sort(sortPostsByRankDescendingly)
+
+    return {
+      props: {posts}
+    };
   }
 </script>
 
@@ -27,7 +31,7 @@
 <article>
   <h1 class="huge">Projects</h1>
 
-  {#each posts as post, i}
+  {#each posts as post}
     <section class="{post.slug} appear">
       <a class="pic-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
         <img alt="{post.title}" src="projects/{post.slug}.{post.previewType}"

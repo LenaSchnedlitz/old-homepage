@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-Refer to the official [Sapper documentation](https://sapper.svelte.dev/docs) for more details.
+Refer to the official [Svelte-Kit documentation](https://kit.svelte.dev/docs) for more details.
 
 ### Tests
 

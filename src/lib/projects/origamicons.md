@@ -13,7 +13,7 @@ What can you do with broken cryptographic functions? Create identicons, of cours
 
 The origamicon generator uses SHA-1 hashes to create *almost* unique pictures that slightly resemble
 folded paper. It can be accessed via 
-<a href="https://origamicons.herokuapp.com/">web&nbsp;interface</a> or used offline as a command line tool.
+<a href="https://origamicons.herokuapp.com/">web interface</a> or used offline as a command line tool.
 
 
 **<mark>Examples:</mark>**
@@ -21,32 +21,32 @@ folded paper. It can be accessed via
 <section class="figrow">
 
 <figure>
-<img src="projects/origamicons/origamicon_Alice.png" alt="Alice"/>
+<img src="origamicons/origamicon_Alice.png" alt="Alice"/>
 <figcaption>Origamicons <strong>Alice</strong></figcaption>
 </figure>
 
 <figure>
-<img src="projects/origamicons/origamicon_Bob.png" alt="Bob"/>
+<img src="origamicons/origamicon_Bob.png" alt="Bob"/>
 <figcaption>Origamicons <strong>Bob</strong></figcaption>
 </figure>
 
 <figure>
-<img src="projects/origamicons/origamicon_origamicons.png" alt="origamicons"/>
+<img src="origamicons/origamicon_origamicons.png" alt="origamicons"/>
 <figcaption>Origamicons <strong>origamicons</strong></figcaption>
 </figure>
 
 <figure>
-<img src="projects/origamicons/origamicon_SHA-1 Origamicons.png" alt="SHA-1 Origamicons"/>
+<img src="origamicons/origamicon_SHA-1 Origamicons.png" alt="SHA-1 Origamicons"/>
 <figcaption>Origamicons <strong>SHA-1 Origamicons</strong></figcaption>
 </figure>
 
 <figure>
-<img src="projects/origamicons/origamicon_SHA-1 Origamicon.png" alt="SHA-1 Origamicon"/>
+<img src="origamicons/origamicon_SHA-1 Origamicon.png" alt="SHA-1 Origamicon"/>
 <figcaption>Origamicons <strong>SHA-1 Origamicon</strong></figcaption>
 </figure>
 
 <figure>
-<img src="projects/origamicons/origamicon_lena.png" alt="lena"/>
+<img src="origamicons/origamicon_lena.png" alt="lena"/>
 <figcaption>Origamicons <strong>lena</strong></figcaption>
 </figure>
 

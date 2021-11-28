@@ -3,7 +3,7 @@
 <head>
   <title>Lena Schnedlitz</title>
   <meta charset='utf-8'>
-  <meta content='width=device-width,initial-scale=1.0' name='viewport'>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name='color-scheme' content='light dark'>
 
   <!-- social media -->
@@ -24,29 +24,15 @@
 
   <link rel="apple-touch-icon" href="/app.png">
 
-  %sapper.base%
-
-  <link href='global.css' rel='stylesheet'>
+  <link href='global.css' rel='stylesheet' type="text/css">
   <link crossorigin='use-credentials' href='manifest.json' rel='manifest'>
-  <link href='favicon.png' rel='icon' type='image/png'>
-
-  <!-- Sapper generates a <style> tag containing critical CSS
-       for the current page. CSS for the rest of the app is
-       lazily loaded when it precaches secondary pages -->
-  %sapper.styles%
+  <link href='/favicon.png' rel='icon' type='image/png'>
 
   <!-- This contains the contents of the <svelte:head> component, if
        the current page has one -->
-  %sapper.head%
+  %svelte.head%
 </head>
 <body>
-<!-- The application will be rendered inside this element,
-     because `src/client.js` references it -->
-<div id='sapper'>%sapper.html%</div>
-
-<!-- Sapper creates a <script> tag containing `src/client.js`
-     and anything else it needs to hydrate the app and
-     initialise the router -->
-%sapper.scripts%
+  <div id="svelte">%svelte.body%</div>
 </body>
 </html>

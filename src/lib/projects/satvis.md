@@ -18,7 +18,7 @@ Check out the official
 to learn more.
 
 <figure>
-<img src="projects/satvis/visualization.png" alt="Graph"/>
+<img src="satvis/visualization.png" alt="Graph"/>
 <figcaption>SatVis <strong>Graph</strong></figcaption>
 </figure>
 

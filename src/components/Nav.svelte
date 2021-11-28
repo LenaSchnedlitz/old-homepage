@@ -1,5 +1,5 @@
 <script>
-  export let segment;
+  export let basePath;
 </script>
 
 <nav>
@@ -10,11 +10,11 @@
     </li>
     -->
     <li>
-      <a aria-current={segment === "projects" ? "page" : undefined}
+      <a aria-current={basePath === "projects" ? "page" : undefined}
          href='projects'>Projects</a>
     </li>
     <li>
-      <a aria-current='{segment === "about" ? "page" : undefined}' href='about'>About</a>
+      <a aria-current='{basePath === "about" ? "page" : undefined}' href='about'>About</a>
     </li>
   </ul>
 </nav>
