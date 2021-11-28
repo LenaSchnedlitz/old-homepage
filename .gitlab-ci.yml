@@ -1,4 +1,4 @@
-image: 16.13-alpine3.12
+image: node:16.13-alpine3.12
 
 # VARIABLES AND CACHE #
 
