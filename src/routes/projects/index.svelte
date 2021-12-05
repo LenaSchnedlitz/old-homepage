@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>Lena Schnedlitz - Projects</title>
+</svelte:head>
+
 <script context="module">
   function sortPostsByRankDescendingly(postA, postB) {
     if (postA.rank > postB.rank) {
@@ -27,10 +31,6 @@
 <!-- workaround for svelte bug;
 see https://github.com/sveltejs/svelte/issues/6325 -->
 {#if false}<slot/>{/if}
-
-<svelte:head>
-  <title>Lena Schnedlitz - Projects</title>
-</svelte:head>
 
 <article>
   <h1 class="huge">Projects</h1>
