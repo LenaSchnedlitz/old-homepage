@@ -37,12 +37,12 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 
   {#each posts as post}
     <section class="{post.slug} appear">
-      <a class="pic-wrapper" href="/projects/{post.slug}" rel="prefetch" title={post.title}>
-        <img alt="{post.title}" src="/projects/{post.slug}.{post.previewType}"
+      <a class="pic-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
+        <img alt="{post.title}" src="projects/{post.slug}.{post.previewType}"
              class:tiny={post.tiny}/>
       </a>
-      <div class="text-wrapper" href="/projects/{post.slug}" rel="prefetch" title={post.title}>
-        <a href="/projects/{post.slug}" rel="prefetch" title={post.title} tabindex="-1">
+      <div class="text-wrapper" href="projects/{post.slug}" rel="prefetch" title={post.title}>
+        <a href="projects/{post.slug}" rel="prefetch" title={post.title} tabindex="-1">
           <h3>{post.title}</h3>
           <span>{post.teaser}</span>
         </a>
