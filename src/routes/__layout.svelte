@@ -37,8 +37,6 @@
   <DarkModeToggle/>
 </header>
 
-<div class="sticky-segment-dot {segment}"></div>
-
 <main>
   <slot/>
 </main>
@@ -72,36 +70,6 @@
   @media all and (min-width: 768px) {
     header {
       --item-padding: 2rem;
-    }
-  }
-
-  .sticky-segment-dot {
-    position: fixed;
-    left: .75rem;
-    top: .75rem;
-    z-index: 1;
-    width: .5rem;
-    height: .5rem;
-    border-radius: 1rem;
-    background: var(--primary-color);
-    transition: all cubic-bezier(.6, -0.28, .74, .05) .15s;
-    transition-delay: .15s;
-  }
-
-  .sticky-segment-dot.projects {
-    background: var(--tertiary-color);
-    border-radius: 0;
-  }
-
-  header.visible ~ .sticky-segment-dot {
-    transform: scale(.5, .5);
-    opacity: 0;
-    transition: none;
-  }
-
-  @media all and (min-width: 768px) {
-    .sticky-segment-dot {
-      display: none;
     }
   }
 
