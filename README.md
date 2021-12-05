@@ -11,18 +11,11 @@ The page most likely doesn't work correctly in old browsers (looking at you, IE1
 ## How to Run Locally
 
 ```bash
-git clone git@gitlab.com:LenaSchnedlitz/personal-homepage.git
-cd personal-homepage
+git clone git@github.com:LenaSchnedlitz/LenaSchnedlitz.github.io.git
+cd LenaSchnedlitz.github.io.git
 npm install
 npm run dev
 ```
 
 Refer to the official [Svelte-Kit documentation](https://kit.svelte.dev/docs) for more details.
 
-### Tests
-
-You need [Cypress](https://www.cypress.io/) to execute tests.
-
-```bash
-npm test
-```
