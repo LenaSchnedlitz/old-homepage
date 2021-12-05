@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "rm -rf build && svelte-kit build && touch build/.nojekyll",
+    "build": "rm -rf build && svelte-kit build && touch build/.nojekyll && cp CNAME build/CNAME",
     "deploy": "npm run build && npx gh-pages --dist build --dotfiles true",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
