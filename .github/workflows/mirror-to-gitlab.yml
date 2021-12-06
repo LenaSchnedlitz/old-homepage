@@ -21,4 +21,4 @@ jobs:
         run: |
           echo git@gitlab.com:$GITHUB_REPOSITORY.git
           cd ${{ github.event.repository.name }}.git
-          git push --mirror git@gitlab.com:LenaSchnedlitz/personal-homepage.git
+          git push --mirror git@gitlab.com:LenaSchnedlitz/my-homepage.git
