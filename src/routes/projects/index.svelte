@@ -72,10 +72,6 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     filter: grayscale(70%);
   }
 
-  .game-of-life img {
-    object-fit: contain;
-  }
-
   .luups-map img {
     object-position: top;
   }
@@ -169,6 +165,10 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     section:nth-child(odd) .pic-wrapper:hover {
       transform: translate3d(-1rem, -.5rem, 0) scale(1.01, 1.01);
       transition: all ease-out .5s;
+    }
+
+    .game-of-life img {
+      object-fit: contain;
     }
   }
 

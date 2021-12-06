@@ -70,6 +70,18 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     animation: appear 0.8s ease-in-out both;
   }
 
+  @media all and (min-width: 768px) {
+    article.portfolio > :global(p) {
+      grid-column-end: 3;
+    }
+  }
+
+  @media all and (min-width: 1366px) {
+    article.portfolio > :global(p) {
+      grid-column-end: 4;
+    }
+  }
+
   .error {
     width: 100vw;
     min-height: 100vh;
