@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: Clone
-        run: git clone --mirror $GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git
+        run: git clone --bare $GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git
 
       - name: Authenticate
         run: |
