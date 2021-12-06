@@ -15,14 +15,14 @@ import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 
 In my opinion, Skyrim is one of the best games ever made.
 As a completionist, I spent ages trying to unlock all perks.
-However, at higher levels, it gets difficult to plan ahead and figure out 
+However, at higher levels, it gets difficult to plan ahead and figure out
 how much training will be needed to reach a long-yearned-for level up.
 That’s why I decided to make a tool for character progress optimization.
 
 <Figure src="/projects/skycalc/landing.png">SkyCalc <strong>Landing Page</strong></Figure>
 
-SkyCalc uses level information to predict how much training of user-selected skills is needed to 
-reach a certain goal level. 
+SkyCalc uses level information to predict how much training of user-selected skills is needed to
+reach a certain goal level.
 The tool also offers guidance which skills to choose for role-playing.
 Results can be exported as a text file.
 

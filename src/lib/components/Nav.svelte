@@ -10,11 +10,15 @@
     </li>
     -->
     <li>
-      <a aria-current='{segment === "projects" ? "page" : undefined}'
-         href='/projects'>Projects</a>
+      <a
+        aria-current={segment === 'projects' ? 'page' : undefined}
+        href="/projects">Projects</a
+      >
     </li>
     <li>
-      <a aria-current='{segment === "about" ? "page" : undefined}' href='/about'>About</a>
+      <a aria-current={segment === 'about' ? 'page' : undefined} href="/about"
+        >About</a
+      >
     </li>
   </ul>
 </nav>
@@ -53,19 +57,19 @@
   a::after {
     position: absolute;
     content: '';
-    bottom: -.2rem;
+    bottom: -0.2rem;
     left: calc(100% - var(--item-padding));
     display: block;
     height: 1px;
     width: 0;
     background-color: currentColor;
-    transition: all ease-out .1s;
+    transition: all ease-out 0.1s;
   }
 
   [aria-current]::after {
     left: var(--item-padding);
     width: calc(100% - calc(var(--item-padding) * 2));
-    transition: width ease-in .2s;
+    transition: width ease-in 0.2s;
   }
 
   @media all and (min-width: 768px) {

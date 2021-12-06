@@ -1,4 +1,4 @@
-<section><slot/></section>
+<section><slot /></section>
 
 <style>
   section {
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .25rem 1rem;
+    padding: 0.25rem 1rem;
     border: solid 1px var(--text);
     font-size: var(--font--small);
   }
@@ -28,11 +28,11 @@
 
   section :global(svg):first-child:not(:last-child) {
     stroke-width: 2;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 
   section :global(svg):last-child {
     stroke-width: 2;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
 </style>

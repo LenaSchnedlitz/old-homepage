@@ -14,7 +14,7 @@ import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 
 [LUUPS](https://www.luups.net/) is a city guide with vouchers that is
 published annually. I've been using the booklet for some years now and can strongly recommend
-it, but it lacks one important feature: *an interactive, filterable map.*
+it, but it lacks one important feature: _an interactive, filterable map._
 
 I teamed up with another Viennese software engineer, [Hans Schnedlitz](https://github.com/hschne) (the name is no coincidence),
 to develop exactly this.
@@ -27,7 +27,7 @@ by voucher type and/or tag.
 
 <Figure src="/projects/luups-map/filter.png">LUUPS Map <strong>Filter</strong></Figure>
 
-*Note:* A year after the development of LUUPS Map, LUUPS added an official map to their homepage. As a result,
+_Note:_ A year after the development of LUUPS Map, LUUPS added an official map to their homepage. As a result,
 this project will not be updated any more.
 
 <ProjectLinks>

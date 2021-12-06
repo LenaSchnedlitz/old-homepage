@@ -4,21 +4,19 @@
 
 <!-- workaround for svelte bug;
 see https://github.com/sveltejs/svelte/issues/6325 -->
-{#if false}<slot/>{/if}
+{#if false}<slot />{/if}
 
 <section>
   <h1 class="huge">
     <small class="left">I'm</small>
-    <strong>Lena<br/><span class="desktop-only">Schnedlitz</span></strong>
+    <strong>Lena<br /><span class="desktop-only">Schnedlitz</span></strong>
     <small class="right">
-      a <em>software engineer</em><br/>
+      a <em>software engineer</em><br />
       based in <em>Vienna.</em>
     </small>
   </h1>
 
-  <span class="gigantic greeting">
-    Welcome
-  </span>
+  <span class="gigantic greeting"> Welcome </span>
 </section>
 
 <style>
@@ -44,7 +42,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 
   h1 small {
     padding: 0 0.5em 0 2em;
-    font-size: .1618em;
+    font-size: 0.1618em;
     font-weight: 300;
     line-height: 1.5;
   }
@@ -67,7 +65,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
   }
 
   h1 small.right::first-line {
-    animation-delay: .1s;
+    animation-delay: 0.1s;
   }
 
   h1 em {
@@ -84,7 +82,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
   .greeting {
     display: inline;
     position: absolute;
-    bottom: -.16em;
+    bottom: -0.16em;
     right: 1.16em;
     height: 0;
     width: 0;
@@ -129,11 +127,11 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     }
 
     h1 small.left {
-      animation-delay: .2s;
+      animation-delay: 0.2s;
     }
 
     h1 small.right {
-      animation-delay: .3s;
+      animation-delay: 0.3s;
     }
   }
 

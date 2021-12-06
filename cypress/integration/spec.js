@@ -1,10 +1,10 @@
 describe('My Homepage', () => {
   beforeEach(() => {
-    cy.visit('/')
+    cy.visit('/');
   });
 
   it('has the correct <h1>', () => {
-    cy.contains('h1', 'Lena')
+    cy.contains('h1', 'Lena');
   });
 
   xit('navigates to /blog', () => {

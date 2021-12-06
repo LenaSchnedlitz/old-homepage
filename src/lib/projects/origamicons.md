@@ -16,9 +16,8 @@ import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 After a long and slow demise, [SHA-1](https://shattered.io/) is finally dead.
 What can you do with broken cryptographic functions? Create identicons, of course.
 
-The origamicon generator uses SHA-1 hashes to create *almost* unique pictures that slightly resemble
+The origamicon generator uses SHA-1 hashes to create _almost_ unique pictures that slightly resemble
 folded paper. It can be accessed via [web interface](https://origamicons.herokuapp.com/) or used offline as a command line tool.
-
 
 **<mark>Examples:</mark>**
 
@@ -30,7 +29,6 @@ folded paper. It can be accessed via [web interface](https://origamicons.herokua
 <Figure src="/projects/origamicons/origamicon_SHA-1 Origamicon.png">Origamicons <strong>SHA-1 Origamicon</strong></Figure>
 <Figure src="/projects/origamicons/origamicon_lena.png">Origamicons <strong>lena</strong></Figure>
 </FigureRow>
-
 
 <ProjectLinks>
 <a href="https://origamicons.herokuapp.com/" class="meta link">

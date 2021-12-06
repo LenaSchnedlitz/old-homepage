@@ -1,7 +1,3 @@
-<svelte:head>
-  <title>Lena Schnedlitz - Projects</title>
-</svelte:head>
-
 <script context="module">
   function sortPostsByRankDescendingly(postA, postB) {
     if (postA.rank > postB.rank) {
@@ -12,14 +8,14 @@
     return 0;
   }
 
-  export async function load({fetch}) {
+  export async function load({ fetch }) {
     const url = '/projects.json';
     const res = await fetch(url);
     const posts = await res.json();
-    posts.sort(sortPostsByRankDescendingly)
+    posts.sort(sortPostsByRankDescendingly);
 
     return {
-      props: {posts}
+      props: { posts },
     };
   }
 </script>
@@ -28,21 +24,44 @@
   export let posts;
 </script>
 
+<svelte:head>
+  <title>Lena Schnedlitz - Projects</title>
+</svelte:head>
+
 <!-- workaround for svelte bug;
 see https://github.com/sveltejs/svelte/issues/6325 -->
-{#if false}<slot/>{/if}
+{#if false}<slot />{/if}
 
 <article>
   <h1 class="huge">Projects</h1>
 
   {#each posts as post}
     <section class="{post.slug} appear">
-      <a class="pic-wrapper" href="/projects/{post.slug}" rel="prefetch" title={post.title} aria-hidden='true'>
-        <img alt="{post.title}" src="/projects/{post.slug}.{post.previewType}"
-             class:tiny={post.tiny}/>
+      <a
+        class="pic-wrapper"
+        href="/projects/{post.slug}"
+        rel="prefetch"
+        title={post.title}
+        aria-hidden="true"
+      >
+        <img
+          alt={post.title}
+          src="/projects/{post.slug}.{post.previewType}"
+          class:tiny={post.tiny}
+        />
       </a>
-      <div class="text-wrapper" href="/projects/{post.slug}" rel="prefetch" title={post.title}>
-        <a href="/projects/{post.slug}" rel="prefetch" title={post.title} tabindex="-1">
+      <div
+        class="text-wrapper"
+        href="/projects/{post.slug}"
+        rel="prefetch"
+        title={post.title}
+      >
+        <a
+          href="/projects/{post.slug}"
+          rel="prefetch"
+          title={post.title}
+          tabindex="-1"
+        >
           <h3>{post.title}</h3>
           <span>{post.teaser}</span>
         </a>
@@ -50,7 +69,6 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     </section>
   {/each}
 </article>
-
 
 <style>
   section {
@@ -64,7 +82,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
   }
 
   .text-wrapper {
-    padding: .25rem .5rem;
+    padding: 0.25rem 0.5rem;
   }
 
   .game-of-life .pic-wrapper {
@@ -103,7 +121,8 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
       margin-bottom: 6rem;
     }
 
-    .pic-wrapper, .text-wrapper {
+    .pic-wrapper,
+    .text-wrapper {
       grid-column-end: span 1;
     }
 
@@ -158,13 +177,13 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     }
 
     section:nth-child(even) .pic-wrapper:hover {
-      transform: translate3d(1rem, -.5rem, 0) scale(1.01, 1.01);
-      transition: all ease-out .5s;
+      transform: translate3d(1rem, -0.5rem, 0) scale(1.01, 1.01);
+      transition: all ease-out 0.5s;
     }
 
     section:nth-child(odd) .pic-wrapper:hover {
-      transform: translate3d(-1rem, -.5rem, 0) scale(1.01, 1.01);
-      transition: all ease-out .5s;
+      transform: translate3d(-1rem, -0.5rem, 0) scale(1.01, 1.01);
+      transition: all ease-out 0.5s;
     }
 
     .game-of-life img {
@@ -178,7 +197,8 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
       margin-bottom: 16rem;
     }
 
-    .pic-wrapper, .text-wrapper {
+    .pic-wrapper,
+    .text-wrapper {
       grid-column-end: span 2;
     }
 

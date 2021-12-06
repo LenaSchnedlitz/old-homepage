@@ -2,7 +2,7 @@
 slug: 'game-of-life'
 rank: 5
 title: 'Game of Life'
-teaser: 'Conway''s famous game implemented on a hexagonal grid.'
+teaser: "Conway's famous game implemented on a hexagonal grid."
 previewType: 'gif'
 ---
 
@@ -12,7 +12,7 @@ import Icon from '$lib/components/Icon.svelte';
 import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
-I implemented a variant of the famous [Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) 
+I implemented a variant of the famous [Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life)
 on a hexagonal grid. Pretty much all parameters of the game can be configured:
 rules for birth and survival, start configuration, duration, and color palette.
 

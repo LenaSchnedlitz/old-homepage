@@ -14,7 +14,7 @@ import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 
 We all take the current pandemic very seriously and have adapted our lifestyles accordingly.
 Shouldn't we focus on our physical and mental well-being instead of spending a whole afternoon tracking death statistics?  
-To help with that, I made a simple Firefox add-on that hides *most* articles about COVID-19.
+To help with that, I made a simple Firefox add-on that hides _most_ articles about COVID-19.
 The tool uses basic text matching to identify posts about SARS-CoV-2 and its consequences.
 It gained some traction on [Hacker News.](https://news.ycombinator.com/item?id=22781113)
 

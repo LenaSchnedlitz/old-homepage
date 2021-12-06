@@ -1,5 +1,5 @@
 <script>
-  import {onMount} from 'svelte';
+  import { onMount } from 'svelte';
   import Icon from '$lib/components/Icon.svelte';
 
   const STORAGE_KEY = 'theme';
@@ -36,7 +36,10 @@
       localStorage.removeItem(STORAGE_KEY);
     } else {
       // store opposite of preference
-      localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
+      localStorage.setItem(
+        STORAGE_KEY,
+        prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK,
+      );
     }
 
     applyTheme();
@@ -49,16 +52,16 @@
 </script>
 
 <svelte:head>
-  <meta content={lightOn ? '#ffffff' : '#131418'} name='theme-color'>
+  <meta content={lightOn ? '#ffffff' : '#131418'} name="theme-color" />
 </svelte:head>
 
 <label>
   <span class="aria-label">{lightOn ? THEMES.LIGHT : THEMES.DARK} mode</span>
-  <input type="checkbox" bind:checked={lightOn} on:click={toggleTheme}/>
+  <input type="checkbox" bind:checked={lightOn} on:click={toggleTheme} />
   <span class="toggle">
     <span class="toggle-icons">
-      <Icon name='moon' />
-      <Icon name='sun' />
+      <Icon name="moon" />
+      <Icon name="sun" />
     </span>
   </span>
 </label>
@@ -76,7 +79,6 @@
 
     --toggle-height: 20px;
   }
-
 
   @media all and (min-width: 1366px) {
     label {

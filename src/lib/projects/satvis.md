@@ -12,10 +12,10 @@ import Icon from '$lib/components/Icon.svelte';
 import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
-[Vampire](https://vprover.github.io/) is a theorem prover for first order logic 
+[Vampire](https://vprover.github.io/) is a theorem prover for first order logic
 that is able to produce detailed proofs in a short time. However, debugging failed proof attempts can be
-quite cumbersome. SatVis attempts to change this by providing features such as *derivation visualization,*
-*clause reformatting,* *common parent and/or consequence search,* and many more.
+quite cumbersome. SatVis attempts to change this by providing features such as _derivation visualization,_
+_clause reformatting,_ _common parent and/or consequence search,_ and many more.
 
 Check out the official [SatVis paper](https://link.springer.com/chapter/10.1007%2F978-3-030-34968-4_28) to learn more.
 

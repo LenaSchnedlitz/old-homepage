@@ -1,7 +1,7 @@
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: .5em;
+  padding: 0.5em;
   color: var(--grey-900);
 }
 
@@ -90,7 +90,6 @@
 .hljs-strong {
   font-weight: bold;
 }
-
 
 body.dark-mode img {
   filter: grayscale(16%);

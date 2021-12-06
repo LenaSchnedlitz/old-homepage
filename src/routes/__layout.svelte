@@ -1,11 +1,11 @@
 <script context="module">
-  export async function load({page}) {
+  export async function load({ page }) {
     const routeParts = page.path.split('/');
     const segment = routeParts.length > 1 ? routeParts[1] : '';
 
     return {
-      props: {segment}
-    }
+      props: { segment },
+    };
   }
 </script>
 
@@ -13,7 +13,7 @@
   import Nav from '$lib/components/Nav.svelte';
   import Logo from '$lib/components/Logo.svelte';
   import DarkModeToggle from '$lib/components/DarkModeToggle.svelte';
-  import {onMount} from 'svelte';
+  import { onMount } from 'svelte';
 
   export let segment;
 
@@ -32,13 +32,13 @@
 </script>
 
 <header class:visible class:transparent>
-  <Logo/>
-  <Nav {segment}/>
-  <DarkModeToggle/>
+  <Logo />
+  <Nav {segment} />
+  <DarkModeToggle />
 </header>
 
 <main>
-  <slot/>
+  <slot />
 </main>
 
 <style>
@@ -51,7 +51,7 @@
     z-index: 100;
     background: var(--header);
 
-    --item-padding: .75rem;
+    --item-padding: 0.75rem;
   }
 
   header.transparent {

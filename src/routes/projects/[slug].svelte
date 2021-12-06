@@ -1,29 +1,25 @@
-<svelte:head>
-  <title>Lena Schnedlitz - {post.title || 'Ooops!'}</title>
-</svelte:head>
-
 <script context="module">
-  export async function load({page, fetch}) {
+  export async function load({ page, fetch }) {
     const res = await fetch(`${page.path}.json`);
 
     if (res.ok) {
       const post = await res.json();
 
       return {
-        props: {post}
+        props: { post },
       };
     }
 
     return {
-      props: {post: {}}
-    }
+      props: { post: {} },
+    };
   }
 </script>
 
 <script>
   export let post;
 
-  import ProjectNotFound from '$lib/illustrations/project-not-found.svelte'
+  import ProjectNotFound from '$lib/illustrations/project-not-found.svelte';
 
   // Those are necessary to make CSS modules work
   import Figure from '$lib/components/Figure.svelte';
@@ -32,10 +28,14 @@
   import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
+<svelte:head>
+  <title>Lena Schnedlitz - {post.title || 'Ooops!'}</title>
+</svelte:head>
+
 <!-- workaround for svelte bug;
 see https://github.com/sveltejs/svelte/issues/6325 -->
 {#if false}
-  <slot/>
+  <slot />
 {/if}
 
 {#if post && post.title}
@@ -50,12 +50,13 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     <section>
       <h1>Ooops!</h1>
       <p>
-        Seems this content is hiding and doesn't want to be found. Wanna try something else instead?
-        <br/>
+        Seems this content is hiding and doesn't want to be found. Wanna try
+        something else instead?
+        <br />
         <a href="/projects">Click here!</a>
       </p>
     </section>
-    <ProjectNotFound/>
+    <ProjectNotFound />
   </article>
 {/if}
 
@@ -91,7 +92,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
   }
 
   .error a {
-    margin-top: .6rem;
+    margin-top: 0.6rem;
     display: inline-block;
   }
 

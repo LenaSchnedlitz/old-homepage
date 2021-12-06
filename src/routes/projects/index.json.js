@@ -8,6 +8,6 @@ export async function get() {
 
   return {
     status: 200,
-    body: JSON.stringify(body)
+    body: JSON.stringify(body),
   };
 }

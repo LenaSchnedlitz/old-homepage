@@ -45,18 +45,21 @@ h1 {
   }
 
   h1.huge {
-    margin: 1.5em 0 .3em;
+    margin: 1.5em 0 0.3em;
   }
 }
 
 @media all and (min-width: 1366px) {
   h1.huge {
-    margin: 1em 0 .3em;
+    margin: 1em 0 0.3em;
   }
 }
 
-h2, h3, h4, h5 {
-  margin: .3em 0 .3em;
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.3em 0 0.3em;
   font-weight: 400;
   line-height: 1.3;
 }
@@ -161,17 +164,24 @@ article {
 mark {
   color: var(--text);
   background-color: transparent;
-  background-image: linear-gradient(var(--bg) 60%, var(--mark) 60%, var(--mark) 100%, var(--bg) 100%);
-  box-shadow: inset 0 .5em 0 1px var(--bg);
-  transition: all ease-in .3s;
+  background-image: linear-gradient(
+    var(--bg) 60%,
+    var(--mark) 60%,
+    var(--mark) 100%,
+    var(--bg) 100%
+  );
+  box-shadow: inset 0 0.5em 0 1px var(--bg);
+  transition: all ease-in 0.3s;
 }
 
 mark:hover {
   border-radius: 0;
   box-shadow: none;
-  background-image: linear-gradient(var(--secondary-color-200), var(--secondary-color-200));
+  background-image: linear-gradient(
+    var(--secondary-color-200),
+    var(--secondary-color-200)
+  );
 }
-
 
 /* LINK *******************************************************************************************/
 
@@ -184,22 +194,26 @@ a {
 p a {
   color: var(--primary-color-600);
 
-  text-shadow: 0 .03em var(--bg);
-  background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--line), var(--line));
+  text-shadow: 0 0.03em var(--bg);
+  background-image: linear-gradient(var(--bg), var(--bg)),
+    linear-gradient(var(--bg), var(--bg)),
+    linear-gradient(var(--line), var(--line));
   background-position: 0 99%, 100% 99%, 0 99%;
-  background-size: .05em 1px, .05em 1px, 1px 1px;
+  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
   background-repeat: no-repeat, no-repeat, repeat-x;
 }
 
 p a:hover {
   color: var(--primary-color);
-  background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--primary-color), var(--primary-color));
+  background-image: linear-gradient(var(--bg), var(--bg)),
+    linear-gradient(var(--bg), var(--bg)),
+    linear-gradient(var(--primary-color), var(--primary-color));
 }
 
 /* CODE *******************************************************************************************/
 
 pre {
-  padding: .5rem 1rem 1rem;
+  padding: 0.5rem 1rem 1rem;
   width: 100%;
   box-sizing: border-box;
   overflow-x: auto;
@@ -207,7 +221,7 @@ pre {
 }
 
 code {
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
 
@@ -228,7 +242,7 @@ code {
 :focus-visible {
   box-shadow: 0 0 0 4px var(--secondary-color);
   outline: none;
-  transition-delay: .1s;
+  transition-delay: 0.1s;
 }
 
 a::selection,

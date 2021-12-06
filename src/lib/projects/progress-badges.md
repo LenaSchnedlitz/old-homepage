@@ -13,8 +13,7 @@ import Icon from '$lib/components/Icon.svelte';
 import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
-This web app was inspired by <a href="https://shields.io/">shields.io</a> and offers an API 
-for adding progress bars to markdown files.
+This web app was inspired by <a href="https://shields.io/">shields.io</a> and offers an API for adding progress bars to markdown files.
 
 <Figure src="/projects/progress-badges/default.svg">Default Theme</Figure>
 
