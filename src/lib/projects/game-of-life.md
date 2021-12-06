@@ -8,6 +8,8 @@ previewType: 'gif'
 
 <script>
 import Figure from '$lib/components/Figure.svelte';
+import Icon from '$lib/components/Icon.svelte';
+import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
 I implemented a variant of the famous [Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) 
@@ -30,10 +32,10 @@ evolutions like in figure 2.
 
 Feel free to play around as well!
 
-<section class="meta-links">
+<ProjectLinks>
     <a href="https://github.com/LenaSchnedlitz/hexagonal-game-of-life">
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
-    Fork me on GitHub
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='github'></Icon>
+        Fork me on GitHub
+        <Icon name='arrow-right'></Icon>
     </a>
-</section>
+</ProjectLinks>

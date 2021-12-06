@@ -9,6 +9,8 @@ previewType: 'png'
 <script>
 import Figure from '$lib/components/Figure.svelte';
 import FigureGroup from '$lib/components/FigureGroup.svelte';
+import Icon from '$lib/components/Icon.svelte';
+import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
 In my opinion, Skyrim is one of the best games ever made.
@@ -30,10 +32,10 @@ Results can be exported as a text file.
     <Figure src="/projects/skycalc/results.png">SkyCalc <strong>Results</strong></Figure>
 </FigureGroup>
 
-<section class="meta-links">
+<ProjectLinks>
     <a href="https://github.com/LenaSchnedlitz/skycalc">
-        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
+        <Icon name='github'></Icon>
         Fork me on GitHub
-        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='arrow-right'></Icon>
     </a>
-</section>
+</ProjectLinks>

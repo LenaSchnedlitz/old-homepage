@@ -29,6 +29,7 @@
   import Figure from '$lib/components/Figure.svelte';
   import FigureGroup from '$lib/components/FigureGroup.svelte';
   import FigureRow from '$lib/components/FigureRow.svelte';
+  import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
 <!-- workaround for svelte bug;

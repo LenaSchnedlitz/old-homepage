@@ -9,6 +9,8 @@ previewType: 'svg'
 <script>
 import Figure from '$lib/components/Figure.svelte';
 import FigureRow from '$lib/components/FigureRow.svelte';
+import Icon from '$lib/components/Icon.svelte';
+import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
 This web app was inspired by <a href="https://shields.io/">shields.io</a> and offers an API 
@@ -27,14 +29,14 @@ for adding progress bars to markdown files.
 <br>
 &nbsp;
 
-<section class="meta-links">
+<ProjectLinks>
     <a href="https://progressbadges.herokuapp.com/">
     Try it out!
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='arrow-right'></Icon>
     </a>
     <a href="https://github.com/LenaSchnedlitz/progress">
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
-    Fork me on GitHub
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='github'></Icon>
+        Fork me on GitHub
+        <Icon name='arrow-right'></Icon>
     </a>
-</section>
+</ProjectLinks>

@@ -8,6 +8,8 @@ previewType: 'png'
 
 <script>
 import Figure from '$lib/components/Figure.svelte';
+import Icon from '$lib/components/Icon.svelte';
+import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
 [LUUPS](https://www.luups.net/) is a city guide with vouchers that is
@@ -28,11 +30,10 @@ by voucher type and/or tag.
 *Note:* A year after the development of LUUPS Map, LUUPS added an official map to their homepage. As a result,
 this project will not be updated any more.
 
-
-<section class="meta-links">
+<ProjectLinks>
     <a href="https://github.com/Team-LANS/luups-map">
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
-    Fork me on GitHub
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='github'></Icon>
+        Fork me on GitHub
+        <Icon name='arrow-right'></Icon>
     </a>
-</section>
+</ProjectLinks>

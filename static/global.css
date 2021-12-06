@@ -222,56 +222,6 @@ p a:hover {
   background-image: linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--bg), var(--bg)), linear-gradient(var(--primary-color), var(--primary-color));
 }
 
-.portfolio .meta-links {
-  position: absolute;
-  bottom: 6rem;
-  display: flex;
-}
-
-.portfolio .meta-links a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: .25rem 1rem;
-  border: solid 1px var(--text);
-}
-
-.portfolio .meta-links a:not(:last-child) {
-  border-right: 0 transparent;
-}
-
-.portfolio .meta-links a {
-  font-size: var(--font--small);
-}
-
-@media all and (min-width: 768px) {
-  .portfolio .meta-links a {
-    font-size: 1rem;
-  }
-}
-
-.portfolio .meta-links .icon:first-child:not(:last-child) {
-  stroke-width: 2;
-  margin-right: .5rem;
-}
-
-.portfolio .meta-links .icon:last-child {
-  stroke-width: 2;
-  margin-left: .5rem;
-}
-
-/* SVG ********************************************************************************************/
-
-svg.icon {
-  width: 1rem;
-  height: 1rem;
-  fill: none;
-  stroke: var(--grey-950);
-  stroke-width: 1px;
-  stroke-linecap: square;
-  stroke-linejoin: round;
-}
-
 /* CODE *******************************************************************************************/
 
 pre {

@@ -1,5 +1,6 @@
 <script>
   import {onMount} from 'svelte';
+  import Icon from '$lib/components/Icon.svelte';
 
   const STORAGE_KEY = 'theme';
   const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
@@ -56,12 +57,8 @@
   <input type="checkbox" bind:checked={lightOn} on:click={toggleTheme}/>
   <span class="toggle">
     <span class="toggle-icons">
-        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use href="/icons/sprite.svg#moon"/>
-        </svg>
-        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-          <use href="/icons/sprite.svg#sun"/>
-        </svg>
+      <Icon name='moon' />
+      <Icon name='sun' />
     </span>
   </span>
 </label>
@@ -153,7 +150,7 @@
     pointer-events: none;
   }
 
-  svg {
+  .toggle-icons :global(svg) {
     stroke: currentColor;
     stroke-width: 2px;
     height: calc(var(--toggle-height) - var(--icon-padding));

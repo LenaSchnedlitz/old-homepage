@@ -8,6 +8,8 @@ previewType: 'png'
 
 <script>
 import Figure from '$lib/components/Figure.svelte';
+import Icon from '$lib/components/Icon.svelte';
+import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
 [Vampire](https://vprover.github.io/) is a theorem prover for first order logic 
@@ -19,10 +21,10 @@ Check out the official [SatVis paper](https://link.springer.com/chapter/10.1007%
 
 <Figure src="/projects/satvis/visualization.png">SatVis <strong>Graph</strong></Figure>
 
-<section class="meta-links">
+<ProjectLinks>
     <a href="https://github.com/gleiss/saturation-visualization">
-        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
+        <Icon name='github'></Icon>
         Fork me on GitHub
-        <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='arrow-right'></Icon>
     </a>
-</section>
+</ProjectLinks>

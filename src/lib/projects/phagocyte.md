@@ -8,6 +8,8 @@ previewType: 'png'
 
 <script>
 import Figure from '$lib/components/Figure.svelte';
+import Icon from '$lib/components/Icon.svelte';
+import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
 We all take the current pandemic very seriously and have adapted our lifestyles accordingly.
@@ -18,15 +20,15 @@ It gained some traction on [Hacker News.](https://news.ycombinator.com/item?id=2
 
 <Figure src="/projects/phagocyte/demo.png">Phagocyte <strong>Demo</strong></Figure>
 
-<section class="meta-links">
+<ProjectLinks>
 <a href="https://addons.mozilla.org/firefox/addon/phagocyte/">
 Try it out!
-<svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='arrow-right'></Icon>
 </a>
 
 <a href="https://github.com/LenaSchnedlitz/phagocyte">
-<svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
-Fork me on GitHub
-<svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='github'></Icon>
+        Fork me on GitHub
+        <Icon name='arrow-right'></Icon>
 </a>
-</section>
+</ProjectLinks>

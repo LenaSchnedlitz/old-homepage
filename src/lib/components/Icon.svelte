@@ -1,25 +1,19 @@
 <script>
   export let name;
-  export let fat = false;
 </script>
 
-<svg width="24" height="24" viewBox="0 0 24 24" class="icon" class:fat aria-hidden="true">
-  <use xlink:href="/icons/sprite.svg#{name}" />
+<svg viewBox="0 0 24 24" aria-hidden="true">
+  <use href="/icons/sprite.svg#{name}" />
 </svg>
 
 <style>
   svg {
-    position: relative;
-    width: 0.9em;
-    height: 0.9em;
-    bottom: calc(var(--line-height) - 24px);
+    width: 1rem;
+    height: 1rem;
     fill: none;
     stroke: currentColor;
-    stroke-width: 2px;
-    stroke-linecap: round;
-  }
-
-  .fat {
-    stroke-width: 3px;
+    stroke-width: 1px;
+    stroke-linecap: square;
+    stroke-linejoin: round;
   }
 </style>

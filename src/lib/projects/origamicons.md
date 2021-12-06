@@ -9,6 +9,8 @@ previewType: 'png'
 <script>
 import Figure from '$lib/components/Figure.svelte';
 import FigureRow from '$lib/components/FigureRow.svelte';
+import Icon from '$lib/components/Icon.svelte';
+import ProjectLinks from '$lib/components/ProjectLinks.svelte';
 </script>
 
 After a long and slow demise, [SHA-1](https://shattered.io/) is finally dead.
@@ -30,15 +32,15 @@ folded paper. It can be accessed via [web interface](https://origamicons.herokua
 </FigureRow>
 
 
-<section class="meta-links">
+<ProjectLinks>
 <a href="https://origamicons.herokuapp.com/" class="meta link">
     Try it out!
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='arrow-right'></Icon>
 </a>
 
 <a href="https://github.com/LenaSchnedlitz/origamicons">
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
-    Fork me on GitHub
-    <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
+        <Icon name='github'></Icon>
+        Fork me on GitHub
+        <Icon name='arrow-right'></Icon>
 </a>
-</section>
+</ProjectLinks>
