@@ -16,7 +16,7 @@ I teamed up with another Viennese software engineer, <a href="https://github.com
 to develop exactly this.
 
 <figure>
-<img src="/luups-map/map.png" alt=""/>
+<img src="/projects/luups-map/map.png" alt=""/>
 <figcaption>LUUPS Map <strong>Screenshot</strong></figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ by voucher type and/or tag.
 
 
 <figure class="right">
-<img src="/luups-map/filter.png" alt=""/>
+<img src="/projects/luups-map/filter.png" alt=""/>
 <figcaption>LUUPS Map <strong>Filter</strong></figcaption>
 </figure>
 

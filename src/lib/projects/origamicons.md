@@ -20,32 +20,32 @@ folded paper. It can be accessed via <a href="https://origamicons.herokuapp.com/
 <section class="figrow">
 
 <figure>
-<img src="/origamicons/origamicon_Alice.png" alt=""/>
+<img src="/projects/origamicons/origamicon_Alice.png" alt=""/>
 <figcaption>Origamicons <strong>Alice</strong></figcaption>
 </figure>
 
 <figure>
-<img src="/origamicons/origamicon_Bob.png" alt=""/>
+<img src="/projects/origamicons/origamicon_Bob.png" alt=""/>
 <figcaption>Origamicons <strong>Bob</strong></figcaption>
 </figure>
 
 <figure>
-<img src="/origamicons/origamicon_origamicons.png" alt=""/>
+<img src="/projects/origamicons/origamicon_origamicons.png" alt=""/>
 <figcaption>Origamicons <strong>origamicons</strong></figcaption>
 </figure>
 
 <figure>
-<img src="/origamicons/origamicon_SHA-1 Origamicons.png" alt=""/>
+<img src="/projects/origamicons/origamicon_SHA-1 Origamicons.png" alt=""/>
 <figcaption>Origamicons <strong>SHA-1 Origamicons</strong></figcaption>
 </figure>
 
 <figure>
-<img src="/origamicons/origamicon_SHA-1 Origamicon.png" alt=""/>
+<img src="/projects/origamicons/origamicon_SHA-1 Origamicon.png" alt=""/>
 <figcaption>Origamicons <strong>SHA-1 Origamicon</strong></figcaption>
 </figure>
 
 <figure>
-<img src="/origamicons/origamicon_lena.png" alt=""/>
+<img src="/projects/origamicons/origamicon_lena.png" alt=""/>
 <figcaption>Origamicons <strong>lena</strong></figcaption>
 </figure>
 

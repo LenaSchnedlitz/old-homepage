@@ -17,7 +17,7 @@ Check out the official <a href="https://link.springer.com/chapter/10.1007%2F978-
 to learn more.
 
 <figure>
-<img src="/satvis/visualization.png" alt=""/>
+<img src="/projects/satvis/visualization.png" alt=""/>
 <figcaption>SatVis <strong>Graph</strong></figcaption>
 </figure>
 
