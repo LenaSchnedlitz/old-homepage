@@ -20,32 +20,32 @@ folded paper. It can be accessed via <a href="https://origamicons.herokuapp.com/
 <section class="figrow">
 
 <figure>
-<img src="origamicons/origamicon_Alice.png" alt="Alice"/>
+<img src="/origamicons/origamicon_Alice.png" alt=""/>
 <figcaption>Origamicons <strong>Alice</strong></figcaption>
 </figure>
 
 <figure>
-<img src="origamicons/origamicon_Bob.png" alt="Bob"/>
+<img src="/origamicons/origamicon_Bob.png" alt=""/>
 <figcaption>Origamicons <strong>Bob</strong></figcaption>
 </figure>
 
 <figure>
-<img src="origamicons/origamicon_origamicons.png" alt="origamicons"/>
+<img src="/origamicons/origamicon_origamicons.png" alt=""/>
 <figcaption>Origamicons <strong>origamicons</strong></figcaption>
 </figure>
 
 <figure>
-<img src="origamicons/origamicon_SHA-1 Origamicons.png" alt="SHA-1 Origamicons"/>
+<img src="/origamicons/origamicon_SHA-1 Origamicons.png" alt=""/>
 <figcaption>Origamicons <strong>SHA-1 Origamicons</strong></figcaption>
 </figure>
 
 <figure>
-<img src="origamicons/origamicon_SHA-1 Origamicon.png" alt="SHA-1 Origamicon"/>
+<img src="/origamicons/origamicon_SHA-1 Origamicon.png" alt=""/>
 <figcaption>Origamicons <strong>SHA-1 Origamicon</strong></figcaption>
 </figure>
 
 <figure>
-<img src="origamicons/origamicon_lena.png" alt="lena"/>
+<img src="/origamicons/origamicon_lena.png" alt=""/>
 <figcaption>Origamicons <strong>lena</strong></figcaption>
 </figure>
 
@@ -62,5 +62,5 @@ folded paper. It can be accessed via <a href="https://origamicons.herokuapp.com/
     <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#github"/></svg>
     Fork me on GitHub
     <svg viewBox="0 0 24 24" class="icon"><use xlink:href="/icons/sprite.svg#arrow-right"/></svg>
-    </a>
+</a>
 </section>

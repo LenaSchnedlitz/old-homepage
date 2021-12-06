@@ -13,28 +13,28 @@ This web app was inspired by <a href="https://shields.io/">shields.io</a> and of
 for adding progress bars to markdown files.
 
 <figure class="stretch">
-<img src="progress-badges/default.svg" alt="Default Theme"/>
+<img src="/progress-badges/default.svg" alt="Default Theme"/>
 </figure>
 
 <figure class="stretch">
-<img src="progress-badges/minimal.svg" alt="Minimal Theme"/>
+<img src="/progress-badges/minimal.svg" alt="Minimal Theme"/>
 </figure>
 
 <section class="figrow">
 <figure>
-<img src="progress-badges/badge_low.svg" alt="Badge Theme - Low"/>
+<img src="/progress-badges/badge_low.svg" alt="Badge Theme - Low"/>
 </figure>
 
 <figure>
-<img src="progress-badges/badge_medium.svg" alt="Badge Theme - Medium"/>
+<img src="/progress-badges/badge_medium.svg" alt="Badge Theme - Medium"/>
 </figure>
 
 <figure>
-<img src="progress-badges/badge_medium_high.svg" alt="Badge Theme - Medium-High"/>
+<img src="/progress-badges/badge_medium_high.svg" alt="Badge Theme - Medium-High"/>
 </figure>
 
 <figure>
-<img src="progress-badges/badge_high.svg" alt="Badge Theme - High"/>
+<img src="/progress-badges/badge_high.svg" alt="Badge Theme - High"/>
 </figure>
 </section>
 

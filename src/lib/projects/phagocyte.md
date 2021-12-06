@@ -17,7 +17,7 @@ It gained some traction on <a href="https://news.ycombinator.com/item?id=2278111
 
 
 <figure>
-<img src="phagocyte/demo.png" alt="Demo"/>
+<img src="/phagocyte/demo.png" alt=""/>
 <figcaption>Phagocyte <strong>Demo</strong></figcaption>
 </figure>
 

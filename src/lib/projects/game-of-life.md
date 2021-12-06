@@ -19,7 +19,7 @@ exactly 2 living cells and they survive if surrounded by 3 or 4 other live cells
 produces some nice oscillators, like the one in figure 1.
 
 <figure>
-<img src="game-of-life.gif" alt="B2/S34 - Oscillator"/>
+<img src="/game-of-life.gif" alt=""/>
 <figcaption>Figure 1: B2/S34 <strong>Oscillator</strong></figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ evolutions like in figure 2.
 
 
 <figure class="no-margin">
-<img src="game-of-life/expansion.gif" alt="B1/S12 - Expansion"/>
+<img src="/game-of-life/expansion.gif" alt=""/>
 <figcaption>Figure 2: B1/S12 <strong>Expansion</strong></figcaption>
 </figure>
 

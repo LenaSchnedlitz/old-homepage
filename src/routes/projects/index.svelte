@@ -37,7 +37,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 
   {#each posts as post}
     <section class="{post.slug} appear">
-      <a class="pic-wrapper" href="/projects/{post.slug}" rel="prefetch" title={post.title}>
+      <a class="pic-wrapper" href="/projects/{post.slug}" rel="prefetch" title={post.title} aria-hidden='true'>
         <img alt="{post.title}" src="/projects/{post.slug}.{post.previewType}"
              class:tiny={post.tiny}/>
       </a>
