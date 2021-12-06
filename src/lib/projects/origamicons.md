@@ -4,52 +4,30 @@ rank: 7
 title: 'Origamicons'
 teaser: 'Identicons inspired by folded paper.'
 previewType: 'png'
-background: 'gray-light'
-align: 'right'
 ---
 
-After a long and slow demise, <a href="https://shattered.io/">SHA-1</a> is finally dead.
+<script>
+import Figure from '$lib/components/Figure.svelte';
+import FigureRow from '$lib/components/FigureRow.svelte';
+</script>
+
+After a long and slow demise, [SHA-1](https://shattered.io/) is finally dead.
 What can you do with broken cryptographic functions? Create identicons, of course.
 
 The origamicon generator uses SHA-1 hashes to create *almost* unique pictures that slightly resemble
-folded paper. It can be accessed via <a href="https://origamicons.herokuapp.com/">web interface</a> or used offline as a command line tool.
+folded paper. It can be accessed via [web interface](https://origamicons.herokuapp.com/) or used offline as a command line tool.
 
 
 **<mark>Examples:</mark>**
 
-<section class="figrow">
-
-<figure>
-<img src="/projects/origamicons/origamicon_Alice.png" alt=""/>
-<figcaption>Origamicons <strong>Alice</strong></figcaption>
-</figure>
-
-<figure>
-<img src="/projects/origamicons/origamicon_Bob.png" alt=""/>
-<figcaption>Origamicons <strong>Bob</strong></figcaption>
-</figure>
-
-<figure>
-<img src="/projects/origamicons/origamicon_origamicons.png" alt=""/>
-<figcaption>Origamicons <strong>origamicons</strong></figcaption>
-</figure>
-
-<figure>
-<img src="/projects/origamicons/origamicon_SHA-1 Origamicons.png" alt=""/>
-<figcaption>Origamicons <strong>SHA-1 Origamicons</strong></figcaption>
-</figure>
-
-<figure>
-<img src="/projects/origamicons/origamicon_SHA-1 Origamicon.png" alt=""/>
-<figcaption>Origamicons <strong>SHA-1 Origamicon</strong></figcaption>
-</figure>
-
-<figure>
-<img src="/projects/origamicons/origamicon_lena.png" alt=""/>
-<figcaption>Origamicons <strong>lena</strong></figcaption>
-</figure>
-
-</section>
+<FigureRow>
+<Figure src="/projects/origamicons/origamicon_Alice.png">Origamicons <strong>Alice</strong></Figure>
+<Figure src="/projects/origamicons/origamicon_Bob.png">Origamicons <strong>Bob</strong></Figure>
+<Figure src="/projects/origamicons/origamicon_origamicons.png">Origamicons <strong>origamicons</strong></Figure>
+<Figure src="/projects/origamicons/origamicon_SHA-1 Origamicons.png">Origamicons <strong>SHA-1 Origamicons</strong></Figure>
+<Figure src="/projects/origamicons/origamicon_SHA-1 Origamicon.png">Origamicons <strong>SHA-1 Origamicon</strong></Figure>
+<Figure src="/projects/origamicons/origamicon_lena.png">Origamicons <strong>lena</strong></Figure>
+</FigureRow>
 
 
 <section class="meta-links">

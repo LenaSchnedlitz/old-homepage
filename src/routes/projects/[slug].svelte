@@ -24,6 +24,11 @@
   export let post;
 
   import ProjectNotFound from '$lib/illustrations/project-not-found.svelte'
+
+  // Those are necessary to make CSS modules work
+  import Figure from '$lib/components/Figure.svelte';
+  import FigureGroup from '$lib/components/FigureGroup.svelte';
+  import FigureRow from '$lib/components/FigureRow.svelte';
 </script>
 
 <!-- workaround for svelte bug;

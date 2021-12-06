@@ -4,22 +4,20 @@ rank: 1
 title: 'SatVis'
 teaser: 'Visualize Vampire saturation runs.'
 previewType: 'png'
-background: 'secondary'
-align: 'right'
 ---
 
-&shy;<a href="https://vprover.github.io/">Vampire</a> is a theorem prover for first order logic 
+<script>
+import Figure from '$lib/components/Figure.svelte';
+</script>
+
+[Vampire](https://vprover.github.io/) is a theorem prover for first order logic 
 that is able to produce detailed proofs in a short time. However, debugging failed proof attempts can be
-quite cumbersome. SatVis attempts to change this by providing features such as *derivation visualization*,
-*clause reformatting*, *common parent and/or consequence search*, and many more.
+quite cumbersome. SatVis attempts to change this by providing features such as *derivation visualization,*
+*clause reformatting,* *common parent and/or consequence search,* and many more.
 
-Check out the official <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-34968-4_28">SatVis&nbsp;paper</a>
-to learn more.
+Check out the official [SatVis paper](https://link.springer.com/chapter/10.1007%2F978-3-030-34968-4_28) to learn more.
 
-<figure>
-<img src="/projects/satvis/visualization.png" alt=""/>
-<figcaption>SatVis <strong>Graph</strong></figcaption>
-</figure>
+<Figure src="/projects/satvis/visualization.png">SatVis <strong>Graph</strong></Figure>
 
 <section class="meta-links">
     <a href="https://github.com/gleiss/saturation-visualization">

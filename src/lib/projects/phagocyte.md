@@ -4,23 +4,19 @@ rank: 3
 title: 'Phagocyte'
 teaser: 'Hide articles about COVID-19 in Firefox.'
 previewType: 'png'
-background: 'primary-dark'
-align: 'left'
 ---
 
+<script>
+import Figure from '$lib/components/Figure.svelte';
+</script>
+
 We all take the current pandemic very seriously and have adapted our lifestyles accordingly.
-Shouldn't we focus on our physical and mental wellbeing instead of spending a whole afternoon tracking death statistics?  
+Shouldn't we focus on our physical and mental well-being instead of spending a whole afternoon tracking death statistics?  
 To help with that, I made a simple Firefox add-on that hides *most* articles about COVID-19.
 The tool uses basic text matching to identify posts about SARS-CoV-2 and its consequences.
-It gained some traction on <a href="https://news.ycombinator.com/item?id=22781113">Hacker&nbsp;News</a>.
+It gained some traction on [Hacker News.](https://news.ycombinator.com/item?id=22781113)
 
-
-
-<figure>
-<img src="/projects/phagocyte/demo.png" alt=""/>
-<figcaption>Phagocyte <strong>Demo</strong></figcaption>
-</figure>
-
+<Figure src="/projects/phagocyte/demo.png">Phagocyte <strong>Demo</strong></Figure>
 
 <section class="meta-links">
 <a href="https://addons.mozilla.org/firefox/addon/phagocyte/">

@@ -13,6 +13,7 @@ const config = {
 			preserve: ['module']
 		}),
 		mdsvex({
+			preserve: ['module'],
 			extensions: extensions
 		})
 	],
