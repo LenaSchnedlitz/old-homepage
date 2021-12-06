@@ -1,0 +1,246 @@
+<script context="module">
+  function sortPostsByRankDescendingly(postA, postB) {
+    if (postA.rank > postB.rank) {
+      return -1;
+    } else if (postB.rank > postA.rank) {
+      return 1;
+    }
+    return 0;
+  }
+
+  export async function load({ fetch }) {
+    const url = '/blog.json';
+    const res = await fetch(url);
+    const posts = await res.json();
+    posts.sort(sortPostsByRankDescendingly);
+
+    return {
+      props: { posts },
+    };
+  }
+</script>
+
+<script>
+  export let posts;
+</script>
+
+<svelte:head>
+  <title>Lena Schnedlitz - Blog</title>
+</svelte:head>
+
+<!-- workaround for svelte bug;
+see https://github.com/sveltejs/svelte/issues/6325 -->
+{#if false}<slot />{/if}
+
+<article>
+  <h1 class="huge">Blog</h1>
+
+  {#each posts as post}
+    <section class="{post.slug} appear">
+      <a
+        class="pic-wrapper"
+        href="/projects/{post.slug}"
+        rel="prefetch"
+        title={post.title}
+        aria-hidden="true"
+      >
+        <img
+          alt={post.title}
+          src="/projects/{post.slug}.{post.previewType}"
+          class:tiny={post.tiny}
+        />
+      </a>
+      <div
+        class="text-wrapper"
+        href="/projects/{post.slug}"
+        rel="prefetch"
+        title={post.title}
+      >
+        <a
+          href="/projects/{post.slug}"
+          rel="prefetch"
+          title={post.title}
+          tabindex="-1"
+        >
+          <h3>{post.title}</h3>
+          <span>{post.teaser}</span>
+        </a>
+      </div>
+    </section>
+  {/each}
+</article>
+
+<style>
+  section {
+    margin-bottom: 3rem;
+  }
+
+  .pic-wrapper img {
+    width: 100%;
+    height: 62vw;
+    object-fit: cover;
+  }
+
+  .text-wrapper {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .game-of-life .pic-wrapper {
+    background: #d8dee9;
+    filter: grayscale(70%);
+  }
+
+  .luups-map img {
+    object-position: top;
+  }
+
+  .satvis img {
+    object-position: top;
+  }
+
+  .progress-badges img {
+    object-fit: contain;
+    padding: 20%;
+    background: var(--grey-25);
+  }
+
+  .phagocyte img {
+    object-position: right;
+  }
+
+  @media all and (min-width: 768px) {
+    h1 {
+      margin-bottom: 1.3em;
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-gap: 0;
+      grid-auto-flow: dense;
+      margin-bottom: 6rem;
+    }
+
+    .pic-wrapper,
+    .text-wrapper {
+      grid-column-end: span 1;
+    }
+
+    .pic-wrapper {
+      height: 20vw;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1;
+    }
+
+    .pic-wrapper img {
+      height: 100%;
+    }
+
+    .text-wrapper {
+      padding: 1rem 2rem;
+      align-self: end;
+    }
+
+    .text-wrapper h3 {
+      margin-top: 0;
+    }
+
+    section:nth-child(even) .pic-wrapper {
+      grid-column-start: 1;
+    }
+
+    section:nth-child(odd) .text-wrapper {
+      grid-column-start: 2;
+    }
+
+    section:nth-child(even) .text-wrapper,
+    section:nth-child(odd) .pic-wrapper {
+      grid-column-start: 2;
+    }
+
+    section:nth-child(4n - 2) .text-wrapper {
+      align-self: start;
+    }
+
+    section:nth-child(4n - 1) .text-wrapper {
+      text-align: right;
+    }
+
+    section:nth-child(4n - 1) .pic-wrapper {
+      grid-column-start: 3;
+    }
+
+    section:nth-child(4n + 1) .text-wrapper {
+      grid-column-start: 3;
+    }
+
+    section:nth-child(even) .pic-wrapper:hover {
+      transform: translate3d(1rem, -0.5rem, 0) scale(1.01, 1.01);
+      transition: all ease-out 0.5s;
+    }
+
+    section:nth-child(odd) .pic-wrapper:hover {
+      transform: translate3d(-1rem, -0.5rem, 0) scale(1.01, 1.01);
+      transition: all ease-out 0.5s;
+    }
+
+    .game-of-life img {
+      object-fit: contain;
+    }
+  }
+
+  @media all and (min-width: 1366px) {
+    section {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-bottom: 16rem;
+    }
+
+    .pic-wrapper,
+    .text-wrapper {
+      grid-column-end: span 2;
+    }
+
+    .pic-wrapper {
+      height: 24vw;
+    }
+
+    section:nth-child(even) .pic-wrapper,
+    section:nth-child(odd) .text-wrapper {
+      grid-column-start: 1;
+    }
+
+    section:nth-child(even) .text-wrapper,
+    section:nth-child(odd) .pic-wrapper {
+      grid-column-start: 3;
+    }
+
+    section:nth-child(4n + 1) .pic-wrapper {
+      grid-column-end: span 1;
+      height: 16vw;
+    }
+
+    section:nth-child(4n - 2) .text-wrapper {
+      align-self: start;
+    }
+
+    section:nth-child(4n - 1) .text-wrapper {
+      text-align: right;
+    }
+
+    section:nth-child(4n + 1) .text-wrapper {
+      grid-column-end: span 1;
+      grid-column-start: 4;
+    }
+
+    section:nth-child(even) .pic-wrapper:hover {
+      transform: translate3d(3rem, -1rem, 0) scale(1.01, 1.01);
+    }
+
+    section:nth-child(odd) .pic-wrapper:hover {
+      transform: translate3d(-3rem, -1rem, 0) scale(1.01, 1.01);
+    }
+  }
+</style>
