@@ -6,13 +6,14 @@
   <ul>
     <li>
       <a
-        rel=prefetch
+        rel="prefetch"
         aria-current={segment === 'blog' ? 'page' : undefined}
-        href='/blog'>Blog</a>
+        href="/blog">Blog</a
+      >
     </li>
     <li>
       <a
-        rel=prefetch
+        rel="prefetch"
         aria-current={segment === 'projects' ? 'page' : undefined}
         href="/projects">Projects</a
       >

@@ -1,18 +1,9 @@
 <script context="module">
-  function sortPostsByRankDescendingly(postA, postB) {
-    if (postA.rank > postB.rank) {
-      return -1;
-    } else if (postB.rank > postA.rank) {
-      return 1;
-    }
-    return 0;
-  }
-
   export async function load({ fetch }) {
     const url = '/projects.json';
     const res = await fetch(url);
     const posts = await res.json();
-    posts.sort(sortPostsByRankDescendingly);
+    posts.sort((a, b) => b.rank - a.rank);
 
     return {
       props: { posts },
