@@ -30,7 +30,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
   <h1 class="huge">Blog</h1>
 
   <section class="featured appear">
-    <Illustration />
+    <Illustration {...featured} customClass="illustration" />
     <div>
       <h3>{featured.title}</h3>
       <p>{featured.teaser}</p>
@@ -39,7 +39,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 
   {#each posts as post, i}
     <section class="post variant-{i % 2} appear">
-      <Illustration />
+      <Illustration {...post} />
       <h3>{post.title}</h3>
       <p>{post.teaser}</p>
     </section>
@@ -49,6 +49,11 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 <style>
   section {
     margin-bottom: 3rem;
+  }
+
+  .featured h3,
+  .post h3 {
+    margin-top: 0.75rem;
   }
 
   @media all and (min-width: 768px) {
@@ -62,9 +67,15 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .featured > :global(div):first-child {
+    .featured > :global(.illustration) {
       grid-column-end: span 2;
       height: 400px;
+    }
+
+    .featured > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
     .post {
@@ -80,7 +91,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    .featured > :global(div):first-child {
+    .featured > :global(.illustration) {
       grid-column-end: span 2;
       height: 300px;
     }

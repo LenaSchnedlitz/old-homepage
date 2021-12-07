@@ -19,7 +19,7 @@
 <script>
   export let post;
 
-  import ProjectNotFound from '$lib/illustrations/project-not-found.svelte';
+  import ProjectNotFound from '$lib/illustrations/404.svelte';
 
   // Those are necessary to make CSS modules work
   import Figure from '$lib/components/Figure.svelte';
