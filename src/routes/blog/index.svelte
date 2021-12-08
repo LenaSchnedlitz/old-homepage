@@ -50,17 +50,17 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 
 <style>
   .blog {
-    padding-bottom: 6rem;
     min-height: 100vh;
   }
 
   a {
     margin-bottom: 3rem;
+    height: max-content;
   }
 
   .featured h3,
   .post h3 {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
   }
 
   .featured > :global(.illustration),
@@ -93,9 +93,9 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     }
 
     .featured .text {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      height: max-content;
+      align-self: end;
+      padding-bottom: 1rem;
     }
 
     .post {

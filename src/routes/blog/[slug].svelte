@@ -63,6 +63,10 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     padding-bottom: 9rem;
   }
 
+  .blog h1 {
+    font-family: var(--font-mono-circle);
+  }
+
   .blog :global(.illustration) {
     aspect-ratio: 16 / 10;
     margin-bottom: 1rem;
@@ -77,6 +81,12 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
   @media all and (min-width: 768px) {
     article.blog > :global(*:not(h1)) {
       grid-column-end: 3;
+    }
+
+    @media all and (orientation: portrait) {
+      article.blog > :global(*:not(h1)) {
+        grid-column-end: 4;
+      }
     }
 
     article.blog :global(em) {
