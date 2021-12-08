@@ -18,7 +18,7 @@
 
 <script>
   import Illustration from '$lib/components/Illustration.svelte';
-  import ProjectNotFound from '$lib/illustrations/404.svelte';
+  import BlogNotFound from '$lib/illustrations/404.svelte';
   import { stripTags } from '$lib/utils';
 
   export let post;
@@ -52,7 +52,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
         <a href="/blog">Click here!</a>
       </p>
     </section>
-    <ProjectNotFound />
+    <BlogNotFound />
   </article>
 {/if}
 
