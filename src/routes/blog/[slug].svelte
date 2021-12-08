@@ -67,6 +67,13 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     font-family: var(--font-mono-circle);
   }
 
+  .blog h1 :global(strong) {
+    font-weight: 500;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text);
+  }
+
   .blog :global(.illustration) {
     aspect-ratio: 16 / 10;
     margin-bottom: 1rem;
