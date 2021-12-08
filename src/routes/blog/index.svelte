@@ -31,7 +31,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 <article class="blog">
   <h1 class="huge">Blog</h1>
 
-  <a class="featured appear" href="/blog/{featured.slug}">
+  <a class="featured appear" href="/blog/{featured.slug}" rel='prefetch'>
     <Illustration {...featured} customClass="illustration" featured />
     <section class="text">
       <h3>{@html featured.title}</h3>
