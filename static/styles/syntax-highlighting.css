@@ -1,0 +1,41 @@
+.token.attr-name,
+.token.attr-value > .token.punctuation,
+.token.function,
+.token.selector {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.token.operator {
+  color: var(--primary-color-800);
+  font-weight: 500;
+}
+
+.token.string {
+  color: var(--primary-color-800);
+}
+
+.token.punctuation,
+.token.keyword {
+  opacity: .75;
+  color: var(--tertiary-color-800);
+}
+
+.token.rule,
+.token.constant,
+.token.tag > .token.tag {
+  color: var(--tertiary-color-800);
+  font-weight: 500;
+}
+
+.token.property {
+  color: var(--tertiary-color-800)
+}
+
+.token.namespace {
+  font-weight: 500;
+}
+
+.token.comment {
+  opacity: .5;
+}
