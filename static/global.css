@@ -4,6 +4,11 @@
 @import 'styles/syntax-highlighting.css';
 @import 'styles/type-scale.css';
 
+:root {
+  --font-mono-circle: 'Basier Mono Circle', monospace;
+  --font-mono-square: 'Basier Mono Square', monospace;
+}
+
 html {
   font-family: 'Inter', sans-serif;
   font-feature-settings: 'calt';
@@ -33,7 +38,7 @@ html {
 
 h1 {
   margin: 2.5em 0 1.3rem;
-  font-family: 'Basier Mono Square', monospace;
+  font-family: var(--font-mono-square);
   font-weight: 400;
   letter-spacing: -0.05em;
   line-height: 1.3;
@@ -59,6 +64,7 @@ h2 {
   margin: 0.9em 0 0.6em;
   font-weight: 400;
   line-height: 1.3;
+  font-feature-settings: "kern", "ss03";
 }
 
 h3,
@@ -244,7 +250,7 @@ article li::before {
 code,
 pre {
   border-radius: 4px;
-  font-family: 'Basier Mono Circle', monospace;
+  font-family: var(--font-mono-circle);
   font-size: 14px;
   color: var(--tertiary-color-900);
   box-shadow: inset 0 1px 2px 0 var(--tertiary-color-100);

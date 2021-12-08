@@ -89,7 +89,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
     z-index: -1;
     transform: rotate(-90deg);
     transform-origin: bottom right;
-    font-family: 'Basier Mono Square', monospace;
+    font-family: var(--font-mono-square);
     font-weight: 700;
     color: transparent;
     pointer-events: none;

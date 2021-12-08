@@ -13,7 +13,7 @@
   }
 
   figcaption {
-    font-family: 'Basier Mono Square', monospace;
+    font-family: var(--font-mono-square);
     font-size: var(--font--small);
     text-transform: uppercase;
     margin: -0.25rem 0 1.25rem;
