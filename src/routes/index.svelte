@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Lena Schnedlitz</title>
+  <title>Lena Schnedlitz · Home</title>
 </svelte:head>
 
 <!-- workaround for svelte bug;

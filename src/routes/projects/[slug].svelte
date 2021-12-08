@@ -29,7 +29,7 @@
 </script>
 
 <svelte:head>
-  <title>Lena Schnedlitz - {post.title || 'Ooops!'}</title>
+  <title>Lena Schnedlitz · Projects · {post.title || 'Ooops!'}</title>
 </svelte:head>
 
 <!-- workaround for svelte bug;

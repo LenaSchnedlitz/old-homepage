@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-  <title>Lena Schnedlitz - Projects</title>
+  <title>Lena Schnedlitz · Projects</title>
 </svelte:head>
 
 <!-- workaround for svelte bug;

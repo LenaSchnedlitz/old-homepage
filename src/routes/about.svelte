@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Lena Schnedlitz - About</title>
+  <title>Lena Schnedlitz · About</title>
 </svelte:head>
 
 <!-- workaround for svelte bug;

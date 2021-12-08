@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-  <title>Lena Schnedlitz - {stripTags(post.title) || 'Ooops!'}</title>
+  <title>Lena Schnedlitz · Blog · {stripTags(post.title)}</title>
 </svelte:head>
 
 <!-- workaround for svelte bug;

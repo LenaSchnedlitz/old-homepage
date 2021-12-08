@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-  <title>Lena Schnedlitz - Blog</title>
+  <title>Lena Schnedlitz · Blog</title>
 </svelte:head>
 
 <!-- workaround for svelte bug;
