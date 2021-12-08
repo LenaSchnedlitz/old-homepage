@@ -17,7 +17,7 @@
 
 .token.punctuation,
 .token.keyword {
-  opacity: .75;
+  opacity: 0.75;
   color: var(--tertiary-color-800);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .token.property {
-  color: var(--tertiary-color-800)
+  color: var(--tertiary-color-800);
 }
 
 .token.namespace {
@@ -37,5 +37,5 @@
 }
 
 .token.comment {
-  opacity: .5;
+  opacity: 0.5;
 }

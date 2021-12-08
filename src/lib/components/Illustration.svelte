@@ -8,14 +8,15 @@
   export let color = '#bbb';
   export let illustration;
   export let customClass;
+  export let featured;
+
+  let style;
+  $: style = `${
+    featured ? `box-shadow: 2px 8px 24px ${color}66; ` : ''
+  }background: ${backgroundGradient(color)}`;
 </script>
 
-<div
-  class={customClass}
-  style="background: {backgroundGradient(
-    color,
-  )}; box-shadow: 2px 8px 24px {color}66"
->
+<div class={customClass} class:featured {style}>
   <InlineSVG
     src="/illustrations/{illustration}.svg"
     style={illustrationVariables(color)}
@@ -25,7 +26,6 @@
 <style>
   div {
     width: 100%;
-    height: 200px;
     overflow: hidden;
     transition: all ease-in 0.1s;
   }
@@ -77,15 +77,9 @@
   }
 
   @media all and (min-width: 768px) {
-    div:hover {
+    .featured:hover {
       transform: scale(1.05, 1.05);
       transition: all ease-out 0.3s;
-    }
-  }
-
-  @media all and (min-width: 1366px) {
-    div {
-      height: 300px;
     }
   }
 </style>

@@ -1,9 +1,11 @@
 <script context="module">
+  const extractDate = (slug) => new Date(slug.split('_')[0]);
+
   export async function load({ fetch }) {
     const url = '/blog.json';
     const res = await fetch(url);
     const posts = await res.json();
-    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+    posts.sort((a, b) => extractDate(b.slug) - extractDate(a.slug));
 
     return {
       props: { featured: posts[0], posts: posts.slice(1) },
@@ -26,34 +28,43 @@
 see https://github.com/sveltejs/svelte/issues/6325 -->
 {#if false}<slot />{/if}
 
-<article>
+<article class="blog">
   <h1 class="huge">Blog</h1>
 
-  <section class="featured appear">
-    <Illustration {...featured} customClass="illustration" />
-    <div>
-      <h3>{featured.title}</h3>
+  <a class="featured appear" href="/blog/{featured.slug}">
+    <Illustration {...featured} customClass="illustration" featured />
+    <section class="text">
+      <h3>{@html featured.title}</h3>
       <p>{featured.teaser}</p>
-    </div>
-  </section>
+    </section>
+  </a>
 
   {#each posts as post, i}
-    <section class="post variant-{i % 2} appear">
-      <Illustration {...post} />
-      <h3>{post.title}</h3>
+    <a class="post variant-{i % 2} appear" href="/blog/{post.slug}">
+      <Illustration {...post} customClass="illustration" featured />
+      <h3>{@html post.title}</h3>
       <p>{post.teaser}</p>
-    </section>
+    </a>
   {/each}
 </article>
 
 <style>
-  section {
+  .blog {
+    padding-bottom: 6rem;
+  }
+
+  a {
     margin-bottom: 3rem;
   }
 
   .featured h3,
   .post h3 {
     margin-top: 0.75rem;
+  }
+
+  .featured > :global(.illustration),
+  .post > :global(.illustration) {
+    height: 200px;
   }
 
   @media all and (min-width: 768px) {
@@ -72,7 +83,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
       height: 400px;
     }
 
-    .featured > div {
+    .featured .text {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -93,6 +104,10 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 
     .featured > :global(.illustration) {
       grid-column-end: span 2;
+      height: 300px;
+    }
+
+    .post > :global(.illustration) {
       height: 300px;
     }
 

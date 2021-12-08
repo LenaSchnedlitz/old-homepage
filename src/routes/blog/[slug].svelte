@@ -17,19 +17,15 @@
 </script>
 
 <script>
-  export let post;
-
+  import Illustration from '$lib/components/Illustration.svelte';
   import ProjectNotFound from '$lib/illustrations/404.svelte';
+  import { stripTags } from '$lib/utils';
 
-  // Those are necessary to make CSS modules work
-  import Figure from '$lib/components/Figure.svelte';
-  import FigureGroup from '$lib/components/FigureGroup.svelte';
-  import FigureRow from '$lib/components/FigureRow.svelte';
-  import ProjectLinks from '$lib/components/ProjectLinks.svelte';
+  export let post;
 </script>
 
 <svelte:head>
-  <title>Lena Schnedlitz - {post.title || 'Ooops!'}</title>
+  <title>Lena Schnedlitz - {stripTags(post.title) || 'Ooops!'}</title>
 </svelte:head>
 
 <!-- workaround for svelte bug;
@@ -39,9 +35,9 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 {/if}
 
 {#if post && post.title}
-  <article class="portfolio">
-    <h1>{post.title}</h1>
-    <p><strong class="teaser">{post.teaser}</strong></p>
+  <article class="blog">
+    <h1>{@html post.title}</h1>
+    <Illustration {...post} customClass="illustration" />
 
     {@html post.html}
   </article>
@@ -53,7 +49,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
         Seems this content is hiding and doesn't want to be found. Wanna try
         something else instead?
         <br />
-        <a href="/projects">Click here!</a>
+        <a href="/blog">Click here!</a>
       </p>
     </section>
     <ProjectNotFound />
@@ -61,25 +57,36 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 {/if}
 
 <style>
-  .portfolio {
+  .blog {
     position: relative;
     min-height: 100vh;
     padding-bottom: 9rem;
   }
 
-  .portfolio > :global(*:not(h1)) {
-    animation: appear 0.8s ease-in-out both;
+  .blog :global(.illustration) {
+    aspect-ratio: 16 / 10;
+    margin-bottom: 1rem;
+  }
+
+  article.blog :global(em) {
+    color: var(--grey-500);
+    font-size: 14px;
+    display: inline-block; /* TODO use class/component for this */
   }
 
   @media all and (min-width: 768px) {
-    article.portfolio > :global(p) {
+    article.blog > :global(*:not(h1)) {
       grid-column-end: 3;
+    }
+
+    article.blog :global(em) {
+      margin-bottom: 1rem;
     }
   }
 
   @media all and (min-width: 1366px) {
-    article.portfolio > :global(p) {
-      grid-column-end: 4;
+    article.blog > :global(*:not(h1)) {
+      grid-column-end: 5;
     }
   }
 

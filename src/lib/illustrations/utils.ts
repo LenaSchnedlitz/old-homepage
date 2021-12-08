@@ -63,7 +63,6 @@ export const backgroundGradient = (color) => {
 
 export const illustrationVariables = (color) => {
   const hsl = HSL_VALUES[color];
-  console.warn();
   const variants: Modification[] = [
     'darkest',
     'dark',

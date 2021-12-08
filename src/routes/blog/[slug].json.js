@@ -1,4 +1,4 @@
-import projects from '$lib/projects';
+import projects from '$lib/blog';
 
 export function get({ params }) {
   const post = projects.find((x) => x.slug === params.slug);
