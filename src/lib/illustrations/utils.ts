@@ -27,8 +27,27 @@ type Modification =
   | 'accent2'
   | 'gradientColor';
 type ModFunc = (hsl: Hsl) => Hsl;
-const modify: (modFunc: Modification, hsl: Hsl) => Hsl = (modFunc, hsl) =>
-  eval(`${modFunc}([${hsl}])`);
+const modify: (modFunc: Modification, hsl: Hsl) => Hsl = (modFunc, hsl) => {
+  // TODO figure out how to call them dynamically instead
+  switch (modFunc) {
+    case 'darkest':
+      return darkest(hsl);
+    case 'dark':
+      return dark(hsl);
+    case 'medium':
+      return medium(hsl);
+    case 'light':
+      return light(hsl);
+    case 'lightest':
+      return lightest(hsl);
+    case 'accent':
+      return accent(hsl);
+    case 'accent2':
+      return accent2(hsl);
+    case 'gradientColor':
+      return gradientColor(hsl);
+  }
+};
 const darkest: ModFunc = ([h, s]) => [h - 38, s + 2, 5];
 const dark: ModFunc = ([h, s]) => [h - 15, s + 1, 11];
 const medium: ModFunc = ([h, s]) => [h, s, 82];
