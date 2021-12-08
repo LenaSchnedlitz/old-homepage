@@ -51,6 +51,7 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 <style>
   .blog {
     padding-bottom: 6rem;
+    min-height: 100vh;
   }
 
   a {
@@ -64,7 +65,16 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 
   .featured > :global(.illustration),
   .post > :global(.illustration) {
-    height: 200px;
+    aspect-ratio: 16 / 10;
+  }
+
+  h3 > :global(*) {
+    padding-right: 0.5rem;
+  }
+
+  h3 > :global(br) {
+    content: ' ';
+    display: none;
   }
 
   @media all and (min-width: 768px) {
@@ -80,7 +90,6 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 
     .featured > :global(.illustration) {
       grid-column-end: span 2;
-      height: 400px;
     }
 
     .featured .text {
@@ -104,7 +113,6 @@ see https://github.com/sveltejs/svelte/issues/6325 -->
 
     .featured > :global(.illustration) {
       grid-column-end: span 2;
-      height: 300px;
     }
 
     .post > :global(.illustration) {
