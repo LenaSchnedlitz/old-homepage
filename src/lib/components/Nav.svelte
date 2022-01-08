@@ -1,16 +1,9 @@
 <script lang="ts">
-  export let segment: '' | 'projects' | 'blog' | 'about';
+  export let segment: '' | 'projects' | 'about';
 </script>
 
 <nav>
   <ul>
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === 'blog' ? 'page' : undefined}
-        href="/blog">Blog</a
-      >
-    </li>
     <li>
       <a
         rel="prefetch"
