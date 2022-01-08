@@ -31,7 +31,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    font-family: var(--font-mono-square);
+    font-family: var(--font-mono);
     text-transform: uppercase;
   }
 

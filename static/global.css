@@ -1,12 +1,11 @@
-@import 'fonts/Basier-Mono/font-face.css';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import 'fonts/Inter/font-face.css';
 @import 'styles/palette.css';
 @import 'styles/syntax-highlighting.css';
 @import 'styles/type-scale.css';
 
 :root {
-  --font-mono-circle: 'Basier Mono Circle', monospace;
-  --font-mono-square: 'Basier Mono Square', monospace;
+  --font-mono: 'Space Mono', monospace;
 }
 
 html {
@@ -38,8 +37,8 @@ html {
 
 h1 {
   margin: 2.5em 0 1.3rem;
-  font-family: var(--font-mono-square);
-  font-weight: 400;
+  font-family: var(--font-mono);
+  font-weight: 700;
   letter-spacing: -0.05em;
   line-height: 1.3;
 }
@@ -250,7 +249,7 @@ article li::before {
 code,
 pre {
   border-radius: 4px;
-  font-family: var(--font-mono-circle);
+  font-family: var(--font-mono);
   font-size: 14px;
   color: var(--tertiary-color-900);
   box-shadow: inset 0 1px 2px 0 var(--tertiary-color-100);
